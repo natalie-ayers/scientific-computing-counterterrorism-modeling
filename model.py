@@ -170,7 +170,7 @@ class IsraeliGovt(Agent):
             y = model.random.randrange(model.grid.height)
             model.action_pos = (x, y)
         else:
-            model.action_pos = None
+            model.action_pos = (0,0)
 
         # if perform conciliatory or repressive action,
         # add to a cumulative total which identifies sustained actions
@@ -205,6 +205,7 @@ class CounterterrorismModel(Model):
         self.reactive_lvl = reactive_lvl
         self.discontent = discontent
         self.current_id = 0
+        self.timestep = 1
         self.grid = MultiGrid(height, width, torus=False)
         self.schedule = RandomActivation(self)
         self.sust_conc = 0
@@ -213,7 +214,7 @@ class CounterterrorismModel(Model):
         self.violence_aftermath = 0
         self.deaths = []
         self.govt_action = 'NONE'
-        self.action_pos = None
+        self.action_pos = (0,0)
 
         seed = 50
 
@@ -236,8 +237,10 @@ class CounterterrorismModel(Model):
         self.datacollector = DataCollector(
                 model_reporters = {'num_agents':"num_agents",
                 'num_attacks':'num_attacks'},
-                agent_reporters = {'status':'status','loc':'pos'},
-                tables={'Deaths': {'step':[],'deaths':[]}}
+                agent_reporters = {'status':'status','agent_loc':'pos'},
+                tables={'Deaths': ['step','deaths'],
+                        'govt_actions':['step','govt_action','action_loc',\
+                            'violence_aftermath']}
         )
         self.running = True
 
@@ -250,6 +253,16 @@ class CounterterrorismModel(Model):
         self.schedule.step()
         # collect data
         self.datacollector.collect(self)
+        self.datacollector.add_table_row('Deaths', {'step':self.timestep,\
+            'deaths':len(self.deaths)})
+        #print({'step':self.timestep,\
+        #                    'govt_action':self.govt_action,\
+        #                    'action_loc':self.action_pos,\
+        #                    'violence_aftermath':self.violence_aftermath})
+        self.datacollector.add_table_row("govt_actions", {'step':self.timestep,\
+                            'govt_action':self.govt_action,\
+                            'action_loc':self.action_pos,\
+                            'violence_aftermath':self.violence_aftermath})
 
         # remove dead agents from model
         for x in self.deaths:
@@ -274,3 +287,5 @@ class CounterterrorismModel(Model):
         
         if self.violence_aftermath > 0:
             self.violence_aftermath -= 1
+        
+        self.timestep += 1
