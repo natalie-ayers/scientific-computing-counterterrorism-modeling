@@ -33,7 +33,7 @@ function LinePlot(props) {
       ]}
       layout={{
         width: 700,
-        height: 200,
+        height: 300,
         margin: {
             l: 25,
             r: 25,

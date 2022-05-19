@@ -3,6 +3,8 @@ import { useState, useEffect, useCallback } from "react";
 import ParamForm from "./ParamForm";
 import pivot_json from "../services/Services"
 import LinePlot from "./LinePlot";
+import Heatmap from "./Heatmap"
+import PlaybackControls from "./PlaybackControls";
 
 const SimViewer = (props) => {
   const [timestep, setTimestep] = useState(0);
@@ -32,37 +34,36 @@ const SimViewer = (props) => {
 
   const zoom = 5;
   return (
+    <div>
     <div className="sim_viewer">
             <div className="sim_viewer_left">
-            <div>
-                <LinePlot
-                    data={simPiv}
-                    target1={'num_agents'}
-                    target2={'num_attacks'}
-                    x_step={50}>
-                </LinePlot>
-                <LinePlot
-                    data={simPiv}
-                    target1={'num_agents'}
-                    target2={'num_attacks'}
-                    x_step={50}>
-                </LinePlot>
-            </div>
-            <table id="sim_meta">
-                <tr>
-                    <td>{simPars.violence_prob}</td>
-                    <td>{simPars.gov_policy}</td>
-                    <td>{simPars.reactive_level}</td>
-                    <td>{simPars.discontent}</td>
-                    <td>{simPars.starting_pop}</td>
-                    <td>{simPars.total_steps}</td>
-                    <td>{timestep}</td>
-                </tr>
-            </table>
+            <Heatmap></Heatmap>
             </div>
             <div className="sim_viewer_right" width='400' margin='50'>
             <ParamForm></ParamForm>
             </div>
+            <div>
+            <PlaybackControls></PlaybackControls>
+            </div>
+    </div>
+    <div className="sim_viewer">
+        {/* <div className="sim_viewer_right">
+        <LinePlot
+            data={simPiv}
+            target1={'num_agents'}
+            target2={'num_attacks'}
+            x_step={50}>
+        </LinePlot>
+        </div> */}
+        <div className="sim_viewer_left">
+        <LinePlot
+            data={simPiv}
+            target1={'num_agents'}
+            target2={'num_attacks'}
+            x_step={50}>
+        </LinePlot>
+        </div>
+    </div>
     </div>
   );
 };

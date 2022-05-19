@@ -2,8 +2,8 @@ import React, { Component } from 'react'
 import Slider, { Range } from 'rc-slider';
 import LoadingButton from '@mui/lab/LoadingButton';
 import 'rc-slider/assets/index.css';
-import { Form } from 'semantic-ui-react'
 import { BsCloudUpload } from "react-icons/bs";
+import ToggleButtonGroup from '@mui/lab/ToggleButtonGroup';
 
 const gov_policy_options = {
     0: 'Concilatory',
