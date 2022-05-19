@@ -11,42 +11,61 @@ import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
 const PlaybackControls = (props) => {
   return (
     <ToggleButtonGroup
-      value={props.speed}
+      value={props.controlState}
       exclusive
       aria-label="playback setting"
     >
       <ToggleButton
-        value="t0"
-        aria-label="t0"
-        onClick={() => props.setSpeed("t0")}
+        value="skip-to-beginning"
+        aria-label="skip-to-beginning"
+        onClick={() => {
+            props.setTimestep(0)
+            props.setActive(false)
+            props.setControlState("skip-to-beginning")
+        }}
       >
         <BsFillSkipStartCircleFill />
       </ToggleButton>
       <ToggleButton
         value="pause"
         aria-label="pause"
-        onClick={() => props.setSpeed("pause")}
+        onClick={() => {
+            props.setActive(false)
+            props.setControlState("pause")
+        }}
       >
         <BsFillPauseCircleFill />
       </ToggleButton>
       <ToggleButton
         value="play"
         aria-label="play"
-        onClick={() => props.setSpeed("play")}
+        onClick={() => {
+            props.setMsPerStep(1000)
+            props.setActive(true)
+            props.setControlState("play")
+        }}
       >
         <BsFillPlayCircleFill />
       </ToggleButton>
       <ToggleButton
         value="fast-forward"
         aria-label="fast-forward"
-        onClick={() => props.setSpeed("fast-forward")}
+        onClick={() => {
+            props.setMsPerStep(100)
+            props.setActive(true)
+            props.setControlState("fast-forward")
+        }}
       >
         <BsFillSkipForwardCircleFill />
       </ToggleButton>
       <ToggleButton
         value="skip-to-end"
         aria-label="skip-to-end"
-        onClick={() => props.setSpeed("skip-to-end")}
+        onClick={() => {
+            props.setTimestep(props.max_timestep)
+            props.setActive(false)
+            props.setControlState("skip-to-end")
+        }}
       >
         <BsFillSkipEndCircleFill />
       </ToggleButton>

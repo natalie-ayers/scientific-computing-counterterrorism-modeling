@@ -8,7 +8,10 @@ import PlaybackControls from "./PlaybackControls";
 
 const SimViewer = (props) => {
   const [timestep, setTimestep] = useState(0);
-  const [speed, setSpeed] = useState("t0");
+  const [isActive, setActive] = useState(false);
+  const [msPerStep, setMsPerStep] = useState(1000); 
+  const [controlState, setControlState] = useState('pause')
+  const [lineYMax, setLineYMax] = useState(0);
 
   //   const [simData, setSimData] = useState(null)
   const simPars = {
@@ -19,6 +22,18 @@ const SimViewer = (props) => {
     starting_pop: 200,
     total_steps: 500,
   };
+
+  useEffect(() => {
+    let interval = null;
+    if (isActive) {
+      interval = setInterval(() => {
+        setTimestep(timestep => timestep + 1);
+      }, msPerStep);
+    } else if (!isActive && timestep !== 0) {
+      clearInterval(interval);
+    }
+    return () => clearInterval(interval);
+  }, [isActive, timestep]);
 
   const simData = require("../static/model_json.json");
   const simPiv = pivot_json(simData);
@@ -39,6 +54,7 @@ const SimViewer = (props) => {
     <div>
       <div className="sim_viewer">
         <div className="sim_viewer_left">
+            {timestep}
           <Heatmap></Heatmap>
         </div>
         <div className="sim_viewer_right" width="400" margin="50">
@@ -46,8 +62,12 @@ const SimViewer = (props) => {
         </div>
         <div>
           <PlaybackControls
-            speed={speed}
-            setSpeed={setSpeed}
+            setMsPerStep={setMsPerStep}
+            setActive={setActive}
+            setTimestep={setTimestep}
+            setControlState={setControlState}
+            controlState={controlState}
+            max_timestep={simPars.total_steps}
           ></PlaybackControls>
         </div>
       </div>
@@ -66,6 +86,9 @@ const SimViewer = (props) => {
             target1={"num_agents"}
             target2={"num_attacks"}
             x_step={50}
+            timestep={timestep}
+            lineYMax={lineYMax}
+            setLineYMax={setLineYMax}
           ></LinePlot>
         </div>
       </div>
