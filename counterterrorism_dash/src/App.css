@@ -1,73 +1,73 @@
 .App {
-  text-align: center;
+    text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+    height: 40vmin;
+    pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
 }
 
 .App-link {
-  color: #61dafb;
+    color: #61dafb;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 .sim_viewer {
-  border: 3px solid #fff;
-  padding: 20px;
+    border: 3px solid #fff;
+    padding: 20px;
 }
 
 .sim_viewer_right {
-  width: 20%;
-  float: right;
-  padding-bottom: 10px;
-  /* height: 600px; */
-  border: 5px solid rgb(0, 0, 0);
-  border-radius: 25px;
-  /* border-radius: 5px; */
+    width: 20%;
+    float: right;
+    padding-bottom: 10px;
+    /* height: 600px; */
+    border: 5px solid rgb(0, 0, 0);
+    border-radius: 25px;
+    /* border-radius: 5px; */
 }
 
 .sim_viewer_left {
-  width: 45%;
-  float: left;
-  padding: 2px;
-  border: 5px solid rgb(0, 0, 0);
-  border-radius: 25px;
+    width: 45%;
+    float: left;
+    padding: 2px;
+    border: 5px solid rgb(0, 0, 0);
+    border-radius: 25px;
 }
 
 .contain_inner {
-  position: relative;
-  top: 0%;
-  left: 50%;
-  bottom: 20%;
-  padding-left: 15%;
-  padding-right: 20%;
-  padding-top: 15%;
-  padding-bottom: 0%;
-  transform: translate(-50%, -50%);
+    position: relative;
+    top: 0%;
+    left: 50%;
+    bottom: 20%;
+    padding-left: 15%;
+    padding-right: 20%;
+    padding-top: 15%;
+    padding-bottom: 0%;
+    transform: translate(-50%, -50%);
 }

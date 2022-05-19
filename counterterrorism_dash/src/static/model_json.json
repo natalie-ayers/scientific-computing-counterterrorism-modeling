@@ -1,3502 +1,3502 @@
 [
-  {
-    "timestep": 0,
-    "num_agents": 200,
-    "num_attacks": 44
-  },
-  {
-    "timestep": 1,
-    "num_agents": 159,
-    "num_attacks": 47
-  },
-  {
-    "timestep": 2,
-    "num_agents": 156,
-    "num_attacks": 47
-  },
-  {
-    "timestep": 3,
-    "num_agents": 160,
-    "num_attacks": 47
-  },
-  {
-    "timestep": 4,
-    "num_agents": 163,
-    "num_attacks": 47
-  },
-  {
-    "timestep": 5,
-    "num_agents": 168,
-    "num_attacks": 50
-  },
-  {
-    "timestep": 6,
-    "num_agents": 167,
-    "num_attacks": 51
-  },
-  {
-    "timestep": 7,
-    "num_agents": 166,
-    "num_attacks": 51
-  },
-  {
-    "timestep": 8,
-    "num_agents": 167,
-    "num_attacks": 51
-  },
-  {
-    "timestep": 9,
-    "num_agents": 170,
-    "num_attacks": 52
-  },
-  {
-    "timestep": 10,
-    "num_agents": 169,
-    "num_attacks": 52
-  },
-  {
-    "timestep": 11,
-    "num_agents": 170,
-    "num_attacks": 52
-  },
-  {
-    "timestep": 12,
-    "num_agents": 173,
-    "num_attacks": 53
-  },
-  {
-    "timestep": 13,
-    "num_agents": 174,
-    "num_attacks": 53
-  },
-  {
-    "timestep": 14,
-    "num_agents": 176,
-    "num_attacks": 53
-  },
-  {
-    "timestep": 15,
-    "num_agents": 179,
-    "num_attacks": 53
-  },
-  {
-    "timestep": 16,
-    "num_agents": 184,
-    "num_attacks": 53
-  },
-  {
-    "timestep": 17,
-    "num_agents": 187,
-    "num_attacks": 54
-  },
-  {
-    "timestep": 18,
-    "num_agents": 188,
-    "num_attacks": 56
-  },
-  {
-    "timestep": 19,
-    "num_agents": 190,
-    "num_attacks": 56
-  },
-  {
-    "timestep": 20,
-    "num_agents": 191,
-    "num_attacks": 56
-  },
-  {
-    "timestep": 21,
-    "num_agents": 194,
-    "num_attacks": 58
-  },
-  {
-    "timestep": 22,
-    "num_agents": 197,
-    "num_attacks": 58
-  },
-  {
-    "timestep": 23,
-    "num_agents": 201,
-    "num_attacks": 61
-  },
-  {
-    "timestep": 24,
-    "num_agents": 202,
-    "num_attacks": 61
-  },
-  {
-    "timestep": 25,
-    "num_agents": 204,
-    "num_attacks": 61
-  },
-  {
-    "timestep": 26,
-    "num_agents": 209,
-    "num_attacks": 61
-  },
-  {
-    "timestep": 27,
-    "num_agents": 213,
-    "num_attacks": 63
-  },
-  {
-    "timestep": 28,
-    "num_agents": 215,
-    "num_attacks": 63
-  },
-  {
-    "timestep": 29,
-    "num_agents": 219,
-    "num_attacks": 64
-  },
-  {
-    "timestep": 30,
-    "num_agents": 218,
-    "num_attacks": 65
-  },
-  {
-    "timestep": 31,
-    "num_agents": 221,
-    "num_attacks": 65
-  },
-  {
-    "timestep": 32,
-    "num_agents": 224,
-    "num_attacks": 65
-  },
-  {
-    "timestep": 33,
-    "num_agents": 227,
-    "num_attacks": 66
-  },
-  {
-    "timestep": 34,
-    "num_agents": 229,
-    "num_attacks": 67
-  },
-  {
-    "timestep": 35,
-    "num_agents": 235,
-    "num_attacks": 67
-  },
-  {
-    "timestep": 36,
-    "num_agents": 238,
-    "num_attacks": 67
-  },
-  {
-    "timestep": 37,
-    "num_agents": 243,
-    "num_attacks": 68
-  },
-  {
-    "timestep": 38,
-    "num_agents": 244,
-    "num_attacks": 68
-  },
-  {
-    "timestep": 39,
-    "num_agents": 245,
-    "num_attacks": 69
-  },
-  {
-    "timestep": 40,
-    "num_agents": 250,
-    "num_attacks": 70
-  },
-  {
-    "timestep": 41,
-    "num_agents": 253,
-    "num_attacks": 71
-  },
-  {
-    "timestep": 42,
-    "num_agents": 260,
-    "num_attacks": 72
-  },
-  {
-    "timestep": 43,
-    "num_agents": 262,
-    "num_attacks": 72
-  },
-  {
-    "timestep": 44,
-    "num_agents": 265,
-    "num_attacks": 73
-  },
-  {
-    "timestep": 45,
-    "num_agents": 272,
-    "num_attacks": 79
-  },
-  {
-    "timestep": 46,
-    "num_agents": 266,
-    "num_attacks": 79
-  },
-  {
-    "timestep": 47,
-    "num_agents": 271,
-    "num_attacks": 79
-  },
-  {
-    "timestep": 48,
-    "num_agents": 278,
-    "num_attacks": 80
-  },
-  {
-    "timestep": 49,
-    "num_agents": 278,
-    "num_attacks": 80
-  },
-  {
-    "timestep": 50,
-    "num_agents": 286,
-    "num_attacks": 80
-  },
-  {
-    "timestep": 51,
-    "num_agents": 287,
-    "num_attacks": 81
-  },
-  {
-    "timestep": 52,
-    "num_agents": 293,
-    "num_attacks": 83
-  },
-  {
-    "timestep": 53,
-    "num_agents": 299,
-    "num_attacks": 84
-  },
-  {
-    "timestep": 54,
-    "num_agents": 302,
-    "num_attacks": 85
-  },
-  {
-    "timestep": 55,
-    "num_agents": 307,
-    "num_attacks": 87
-  },
-  {
-    "timestep": 56,
-    "num_agents": 308,
-    "num_attacks": 87
-  },
-  {
-    "timestep": 57,
-    "num_agents": 316,
-    "num_attacks": 90
-  },
-  {
-    "timestep": 58,
-    "num_agents": 318,
-    "num_attacks": 90
-  },
-  {
-    "timestep": 59,
-    "num_agents": 325,
-    "num_attacks": 92
-  },
-  {
-    "timestep": 60,
-    "num_agents": 331,
-    "num_attacks": 96
-  },
-  {
-    "timestep": 61,
-    "num_agents": 327,
-    "num_attacks": 97
-  },
-  {
-    "timestep": 62,
-    "num_agents": 327,
-    "num_attacks": 98
-  },
-  {
-    "timestep": 63,
-    "num_agents": 335,
-    "num_attacks": 101
-  },
-  {
-    "timestep": 64,
-    "num_agents": 337,
-    "num_attacks": 101
-  },
-  {
-    "timestep": 65,
-    "num_agents": 345,
-    "num_attacks": 105
-  },
-  {
-    "timestep": 66,
-    "num_agents": 348,
-    "num_attacks": 109
-  },
-  {
-    "timestep": 67,
-    "num_agents": 349,
-    "num_attacks": 109
-  },
-  {
-    "timestep": 68,
-    "num_agents": 349,
-    "num_attacks": 110
-  },
-  {
-    "timestep": 69,
-    "num_agents": 352,
-    "num_attacks": 112
-  },
-  {
-    "timestep": 70,
-    "num_agents": 353,
-    "num_attacks": 113
-  },
-  {
-    "timestep": 71,
-    "num_agents": 363,
-    "num_attacks": 115
-  },
-  {
-    "timestep": 72,
-    "num_agents": 363,
-    "num_attacks": 120
-  },
-  {
-    "timestep": 73,
-    "num_agents": 364,
-    "num_attacks": 121
-  },
-  {
-    "timestep": 74,
-    "num_agents": 365,
-    "num_attacks": 122
-  },
-  {
-    "timestep": 75,
-    "num_agents": 370,
-    "num_attacks": 124
-  },
-  {
-    "timestep": 76,
-    "num_agents": 378,
-    "num_attacks": 130
-  },
-  {
-    "timestep": 77,
-    "num_agents": 378,
-    "num_attacks": 135
-  },
-  {
-    "timestep": 78,
-    "num_agents": 378,
-    "num_attacks": 136
-  },
-  {
-    "timestep": 79,
-    "num_agents": 382,
-    "num_attacks": 137
-  },
-  {
-    "timestep": 80,
-    "num_agents": 391,
-    "num_attacks": 141
-  },
-  {
-    "timestep": 81,
-    "num_agents": 390,
-    "num_attacks": 145
-  },
-  {
-    "timestep": 82,
-    "num_agents": 388,
-    "num_attacks": 150
-  },
-  {
-    "timestep": 83,
-    "num_agents": 394,
-    "num_attacks": 153
-  },
-  {
-    "timestep": 84,
-    "num_agents": 393,
-    "num_attacks": 158
-  },
-  {
-    "timestep": 85,
-    "num_agents": 394,
-    "num_attacks": 163
-  },
-  {
-    "timestep": 86,
-    "num_agents": 394,
-    "num_attacks": 164
-  },
-  {
-    "timestep": 87,
-    "num_agents": 395,
-    "num_attacks": 166
-  },
-  {
-    "timestep": 88,
-    "num_agents": 395,
-    "num_attacks": 170
-  },
-  {
-    "timestep": 89,
-    "num_agents": 403,
-    "num_attacks": 177
-  },
-  {
-    "timestep": 90,
-    "num_agents": 397,
-    "num_attacks": 182
-  },
-  {
-    "timestep": 91,
-    "num_agents": 394,
-    "num_attacks": 190
-  },
-  {
-    "timestep": 92,
-    "num_agents": 391,
-    "num_attacks": 192
-  },
-  {
-    "timestep": 93,
-    "num_agents": 392,
-    "num_attacks": 194
-  },
-  {
-    "timestep": 94,
-    "num_agents": 399,
-    "num_attacks": 200
-  },
-  {
-    "timestep": 95,
-    "num_agents": 398,
-    "num_attacks": 201
-  },
-  {
-    "timestep": 96,
-    "num_agents": 408,
-    "num_attacks": 211
-  },
-  {
-    "timestep": 97,
-    "num_agents": 402,
-    "num_attacks": 211
-  },
-  {
-    "timestep": 98,
-    "num_agents": 408,
-    "num_attacks": 213
-  },
-  {
-    "timestep": 99,
-    "num_agents": 418,
-    "num_attacks": 217
-  },
-  {
-    "timestep": 100,
-    "num_agents": 421,
-    "num_attacks": 225
-  },
-  {
-    "timestep": 101,
-    "num_agents": 419,
-    "num_attacks": 233
-  },
-  {
-    "timestep": 102,
-    "num_agents": 415,
-    "num_attacks": 235
-  },
-  {
-    "timestep": 103,
-    "num_agents": 413,
-    "num_attacks": 238
-  },
-  {
-    "timestep": 104,
-    "num_agents": 415,
-    "num_attacks": 244
-  },
-  {
-    "timestep": 105,
-    "num_agents": 415,
-    "num_attacks": 248
-  },
-  {
-    "timestep": 106,
-    "num_agents": 415,
-    "num_attacks": 256
-  },
-  {
-    "timestep": 107,
-    "num_agents": 413,
-    "num_attacks": 263
-  },
-  {
-    "timestep": 108,
-    "num_agents": 416,
-    "num_attacks": 271
-  },
-  {
-    "timestep": 109,
-    "num_agents": 415,
-    "num_attacks": 274
-  },
-  {
-    "timestep": 110,
-    "num_agents": 423,
-    "num_attacks": 285
-  },
-  {
-    "timestep": 111,
-    "num_agents": 413,
-    "num_attacks": 289
-  },
-  {
-    "timestep": 112,
-    "num_agents": 410,
-    "num_attacks": 295
-  },
-  {
-    "timestep": 113,
-    "num_agents": 408,
-    "num_attacks": 321
-  },
-  {
-    "timestep": 114,
-    "num_agents": 386,
-    "num_attacks": 332
-  },
-  {
-    "timestep": 115,
-    "num_agents": 375,
-    "num_attacks": 333
-  },
-  {
-    "timestep": 116,
-    "num_agents": 377,
-    "num_attacks": 343
-  },
-  {
-    "timestep": 117,
-    "num_agents": 370,
-    "num_attacks": 347
-  },
-  {
-    "timestep": 118,
-    "num_agents": 368,
-    "num_attacks": 347
-  },
-  {
-    "timestep": 119,
-    "num_agents": 373,
-    "num_attacks": 348
-  },
-  {
-    "timestep": 120,
-    "num_agents": 380,
-    "num_attacks": 351
-  },
-  {
-    "timestep": 121,
-    "num_agents": 382,
-    "num_attacks": 351
-  },
-  {
-    "timestep": 122,
-    "num_agents": 388,
-    "num_attacks": 358
-  },
-  {
-    "timestep": 123,
-    "num_agents": 390,
-    "num_attacks": 363
-  },
-  {
-    "timestep": 124,
-    "num_agents": 385,
-    "num_attacks": 364
-  },
-  {
-    "timestep": 125,
-    "num_agents": 395,
-    "num_attacks": 369
-  },
-  {
-    "timestep": 126,
-    "num_agents": 394,
-    "num_attacks": 370
-  },
-  {
-    "timestep": 127,
-    "num_agents": 393,
-    "num_attacks": 372
-  },
-  {
-    "timestep": 128,
-    "num_agents": 394,
-    "num_attacks": 375
-  },
-  {
-    "timestep": 129,
-    "num_agents": 399,
-    "num_attacks": 377
-  },
-  {
-    "timestep": 130,
-    "num_agents": 402,
-    "num_attacks": 380
-  },
-  {
-    "timestep": 131,
-    "num_agents": 399,
-    "num_attacks": 385
-  },
-  {
-    "timestep": 132,
-    "num_agents": 396,
-    "num_attacks": 390
-  },
-  {
-    "timestep": 133,
-    "num_agents": 395,
-    "num_attacks": 395
-  },
-  {
-    "timestep": 134,
-    "num_agents": 393,
-    "num_attacks": 397
-  },
-  {
-    "timestep": 135,
-    "num_agents": 393,
-    "num_attacks": 403
-  },
-  {
-    "timestep": 136,
-    "num_agents": 391,
-    "num_attacks": 411
-  },
-  {
-    "timestep": 137,
-    "num_agents": 391,
-    "num_attacks": 417
-  },
-  {
-    "timestep": 138,
-    "num_agents": 394,
-    "num_attacks": 422
-  },
-  {
-    "timestep": 139,
-    "num_agents": 397,
-    "num_attacks": 425
-  },
-  {
-    "timestep": 140,
-    "num_agents": 405,
-    "num_attacks": 431
-  },
-  {
-    "timestep": 141,
-    "num_agents": 403,
-    "num_attacks": 437
-  },
-  {
-    "timestep": 142,
-    "num_agents": 409,
-    "num_attacks": 451
-  },
-  {
-    "timestep": 143,
-    "num_agents": 396,
-    "num_attacks": 456
-  },
-  {
-    "timestep": 144,
-    "num_agents": 396,
-    "num_attacks": 466
-  },
-  {
-    "timestep": 145,
-    "num_agents": 398,
-    "num_attacks": 474
-  },
-  {
-    "timestep": 146,
-    "num_agents": 396,
-    "num_attacks": 485
-  },
-  {
-    "timestep": 147,
-    "num_agents": 397,
-    "num_attacks": 494
-  },
-  {
-    "timestep": 148,
-    "num_agents": 395,
-    "num_attacks": 502
-  },
-  {
-    "timestep": 149,
-    "num_agents": 398,
-    "num_attacks": 505
-  },
-  {
-    "timestep": 150,
-    "num_agents": 398,
-    "num_attacks": 508
-  },
-  {
-    "timestep": 151,
-    "num_agents": 398,
-    "num_attacks": 509
-  },
-  {
-    "timestep": 152,
-    "num_agents": 405,
-    "num_attacks": 516
-  },
-  {
-    "timestep": 153,
-    "num_agents": 398,
-    "num_attacks": 520
-  },
-  {
-    "timestep": 154,
-    "num_agents": 399,
-    "num_attacks": 524
-  },
-  {
-    "timestep": 155,
-    "num_agents": 403,
-    "num_attacks": 529
-  },
-  {
-    "timestep": 156,
-    "num_agents": 407,
-    "num_attacks": 532
-  },
-  {
-    "timestep": 157,
-    "num_agents": 415,
-    "num_attacks": 538
-  },
-  {
-    "timestep": 158,
-    "num_agents": 418,
-    "num_attacks": 546
-  },
-  {
-    "timestep": 159,
-    "num_agents": 411,
-    "num_attacks": 552
-  },
-  {
-    "timestep": 160,
-    "num_agents": 407,
-    "num_attacks": 555
-  },
-  {
-    "timestep": 161,
-    "num_agents": 414,
-    "num_attacks": 558
-  },
-  {
-    "timestep": 162,
-    "num_agents": 423,
-    "num_attacks": 562
-  },
-  {
-    "timestep": 163,
-    "num_agents": 422,
-    "num_attacks": 563
-  },
-  {
-    "timestep": 164,
-    "num_agents": 422,
-    "num_attacks": 565
-  },
-  {
-    "timestep": 165,
-    "num_agents": 429,
-    "num_attacks": 569
-  },
-  {
-    "timestep": 166,
-    "num_agents": 425,
-    "num_attacks": 571
-  },
-  {
-    "timestep": 167,
-    "num_agents": 432,
-    "num_attacks": 586
-  },
-  {
-    "timestep": 168,
-    "num_agents": 422,
-    "num_attacks": 593
-  },
-  {
-    "timestep": 169,
-    "num_agents": 415,
-    "num_attacks": 613
-  },
-  {
-    "timestep": 170,
-    "num_agents": 396,
-    "num_attacks": 620
-  },
-  {
-    "timestep": 171,
-    "num_agents": 399,
-    "num_attacks": 626
-  },
-  {
-    "timestep": 172,
-    "num_agents": 402,
-    "num_attacks": 628
-  },
-  {
-    "timestep": 173,
-    "num_agents": 401,
-    "num_attacks": 633
-  },
-  {
-    "timestep": 174,
-    "num_agents": 406,
-    "num_attacks": 639
-  },
-  {
-    "timestep": 175,
-    "num_agents": 406,
-    "num_attacks": 648
-  },
-  {
-    "timestep": 176,
-    "num_agents": 401,
-    "num_attacks": 656
-  },
-  {
-    "timestep": 177,
-    "num_agents": 395,
-    "num_attacks": 662
-  },
-  {
-    "timestep": 178,
-    "num_agents": 399,
-    "num_attacks": 676
-  },
-  {
-    "timestep": 179,
-    "num_agents": 395,
-    "num_attacks": 687
-  },
-  {
-    "timestep": 180,
-    "num_agents": 389,
-    "num_attacks": 695
-  },
-  {
-    "timestep": 181,
-    "num_agents": 392,
-    "num_attacks": 708
-  },
-  {
-    "timestep": 182,
-    "num_agents": 389,
-    "num_attacks": 721
-  },
-  {
-    "timestep": 183,
-    "num_agents": 383,
-    "num_attacks": 727
-  },
-  {
-    "timestep": 184,
-    "num_agents": 381,
-    "num_attacks": 732
-  },
-  {
-    "timestep": 185,
-    "num_agents": 386,
-    "num_attacks": 739
-  },
-  {
-    "timestep": 186,
-    "num_agents": 380,
-    "num_attacks": 748
-  },
-  {
-    "timestep": 187,
-    "num_agents": 378,
-    "num_attacks": 753
-  },
-  {
-    "timestep": 188,
-    "num_agents": 379,
-    "num_attacks": 764
-  },
-  {
-    "timestep": 189,
-    "num_agents": 375,
-    "num_attacks": 774
-  },
-  {
-    "timestep": 190,
-    "num_agents": 375,
-    "num_attacks": 778
-  },
-  {
-    "timestep": 191,
-    "num_agents": 375,
-    "num_attacks": 783
-  },
-  {
-    "timestep": 192,
-    "num_agents": 375,
-    "num_attacks": 786
-  },
-  {
-    "timestep": 193,
-    "num_agents": 380,
-    "num_attacks": 791
-  },
-  {
-    "timestep": 194,
-    "num_agents": 384,
-    "num_attacks": 795
-  },
-  {
-    "timestep": 195,
-    "num_agents": 386,
-    "num_attacks": 802
-  },
-  {
-    "timestep": 196,
-    "num_agents": 387,
-    "num_attacks": 802
-  },
-  {
-    "timestep": 197,
-    "num_agents": 399,
-    "num_attacks": 806
-  },
-  {
-    "timestep": 198,
-    "num_agents": 403,
-    "num_attacks": 811
-  },
-  {
-    "timestep": 199,
-    "num_agents": 408,
-    "num_attacks": 816
-  },
-  {
-    "timestep": 200,
-    "num_agents": 407,
-    "num_attacks": 823
-  },
-  {
-    "timestep": 201,
-    "num_agents": 400,
-    "num_attacks": 834
-  },
-  {
-    "timestep": 202,
-    "num_agents": 398,
-    "num_attacks": 837
-  },
-  {
-    "timestep": 203,
-    "num_agents": 404,
-    "num_attacks": 838
-  },
-  {
-    "timestep": 204,
-    "num_agents": 408,
-    "num_attacks": 839
-  },
-  {
-    "timestep": 205,
-    "num_agents": 412,
-    "num_attacks": 843
-  },
-  {
-    "timestep": 206,
-    "num_agents": 418,
-    "num_attacks": 846
-  },
-  {
-    "timestep": 207,
-    "num_agents": 415,
-    "num_attacks": 846
-  },
-  {
-    "timestep": 208,
-    "num_agents": 417,
-    "num_attacks": 847
-  },
-  {
-    "timestep": 209,
-    "num_agents": 426,
-    "num_attacks": 853
-  },
-  {
-    "timestep": 210,
-    "num_agents": 431,
-    "num_attacks": 865
-  },
-  {
-    "timestep": 211,
-    "num_agents": 425,
-    "num_attacks": 873
-  },
-  {
-    "timestep": 212,
-    "num_agents": 418,
-    "num_attacks": 884
-  },
-  {
-    "timestep": 213,
-    "num_agents": 407,
-    "num_attacks": 902
-  },
-  {
-    "timestep": 214,
-    "num_agents": 390,
-    "num_attacks": 911
-  },
-  {
-    "timestep": 215,
-    "num_agents": 382,
-    "num_attacks": 916
-  },
-  {
-    "timestep": 216,
-    "num_agents": 385,
-    "num_attacks": 923
-  },
-  {
-    "timestep": 217,
-    "num_agents": 388,
-    "num_attacks": 933
-  },
-  {
-    "timestep": 218,
-    "num_agents": 387,
-    "num_attacks": 947
-  },
-  {
-    "timestep": 219,
-    "num_agents": 384,
-    "num_attacks": 959
-  },
-  {
-    "timestep": 220,
-    "num_agents": 377,
-    "num_attacks": 963
-  },
-  {
-    "timestep": 221,
-    "num_agents": 375,
-    "num_attacks": 970
-  },
-  {
-    "timestep": 222,
-    "num_agents": 379,
-    "num_attacks": 978
-  },
-  {
-    "timestep": 223,
-    "num_agents": 371,
-    "num_attacks": 983
-  },
-  {
-    "timestep": 224,
-    "num_agents": 368,
-    "num_attacks": 988
-  },
-  {
-    "timestep": 225,
-    "num_agents": 364,
-    "num_attacks": 990
-  },
-  {
-    "timestep": 226,
-    "num_agents": 373,
-    "num_attacks": 995
-  },
-  {
-    "timestep": 227,
-    "num_agents": 379,
-    "num_attacks": 1000
-  },
-  {
-    "timestep": 228,
-    "num_agents": 382,
-    "num_attacks": 1004
-  },
-  {
-    "timestep": 229,
-    "num_agents": 388,
-    "num_attacks": 1010
-  },
-  {
-    "timestep": 230,
-    "num_agents": 382,
-    "num_attacks": 1014
-  },
-  {
-    "timestep": 231,
-    "num_agents": 383,
-    "num_attacks": 1016
-  },
-  {
-    "timestep": 232,
-    "num_agents": 386,
-    "num_attacks": 1021
-  },
-  {
-    "timestep": 233,
-    "num_agents": 389,
-    "num_attacks": 1034
-  },
-  {
-    "timestep": 234,
-    "num_agents": 382,
-    "num_attacks": 1044
-  },
-  {
-    "timestep": 235,
-    "num_agents": 381,
-    "num_attacks": 1047
-  },
-  {
-    "timestep": 236,
-    "num_agents": 388,
-    "num_attacks": 1052
-  },
-  {
-    "timestep": 237,
-    "num_agents": 392,
-    "num_attacks": 1062
-  },
-  {
-    "timestep": 238,
-    "num_agents": 383,
-    "num_attacks": 1074
-  },
-  {
-    "timestep": 239,
-    "num_agents": 376,
-    "num_attacks": 1077
-  },
-  {
-    "timestep": 240,
-    "num_agents": 380,
-    "num_attacks": 1081
-  },
-  {
-    "timestep": 241,
-    "num_agents": 378,
-    "num_attacks": 1084
-  },
-  {
-    "timestep": 242,
-    "num_agents": 375,
-    "num_attacks": 1091
-  },
-  {
-    "timestep": 243,
-    "num_agents": 372,
-    "num_attacks": 1095
-  },
-  {
-    "timestep": 244,
-    "num_agents": 374,
-    "num_attacks": 1096
-  },
-  {
-    "timestep": 245,
-    "num_agents": 376,
-    "num_attacks": 1098
-  },
-  {
-    "timestep": 246,
-    "num_agents": 378,
-    "num_attacks": 1104
-  },
-  {
-    "timestep": 247,
-    "num_agents": 372,
-    "num_attacks": 1112
-  },
-  {
-    "timestep": 248,
-    "num_agents": 370,
-    "num_attacks": 1121
-  },
-  {
-    "timestep": 249,
-    "num_agents": 366,
-    "num_attacks": 1124
-  },
-  {
-    "timestep": 250,
-    "num_agents": 366,
-    "num_attacks": 1125
-  },
-  {
-    "timestep": 251,
-    "num_agents": 368,
-    "num_attacks": 1125
-  },
-  {
-    "timestep": 252,
-    "num_agents": 368,
-    "num_attacks": 1125
-  },
-  {
-    "timestep": 253,
-    "num_agents": 368,
-    "num_attacks": 1125
-  },
-  {
-    "timestep": 254,
-    "num_agents": 373,
-    "num_attacks": 1131
-  },
-  {
-    "timestep": 255,
-    "num_agents": 367,
-    "num_attacks": 1134
-  },
-  {
-    "timestep": 256,
-    "num_agents": 367,
-    "num_attacks": 1137
-  },
-  {
-    "timestep": 257,
-    "num_agents": 371,
-    "num_attacks": 1141
-  },
-  {
-    "timestep": 258,
-    "num_agents": 367,
-    "num_attacks": 1145
-  },
-  {
-    "timestep": 259,
-    "num_agents": 371,
-    "num_attacks": 1149
-  },
-  {
-    "timestep": 260,
-    "num_agents": 377,
-    "num_attacks": 1150
-  },
-  {
-    "timestep": 261,
-    "num_agents": 384,
-    "num_attacks": 1151
-  },
-  {
-    "timestep": 262,
-    "num_agents": 385,
-    "num_attacks": 1154
-  },
-  {
-    "timestep": 263,
-    "num_agents": 383,
-    "num_attacks": 1154
-  },
-  {
-    "timestep": 264,
-    "num_agents": 388,
-    "num_attacks": 1157
-  },
-  {
-    "timestep": 265,
-    "num_agents": 393,
-    "num_attacks": 1164
-  },
-  {
-    "timestep": 266,
-    "num_agents": 398,
-    "num_attacks": 1170
-  },
-  {
-    "timestep": 267,
-    "num_agents": 404,
-    "num_attacks": 1177
-  },
-  {
-    "timestep": 268,
-    "num_agents": 402,
-    "num_attacks": 1178
-  },
-  {
-    "timestep": 269,
-    "num_agents": 402,
-    "num_attacks": 1183
-  },
-  {
-    "timestep": 270,
-    "num_agents": 397,
-    "num_attacks": 1191
-  },
-  {
-    "timestep": 271,
-    "num_agents": 393,
-    "num_attacks": 1197
-  },
-  {
-    "timestep": 272,
-    "num_agents": 392,
-    "num_attacks": 1202
-  },
-  {
-    "timestep": 273,
-    "num_agents": 393,
-    "num_attacks": 1207
-  },
-  {
-    "timestep": 274,
-    "num_agents": 388,
-    "num_attacks": 1210
-  },
-  {
-    "timestep": 275,
-    "num_agents": 397,
-    "num_attacks": 1218
-  },
-  {
-    "timestep": 276,
-    "num_agents": 391,
-    "num_attacks": 1222
-  },
-  {
-    "timestep": 277,
-    "num_agents": 388,
-    "num_attacks": 1226
-  },
-  {
-    "timestep": 278,
-    "num_agents": 388,
-    "num_attacks": 1234
-  },
-  {
-    "timestep": 279,
-    "num_agents": 387,
-    "num_attacks": 1239
-  },
-  {
-    "timestep": 280,
-    "num_agents": 387,
-    "num_attacks": 1247
-  },
-  {
-    "timestep": 281,
-    "num_agents": 387,
-    "num_attacks": 1257
-  },
-  {
-    "timestep": 282,
-    "num_agents": 386,
-    "num_attacks": 1264
-  },
-  {
-    "timestep": 283,
-    "num_agents": 379,
-    "num_attacks": 1266
-  },
-  {
-    "timestep": 284,
-    "num_agents": 383,
-    "num_attacks": 1271
-  },
-  {
-    "timestep": 285,
-    "num_agents": 384,
-    "num_attacks": 1274
-  },
-  {
-    "timestep": 286,
-    "num_agents": 392,
-    "num_attacks": 1282
-  },
-  {
-    "timestep": 287,
-    "num_agents": 392,
-    "num_attacks": 1293
-  },
-  {
-    "timestep": 288,
-    "num_agents": 389,
-    "num_attacks": 1302
-  },
-  {
-    "timestep": 289,
-    "num_agents": 381,
-    "num_attacks": 1314
-  },
-  {
-    "timestep": 290,
-    "num_agents": 369,
-    "num_attacks": 1321
-  },
-  {
-    "timestep": 291,
-    "num_agents": 372,
-    "num_attacks": 1325
-  },
-  {
-    "timestep": 292,
-    "num_agents": 371,
-    "num_attacks": 1328
-  },
-  {
-    "timestep": 293,
-    "num_agents": 373,
-    "num_attacks": 1332
-  },
-  {
-    "timestep": 294,
-    "num_agents": 377,
-    "num_attacks": 1335
-  },
-  {
-    "timestep": 295,
-    "num_agents": 376,
-    "num_attacks": 1340
-  },
-  {
-    "timestep": 296,
-    "num_agents": 378,
-    "num_attacks": 1348
-  },
-  {
-    "timestep": 297,
-    "num_agents": 376,
-    "num_attacks": 1352
-  },
-  {
-    "timestep": 298,
-    "num_agents": 380,
-    "num_attacks": 1357
-  },
-  {
-    "timestep": 299,
-    "num_agents": 375,
-    "num_attacks": 1361
-  },
-  {
-    "timestep": 300,
-    "num_agents": 380,
-    "num_attacks": 1369
-  },
-  {
-    "timestep": 301,
-    "num_agents": 381,
-    "num_attacks": 1373
-  },
-  {
-    "timestep": 302,
-    "num_agents": 386,
-    "num_attacks": 1378
-  },
-  {
-    "timestep": 303,
-    "num_agents": 383,
-    "num_attacks": 1385
-  },
-  {
-    "timestep": 304,
-    "num_agents": 378,
-    "num_attacks": 1388
-  },
-  {
-    "timestep": 305,
-    "num_agents": 385,
-    "num_attacks": 1401
-  },
-  {
-    "timestep": 306,
-    "num_agents": 372,
-    "num_attacks": 1416
-  },
-  {
-    "timestep": 307,
-    "num_agents": 360,
-    "num_attacks": 1421
-  },
-  {
-    "timestep": 308,
-    "num_agents": 359,
-    "num_attacks": 1426
-  },
-  {
-    "timestep": 309,
-    "num_agents": 354,
-    "num_attacks": 1428
-  },
-  {
-    "timestep": 310,
-    "num_agents": 356,
-    "num_attacks": 1430
-  },
-  {
-    "timestep": 311,
-    "num_agents": 358,
-    "num_attacks": 1434
-  },
-  {
-    "timestep": 312,
-    "num_agents": 364,
-    "num_attacks": 1437
-  },
-  {
-    "timestep": 313,
-    "num_agents": 364,
-    "num_attacks": 1439
-  },
-  {
-    "timestep": 314,
-    "num_agents": 362,
-    "num_attacks": 1440
-  },
-  {
-    "timestep": 315,
-    "num_agents": 367,
-    "num_attacks": 1443
-  },
-  {
-    "timestep": 316,
-    "num_agents": 367,
-    "num_attacks": 1445
-  },
-  {
-    "timestep": 317,
-    "num_agents": 373,
-    "num_attacks": 1449
-  },
-  {
-    "timestep": 318,
-    "num_agents": 380,
-    "num_attacks": 1451
-  },
-  {
-    "timestep": 319,
-    "num_agents": 389,
-    "num_attacks": 1454
-  },
-  {
-    "timestep": 320,
-    "num_agents": 389,
-    "num_attacks": 1456
-  },
-  {
-    "timestep": 321,
-    "num_agents": 396,
-    "num_attacks": 1473
-  },
-  {
-    "timestep": 322,
-    "num_agents": 379,
-    "num_attacks": 1479
-  },
-  {
-    "timestep": 323,
-    "num_agents": 374,
-    "num_attacks": 1481
-  },
-  {
-    "timestep": 324,
-    "num_agents": 379,
-    "num_attacks": 1489
-  },
-  {
-    "timestep": 325,
-    "num_agents": 380,
-    "num_attacks": 1494
-  },
-  {
-    "timestep": 326,
-    "num_agents": 385,
-    "num_attacks": 1497
-  },
-  {
-    "timestep": 327,
-    "num_agents": 382,
-    "num_attacks": 1502
-  },
-  {
-    "timestep": 328,
-    "num_agents": 386,
-    "num_attacks": 1505
-  },
-  {
-    "timestep": 329,
-    "num_agents": 390,
-    "num_attacks": 1506
-  },
-  {
-    "timestep": 330,
-    "num_agents": 397,
-    "num_attacks": 1508
-  },
-  {
-    "timestep": 331,
-    "num_agents": 395,
-    "num_attacks": 1508
-  },
-  {
-    "timestep": 332,
-    "num_agents": 405,
-    "num_attacks": 1513
-  },
-  {
-    "timestep": 333,
-    "num_agents": 409,
-    "num_attacks": 1522
-  },
-  {
-    "timestep": 334,
-    "num_agents": 406,
-    "num_attacks": 1529
-  },
-  {
-    "timestep": 335,
-    "num_agents": 401,
-    "num_attacks": 1535
-  },
-  {
-    "timestep": 336,
-    "num_agents": 406,
-    "num_attacks": 1542
-  },
-  {
-    "timestep": 337,
-    "num_agents": 402,
-    "num_attacks": 1549
-  },
-  {
-    "timestep": 338,
-    "num_agents": 399,
-    "num_attacks": 1563
-  },
-  {
-    "timestep": 339,
-    "num_agents": 387,
-    "num_attacks": 1578
-  },
-  {
-    "timestep": 340,
-    "num_agents": 383,
-    "num_attacks": 1588
-  },
-  {
-    "timestep": 341,
-    "num_agents": 378,
-    "num_attacks": 1595
-  },
-  {
-    "timestep": 342,
-    "num_agents": 375,
-    "num_attacks": 1606
-  },
-  {
-    "timestep": 343,
-    "num_agents": 373,
-    "num_attacks": 1618
-  },
-  {
-    "timestep": 344,
-    "num_agents": 370,
-    "num_attacks": 1624
-  },
-  {
-    "timestep": 345,
-    "num_agents": 364,
-    "num_attacks": 1629
-  },
-  {
-    "timestep": 346,
-    "num_agents": 359,
-    "num_attacks": 1638
-  },
-  {
-    "timestep": 347,
-    "num_agents": 356,
-    "num_attacks": 1648
-  },
-  {
-    "timestep": 348,
-    "num_agents": 349,
-    "num_attacks": 1656
-  },
-  {
-    "timestep": 349,
-    "num_agents": 342,
-    "num_attacks": 1660
-  },
-  {
-    "timestep": 350,
-    "num_agents": 348,
-    "num_attacks": 1665
-  },
-  {
-    "timestep": 351,
-    "num_agents": 347,
-    "num_attacks": 1666
-  },
-  {
-    "timestep": 352,
-    "num_agents": 350,
-    "num_attacks": 1669
-  },
-  {
-    "timestep": 353,
-    "num_agents": 350,
-    "num_attacks": 1672
-  },
-  {
-    "timestep": 354,
-    "num_agents": 353,
-    "num_attacks": 1674
-  },
-  {
-    "timestep": 355,
-    "num_agents": 359,
-    "num_attacks": 1679
-  },
-  {
-    "timestep": 356,
-    "num_agents": 357,
-    "num_attacks": 1681
-  },
-  {
-    "timestep": 357,
-    "num_agents": 363,
-    "num_attacks": 1686
-  },
-  {
-    "timestep": 358,
-    "num_agents": 364,
-    "num_attacks": 1690
-  },
-  {
-    "timestep": 359,
-    "num_agents": 364,
-    "num_attacks": 1692
-  },
-  {
-    "timestep": 360,
-    "num_agents": 373,
-    "num_attacks": 1697
-  },
-  {
-    "timestep": 361,
-    "num_agents": 379,
-    "num_attacks": 1702
-  },
-  {
-    "timestep": 362,
-    "num_agents": 376,
-    "num_attacks": 1705
-  },
-  {
-    "timestep": 363,
-    "num_agents": 373,
-    "num_attacks": 1708
-  },
-  {
-    "timestep": 364,
-    "num_agents": 372,
-    "num_attacks": 1711
-  },
-  {
-    "timestep": 365,
-    "num_agents": 370,
-    "num_attacks": 1716
-  },
-  {
-    "timestep": 366,
-    "num_agents": 368,
-    "num_attacks": 1719
-  },
-  {
-    "timestep": 367,
-    "num_agents": 366,
-    "num_attacks": 1720
-  },
-  {
-    "timestep": 368,
-    "num_agents": 366,
-    "num_attacks": 1721
-  },
-  {
-    "timestep": 369,
-    "num_agents": 368,
-    "num_attacks": 1722
-  },
-  {
-    "timestep": 370,
-    "num_agents": 372,
-    "num_attacks": 1724
-  },
-  {
-    "timestep": 371,
-    "num_agents": 370,
-    "num_attacks": 1730
-  },
-  {
-    "timestep": 372,
-    "num_agents": 374,
-    "num_attacks": 1732
-  },
-  {
-    "timestep": 373,
-    "num_agents": 380,
-    "num_attacks": 1735
-  },
-  {
-    "timestep": 374,
-    "num_agents": 385,
-    "num_attacks": 1739
-  },
-  {
-    "timestep": 375,
-    "num_agents": 391,
-    "num_attacks": 1744
-  },
-  {
-    "timestep": 376,
-    "num_agents": 397,
-    "num_attacks": 1748
-  },
-  {
-    "timestep": 377,
-    "num_agents": 403,
-    "num_attacks": 1752
-  },
-  {
-    "timestep": 378,
-    "num_agents": 401,
-    "num_attacks": 1757
-  },
-  {
-    "timestep": 379,
-    "num_agents": 400,
-    "num_attacks": 1763
-  },
-  {
-    "timestep": 380,
-    "num_agents": 403,
-    "num_attacks": 1770
-  },
-  {
-    "timestep": 381,
-    "num_agents": 407,
-    "num_attacks": 1778
-  },
-  {
-    "timestep": 382,
-    "num_agents": 403,
-    "num_attacks": 1785
-  },
-  {
-    "timestep": 383,
-    "num_agents": 403,
-    "num_attacks": 1790
-  },
-  {
-    "timestep": 384,
-    "num_agents": 410,
-    "num_attacks": 1813
-  },
-  {
-    "timestep": 385,
-    "num_agents": 398,
-    "num_attacks": 1826
-  },
-  {
-    "timestep": 386,
-    "num_agents": 390,
-    "num_attacks": 1839
-  },
-  {
-    "timestep": 387,
-    "num_agents": 388,
-    "num_attacks": 1850
-  },
-  {
-    "timestep": 388,
-    "num_agents": 380,
-    "num_attacks": 1853
-  },
-  {
-    "timestep": 389,
-    "num_agents": 381,
-    "num_attacks": 1857
-  },
-  {
-    "timestep": 390,
-    "num_agents": 386,
-    "num_attacks": 1865
-  },
-  {
-    "timestep": 391,
-    "num_agents": 387,
-    "num_attacks": 1869
-  },
-  {
-    "timestep": 392,
-    "num_agents": 388,
-    "num_attacks": 1872
-  },
-  {
-    "timestep": 393,
-    "num_agents": 390,
-    "num_attacks": 1876
-  },
-  {
-    "timestep": 394,
-    "num_agents": 386,
-    "num_attacks": 1878
-  },
-  {
-    "timestep": 395,
-    "num_agents": 396,
-    "num_attacks": 1879
-  },
-  {
-    "timestep": 396,
-    "num_agents": 399,
-    "num_attacks": 1881
-  },
-  {
-    "timestep": 397,
-    "num_agents": 397,
-    "num_attacks": 1881
-  },
-  {
-    "timestep": 398,
-    "num_agents": 399,
-    "num_attacks": 1881
-  },
-  {
-    "timestep": 399,
-    "num_agents": 400,
-    "num_attacks": 1882
-  },
-  {
-    "timestep": 400,
-    "num_agents": 406,
-    "num_attacks": 1882
-  },
-  {
-    "timestep": 401,
-    "num_agents": 411,
-    "num_attacks": 1882
-  },
-  {
-    "timestep": 402,
-    "num_agents": 420,
-    "num_attacks": 1891
-  },
-  {
-    "timestep": 403,
-    "num_agents": 422,
-    "num_attacks": 1901
-  },
-  {
-    "timestep": 404,
-    "num_agents": 421,
-    "num_attacks": 1906
-  },
-  {
-    "timestep": 405,
-    "num_agents": 427,
-    "num_attacks": 1913
-  },
-  {
-    "timestep": 406,
-    "num_agents": 420,
-    "num_attacks": 1914
-  },
-  {
-    "timestep": 407,
-    "num_agents": 422,
-    "num_attacks": 1918
-  },
-  {
-    "timestep": 408,
-    "num_agents": 427,
-    "num_attacks": 1923
-  },
-  {
-    "timestep": 409,
-    "num_agents": 426,
-    "num_attacks": 1930
-  },
-  {
-    "timestep": 410,
-    "num_agents": 425,
-    "num_attacks": 1936
-  },
-  {
-    "timestep": 411,
-    "num_agents": 422,
-    "num_attacks": 1952
-  },
-  {
-    "timestep": 412,
-    "num_agents": 410,
-    "num_attacks": 1959
-  },
-  {
-    "timestep": 413,
-    "num_agents": 404,
-    "num_attacks": 1978
-  },
-  {
-    "timestep": 414,
-    "num_agents": 391,
-    "num_attacks": 1997
-  },
-  {
-    "timestep": 415,
-    "num_agents": 381,
-    "num_attacks": 2010
-  },
-  {
-    "timestep": 416,
-    "num_agents": 369,
-    "num_attacks": 2017
-  },
-  {
-    "timestep": 417,
-    "num_agents": 370,
-    "num_attacks": 2019
-  },
-  {
-    "timestep": 418,
-    "num_agents": 375,
-    "num_attacks": 2025
-  },
-  {
-    "timestep": 419,
-    "num_agents": 379,
-    "num_attacks": 2033
-  },
-  {
-    "timestep": 420,
-    "num_agents": 379,
-    "num_attacks": 2037
-  },
-  {
-    "timestep": 421,
-    "num_agents": 381,
-    "num_attacks": 2049
-  },
-  {
-    "timestep": 422,
-    "num_agents": 373,
-    "num_attacks": 2059
-  },
-  {
-    "timestep": 423,
-    "num_agents": 374,
-    "num_attacks": 2063
-  },
-  {
-    "timestep": 424,
-    "num_agents": 371,
-    "num_attacks": 2069
-  },
-  {
-    "timestep": 425,
-    "num_agents": 369,
-    "num_attacks": 2078
-  },
-  {
-    "timestep": 426,
-    "num_agents": 360,
-    "num_attacks": 2083
-  },
-  {
-    "timestep": 427,
-    "num_agents": 365,
-    "num_attacks": 2094
-  },
-  {
-    "timestep": 428,
-    "num_agents": 357,
-    "num_attacks": 2102
-  },
-  {
-    "timestep": 429,
-    "num_agents": 353,
-    "num_attacks": 2117
-  },
-  {
-    "timestep": 430,
-    "num_agents": 348,
-    "num_attacks": 2138
-  },
-  {
-    "timestep": 431,
-    "num_agents": 334,
-    "num_attacks": 2141
-  },
-  {
-    "timestep": 432,
-    "num_agents": 335,
-    "num_attacks": 2143
-  },
-  {
-    "timestep": 433,
-    "num_agents": 335,
-    "num_attacks": 2143
-  },
-  {
-    "timestep": 434,
-    "num_agents": 336,
-    "num_attacks": 2143
-  },
-  {
-    "timestep": 435,
-    "num_agents": 343,
-    "num_attacks": 2146
-  },
-  {
-    "timestep": 436,
-    "num_agents": 348,
-    "num_attacks": 2147
-  },
-  {
-    "timestep": 437,
-    "num_agents": 356,
-    "num_attacks": 2149
-  },
-  {
-    "timestep": 438,
-    "num_agents": 357,
-    "num_attacks": 2150
-  },
-  {
-    "timestep": 439,
-    "num_agents": 357,
-    "num_attacks": 2151
-  },
-  {
-    "timestep": 440,
-    "num_agents": 367,
-    "num_attacks": 2153
-  },
-  {
-    "timestep": 441,
-    "num_agents": 369,
-    "num_attacks": 2155
-  },
-  {
-    "timestep": 442,
-    "num_agents": 375,
-    "num_attacks": 2160
-  },
-  {
-    "timestep": 443,
-    "num_agents": 375,
-    "num_attacks": 2163
-  },
-  {
-    "timestep": 444,
-    "num_agents": 373,
-    "num_attacks": 2164
-  },
-  {
-    "timestep": 445,
-    "num_agents": 372,
-    "num_attacks": 2165
-  },
-  {
-    "timestep": 446,
-    "num_agents": 373,
-    "num_attacks": 2167
-  },
-  {
-    "timestep": 447,
-    "num_agents": 371,
-    "num_attacks": 2171
-  },
-  {
-    "timestep": 448,
-    "num_agents": 375,
-    "num_attacks": 2175
-  },
-  {
-    "timestep": 449,
-    "num_agents": 374,
-    "num_attacks": 2181
-  },
-  {
-    "timestep": 450,
-    "num_agents": 377,
-    "num_attacks": 2183
-  },
-  {
-    "timestep": 451,
-    "num_agents": 379,
-    "num_attacks": 2187
-  },
-  {
-    "timestep": 452,
-    "num_agents": 379,
-    "num_attacks": 2197
-  },
-  {
-    "timestep": 453,
-    "num_agents": 375,
-    "num_attacks": 2199
-  },
-  {
-    "timestep": 454,
-    "num_agents": 375,
-    "num_attacks": 2209
-  },
-  {
-    "timestep": 455,
-    "num_agents": 372,
-    "num_attacks": 2212
-  },
-  {
-    "timestep": 456,
-    "num_agents": 369,
-    "num_attacks": 2215
-  },
-  {
-    "timestep": 457,
-    "num_agents": 372,
-    "num_attacks": 2220
-  },
-  {
-    "timestep": 458,
-    "num_agents": 376,
-    "num_attacks": 2229
-  },
-  {
-    "timestep": 459,
-    "num_agents": 376,
-    "num_attacks": 2231
-  },
-  {
-    "timestep": 460,
-    "num_agents": 380,
-    "num_attacks": 2233
-  },
-  {
-    "timestep": 461,
-    "num_agents": 388,
-    "num_attacks": 2236
-  },
-  {
-    "timestep": 462,
-    "num_agents": 397,
-    "num_attacks": 2240
-  },
-  {
-    "timestep": 463,
-    "num_agents": 402,
-    "num_attacks": 2244
-  },
-  {
-    "timestep": 464,
-    "num_agents": 400,
-    "num_attacks": 2247
-  },
-  {
-    "timestep": 465,
-    "num_agents": 409,
-    "num_attacks": 2252
-  },
-  {
-    "timestep": 466,
-    "num_agents": 411,
-    "num_attacks": 2256
-  },
-  {
-    "timestep": 467,
-    "num_agents": 414,
-    "num_attacks": 2266
-  },
-  {
-    "timestep": 468,
-    "num_agents": 415,
-    "num_attacks": 2282
-  },
-  {
-    "timestep": 469,
-    "num_agents": 403,
-    "num_attacks": 2298
-  },
-  {
-    "timestep": 470,
-    "num_agents": 398,
-    "num_attacks": 2361
-  },
-  {
-    "timestep": 471,
-    "num_agents": 340,
-    "num_attacks": 2370
-  },
-  {
-    "timestep": 472,
-    "num_agents": 338,
-    "num_attacks": 2372
-  },
-  {
-    "timestep": 473,
-    "num_agents": 344,
-    "num_attacks": 2377
-  },
-  {
-    "timestep": 474,
-    "num_agents": 347,
-    "num_attacks": 2395
-  },
-  {
-    "timestep": 475,
-    "num_agents": 333,
-    "num_attacks": 2411
-  },
-  {
-    "timestep": 476,
-    "num_agents": 319,
-    "num_attacks": 2415
-  },
-  {
-    "timestep": 477,
-    "num_agents": 320,
-    "num_attacks": 2417
-  },
-  {
-    "timestep": 478,
-    "num_agents": 318,
-    "num_attacks": 2417
-  },
-  {
-    "timestep": 479,
-    "num_agents": 327,
-    "num_attacks": 2418
-  },
-  {
-    "timestep": 480,
-    "num_agents": 326,
-    "num_attacks": 2419
-  },
-  {
-    "timestep": 481,
-    "num_agents": 329,
-    "num_attacks": 2420
-  },
-  {
-    "timestep": 482,
-    "num_agents": 337,
-    "num_attacks": 2423
-  },
-  {
-    "timestep": 483,
-    "num_agents": 341,
-    "num_attacks": 2426
-  },
-  {
-    "timestep": 484,
-    "num_agents": 340,
-    "num_attacks": 2427
-  },
-  {
-    "timestep": 485,
-    "num_agents": 339,
-    "num_attacks": 2430
-  },
-  {
-    "timestep": 486,
-    "num_agents": 339,
-    "num_attacks": 2431
-  },
-  {
-    "timestep": 487,
-    "num_agents": 344,
-    "num_attacks": 2436
-  },
-  {
-    "timestep": 488,
-    "num_agents": 347,
-    "num_attacks": 2438
-  },
-  {
-    "timestep": 489,
-    "num_agents": 345,
-    "num_attacks": 2438
-  },
-  {
-    "timestep": 490,
-    "num_agents": 351,
-    "num_attacks": 2440
-  },
-  {
-    "timestep": 491,
-    "num_agents": 352,
-    "num_attacks": 2440
-  },
-  {
-    "timestep": 492,
-    "num_agents": 352,
-    "num_attacks": 2444
-  },
-  {
-    "timestep": 493,
-    "num_agents": 356,
-    "num_attacks": 2450
-  },
-  {
-    "timestep": 494,
-    "num_agents": 359,
-    "num_attacks": 2454
-  },
-  {
-    "timestep": 495,
-    "num_agents": 355,
-    "num_attacks": 2454
-  },
-  {
-    "timestep": 496,
-    "num_agents": 361,
-    "num_attacks": 2456
-  },
-  {
-    "timestep": 497,
-    "num_agents": 370,
-    "num_attacks": 2460
-  },
-  {
-    "timestep": 498,
-    "num_agents": 373,
-    "num_attacks": 2462
-  },
-  {
-    "timestep": 499,
-    "num_agents": 372,
-    "num_attacks": 2462
-  },
-  {
-    "timestep": 500,
-    "num_agents": 372,
-    "num_attacks": 2465
-  },
-  {
-    "timestep": 501,
-    "num_agents": 370,
-    "num_attacks": 2469
-  },
-  {
-    "timestep": 502,
-    "num_agents": 377,
-    "num_attacks": 2476
-  },
-  {
-    "timestep": 503,
-    "num_agents": 374,
-    "num_attacks": 2478
-  },
-  {
-    "timestep": 504,
-    "num_agents": 383,
-    "num_attacks": 2483
-  },
-  {
-    "timestep": 505,
-    "num_agents": 383,
-    "num_attacks": 2485
-  },
-  {
-    "timestep": 506,
-    "num_agents": 384,
-    "num_attacks": 2504
-  },
-  {
-    "timestep": 507,
-    "num_agents": 366,
-    "num_attacks": 2516
-  },
-  {
-    "timestep": 508,
-    "num_agents": 359,
-    "num_attacks": 2518
-  },
-  {
-    "timestep": 509,
-    "num_agents": 365,
-    "num_attacks": 2523
-  },
-  {
-    "timestep": 510,
-    "num_agents": 370,
-    "num_attacks": 2525
-  },
-  {
-    "timestep": 511,
-    "num_agents": 379,
-    "num_attacks": 2527
-  },
-  {
-    "timestep": 512,
-    "num_agents": 381,
-    "num_attacks": 2529
-  },
-  {
-    "timestep": 513,
-    "num_agents": 388,
-    "num_attacks": 2531
-  },
-  {
-    "timestep": 514,
-    "num_agents": 386,
-    "num_attacks": 2532
-  },
-  {
-    "timestep": 515,
-    "num_agents": 387,
-    "num_attacks": 2536
-  },
-  {
-    "timestep": 516,
-    "num_agents": 387,
-    "num_attacks": 2540
-  },
-  {
-    "timestep": 517,
-    "num_agents": 392,
-    "num_attacks": 2545
-  },
-  {
-    "timestep": 518,
-    "num_agents": 397,
-    "num_attacks": 2552
-  },
-  {
-    "timestep": 519,
-    "num_agents": 396,
-    "num_attacks": 2560
-  },
-  {
-    "timestep": 520,
-    "num_agents": 393,
-    "num_attacks": 2569
-  },
-  {
-    "timestep": 521,
-    "num_agents": 384,
-    "num_attacks": 2574
-  },
-  {
-    "timestep": 522,
-    "num_agents": 388,
-    "num_attacks": 2583
-  },
-  {
-    "timestep": 523,
-    "num_agents": 387,
-    "num_attacks": 2587
-  },
-  {
-    "timestep": 524,
-    "num_agents": 391,
-    "num_attacks": 2597
-  },
-  {
-    "timestep": 525,
-    "num_agents": 387,
-    "num_attacks": 2605
-  },
-  {
-    "timestep": 526,
-    "num_agents": 387,
-    "num_attacks": 2615
-  },
-  {
-    "timestep": 527,
-    "num_agents": 387,
-    "num_attacks": 2622
-  },
-  {
-    "timestep": 528,
-    "num_agents": 390,
-    "num_attacks": 2625
-  },
-  {
-    "timestep": 529,
-    "num_agents": 387,
-    "num_attacks": 2625
-  },
-  {
-    "timestep": 530,
-    "num_agents": 388,
-    "num_attacks": 2625
-  },
-  {
-    "timestep": 531,
-    "num_agents": 390,
-    "num_attacks": 2625
-  },
-  {
-    "timestep": 532,
-    "num_agents": 400,
-    "num_attacks": 2626
-  },
-  {
-    "timestep": 533,
-    "num_agents": 401,
-    "num_attacks": 2627
-  },
-  {
-    "timestep": 534,
-    "num_agents": 407,
-    "num_attacks": 2630
-  },
-  {
-    "timestep": 535,
-    "num_agents": 411,
-    "num_attacks": 2633
-  },
-  {
-    "timestep": 536,
-    "num_agents": 408,
-    "num_attacks": 2633
-  },
-  {
-    "timestep": 537,
-    "num_agents": 416,
-    "num_attacks": 2635
-  },
-  {
-    "timestep": 538,
-    "num_agents": 418,
-    "num_attacks": 2638
-  },
-  {
-    "timestep": 539,
-    "num_agents": 416,
-    "num_attacks": 2640
-  },
-  {
-    "timestep": 540,
-    "num_agents": 415,
-    "num_attacks": 2642
-  },
-  {
-    "timestep": 541,
-    "num_agents": 413,
-    "num_attacks": 2645
-  },
-  {
-    "timestep": 542,
-    "num_agents": 412,
-    "num_attacks": 2649
-  },
-  {
-    "timestep": 543,
-    "num_agents": 418,
-    "num_attacks": 2652
-  },
-  {
-    "timestep": 544,
-    "num_agents": 415,
-    "num_attacks": 2652
-  },
-  {
-    "timestep": 545,
-    "num_agents": 423,
-    "num_attacks": 2655
-  },
-  {
-    "timestep": 546,
-    "num_agents": 421,
-    "num_attacks": 2655
-  },
-  {
-    "timestep": 547,
-    "num_agents": 427,
-    "num_attacks": 2659
-  },
-  {
-    "timestep": 548,
-    "num_agents": 434,
-    "num_attacks": 2667
-  },
-  {
-    "timestep": 549,
-    "num_agents": 433,
-    "num_attacks": 2668
-  },
-  {
-    "timestep": 550,
-    "num_agents": 445,
-    "num_attacks": 2671
-  },
-  {
-    "timestep": 551,
-    "num_agents": 451,
-    "num_attacks": 2678
-  },
-  {
-    "timestep": 552,
-    "num_agents": 445,
-    "num_attacks": 2678
-  },
-  {
-    "timestep": 553,
-    "num_agents": 454,
-    "num_attacks": 2685
-  },
-  {
-    "timestep": 554,
-    "num_agents": 452,
-    "num_attacks": 2690
-  },
-  {
-    "timestep": 555,
-    "num_agents": 454,
-    "num_attacks": 2697
-  },
-  {
-    "timestep": 556,
-    "num_agents": 458,
-    "num_attacks": 2706
-  },
-  {
-    "timestep": 557,
-    "num_agents": 460,
-    "num_attacks": 2713
-  },
-  {
-    "timestep": 558,
-    "num_agents": 456,
-    "num_attacks": 2716
-  },
-  {
-    "timestep": 559,
-    "num_agents": 457,
-    "num_attacks": 2717
-  },
-  {
-    "timestep": 560,
-    "num_agents": 458,
-    "num_attacks": 2723
-  },
-  {
-    "timestep": 561,
-    "num_agents": 465,
-    "num_attacks": 2733
-  },
-  {
-    "timestep": 562,
-    "num_agents": 467,
-    "num_attacks": 2738
-  },
-  {
-    "timestep": 563,
-    "num_agents": 466,
-    "num_attacks": 2745
-  },
-  {
-    "timestep": 564,
-    "num_agents": 461,
-    "num_attacks": 2750
-  },
-  {
-    "timestep": 565,
-    "num_agents": 470,
-    "num_attacks": 2759
-  },
-  {
-    "timestep": 566,
-    "num_agents": 467,
-    "num_attacks": 2764
-  },
-  {
-    "timestep": 567,
-    "num_agents": 468,
-    "num_attacks": 2768
-  },
-  {
-    "timestep": 568,
-    "num_agents": 478,
-    "num_attacks": 2776
-  },
-  {
-    "timestep": 569,
-    "num_agents": 482,
-    "num_attacks": 2783
-  },
-  {
-    "timestep": 570,
-    "num_agents": 482,
-    "num_attacks": 2793
-  },
-  {
-    "timestep": 571,
-    "num_agents": 481,
-    "num_attacks": 2818
-  },
-  {
-    "timestep": 572,
-    "num_agents": 458,
-    "num_attacks": 2824
-  },
-  {
-    "timestep": 573,
-    "num_agents": 453,
-    "num_attacks": 2831
-  },
-  {
-    "timestep": 574,
-    "num_agents": 454,
-    "num_attacks": 2836
-  },
-  {
-    "timestep": 575,
-    "num_agents": 449,
-    "num_attacks": 2844
-  },
-  {
-    "timestep": 576,
-    "num_agents": 453,
-    "num_attacks": 2852
-  },
-  {
-    "timestep": 577,
-    "num_agents": 456,
-    "num_attacks": 2859
-  },
-  {
-    "timestep": 578,
-    "num_agents": 456,
-    "num_attacks": 2874
-  },
-  {
-    "timestep": 579,
-    "num_agents": 446,
-    "num_attacks": 2888
-  },
-  {
-    "timestep": 580,
-    "num_agents": 441,
-    "num_attacks": 2896
-  },
-  {
-    "timestep": 581,
-    "num_agents": 443,
-    "num_attacks": 2901
-  },
-  {
-    "timestep": 582,
-    "num_agents": 443,
-    "num_attacks": 2910
-  },
-  {
-    "timestep": 583,
-    "num_agents": 447,
-    "num_attacks": 2921
-  },
-  {
-    "timestep": 584,
-    "num_agents": 440,
-    "num_attacks": 2924
-  },
-  {
-    "timestep": 585,
-    "num_agents": 440,
-    "num_attacks": 2932
-  },
-  {
-    "timestep": 586,
-    "num_agents": 443,
-    "num_attacks": 2940
-  },
-  {
-    "timestep": 587,
-    "num_agents": 437,
-    "num_attacks": 2945
-  },
-  {
-    "timestep": 588,
-    "num_agents": 432,
-    "num_attacks": 2949
-  },
-  {
-    "timestep": 589,
-    "num_agents": 440,
-    "num_attacks": 2953
-  },
-  {
-    "timestep": 590,
-    "num_agents": 441,
-    "num_attacks": 2954
-  },
-  {
-    "timestep": 591,
-    "num_agents": 445,
-    "num_attacks": 2956
-  },
-  {
-    "timestep": 592,
-    "num_agents": 455,
-    "num_attacks": 2959
-  },
-  {
-    "timestep": 593,
-    "num_agents": 458,
-    "num_attacks": 2963
-  },
-  {
-    "timestep": 594,
-    "num_agents": 461,
-    "num_attacks": 2967
-  },
-  {
-    "timestep": 595,
-    "num_agents": 465,
-    "num_attacks": 2972
-  },
-  {
-    "timestep": 596,
-    "num_agents": 463,
-    "num_attacks": 2977
-  },
-  {
-    "timestep": 597,
-    "num_agents": 469,
-    "num_attacks": 2979
-  },
-  {
-    "timestep": 598,
-    "num_agents": 481,
-    "num_attacks": 2986
-  },
-  {
-    "timestep": 599,
-    "num_agents": 487,
-    "num_attacks": 2993
-  },
-  {
-    "timestep": 600,
-    "num_agents": 488,
-    "num_attacks": 3003
-  },
-  {
-    "timestep": 601,
-    "num_agents": 489,
-    "num_attacks": 3016
-  },
-  {
-    "timestep": 602,
-    "num_agents": 484,
-    "num_attacks": 3023
-  },
-  {
-    "timestep": 603,
-    "num_agents": 489,
-    "num_attacks": 3033
-  },
-  {
-    "timestep": 604,
-    "num_agents": 484,
-    "num_attacks": 3042
-  },
-  {
-    "timestep": 605,
-    "num_agents": 489,
-    "num_attacks": 3052
-  },
-  {
-    "timestep": 606,
-    "num_agents": 492,
-    "num_attacks": 3056
-  },
-  {
-    "timestep": 607,
-    "num_agents": 501,
-    "num_attacks": 3067
-  },
-  {
-    "timestep": 608,
-    "num_agents": 505,
-    "num_attacks": 3079
-  },
-  {
-    "timestep": 609,
-    "num_agents": 495,
-    "num_attacks": 3086
-  },
-  {
-    "timestep": 610,
-    "num_agents": 492,
-    "num_attacks": 3092
-  },
-  {
-    "timestep": 611,
-    "num_agents": 490,
-    "num_attacks": 3101
-  },
-  {
-    "timestep": 612,
-    "num_agents": 492,
-    "num_attacks": 3110
-  },
-  {
-    "timestep": 613,
-    "num_agents": 494,
-    "num_attacks": 3124
-  },
-  {
-    "timestep": 614,
-    "num_agents": 486,
-    "num_attacks": 3133
-  },
-  {
-    "timestep": 615,
-    "num_agents": 479,
-    "num_attacks": 3146
-  },
-  {
-    "timestep": 616,
-    "num_agents": 473,
-    "num_attacks": 3150
-  },
-  {
-    "timestep": 617,
-    "num_agents": 475,
-    "num_attacks": 3154
-  },
-  {
-    "timestep": 618,
-    "num_agents": 477,
-    "num_attacks": 3164
-  },
-  {
-    "timestep": 619,
-    "num_agents": 478,
-    "num_attacks": 3177
-  },
-  {
-    "timestep": 620,
-    "num_agents": 478,
-    "num_attacks": 3182
-  },
-  {
-    "timestep": 621,
-    "num_agents": 481,
-    "num_attacks": 3192
-  },
-  {
-    "timestep": 622,
-    "num_agents": 484,
-    "num_attacks": 3195
-  },
-  {
-    "timestep": 623,
-    "num_agents": 489,
-    "num_attacks": 3200
-  },
-  {
-    "timestep": 624,
-    "num_agents": 494,
-    "num_attacks": 3208
-  },
-  {
-    "timestep": 625,
-    "num_agents": 501,
-    "num_attacks": 3217
-  },
-  {
-    "timestep": 626,
-    "num_agents": 507,
-    "num_attacks": 3231
-  },
-  {
-    "timestep": 627,
-    "num_agents": 494,
-    "num_attacks": 3235
-  },
-  {
-    "timestep": 628,
-    "num_agents": 494,
-    "num_attacks": 3243
-  },
-  {
-    "timestep": 629,
-    "num_agents": 498,
-    "num_attacks": 3251
-  },
-  {
-    "timestep": 630,
-    "num_agents": 505,
-    "num_attacks": 3264
-  },
-  {
-    "timestep": 631,
-    "num_agents": 504,
-    "num_attacks": 3269
-  },
-  {
-    "timestep": 632,
-    "num_agents": 509,
-    "num_attacks": 3274
-  },
-  {
-    "timestep": 633,
-    "num_agents": 513,
-    "num_attacks": 3279
-  },
-  {
-    "timestep": 634,
-    "num_agents": 508,
-    "num_attacks": 3282
-  },
-  {
-    "timestep": 635,
-    "num_agents": 509,
-    "num_attacks": 3287
-  },
-  {
-    "timestep": 636,
-    "num_agents": 505,
-    "num_attacks": 3298
-  },
-  {
-    "timestep": 637,
-    "num_agents": 508,
-    "num_attacks": 3304
-  },
-  {
-    "timestep": 638,
-    "num_agents": 505,
-    "num_attacks": 3316
-  },
-  {
-    "timestep": 639,
-    "num_agents": 500,
-    "num_attacks": 3324
-  },
-  {
-    "timestep": 640,
-    "num_agents": 504,
-    "num_attacks": 3335
-  },
-  {
-    "timestep": 641,
-    "num_agents": 498,
-    "num_attacks": 3337
-  },
-  {
-    "timestep": 642,
-    "num_agents": 511,
-    "num_attacks": 3348
-  },
-  {
-    "timestep": 643,
-    "num_agents": 515,
-    "num_attacks": 3357
-  },
-  {
-    "timestep": 644,
-    "num_agents": 511,
-    "num_attacks": 3371
-  },
-  {
-    "timestep": 645,
-    "num_agents": 507,
-    "num_attacks": 3381
-  },
-  {
-    "timestep": 646,
-    "num_agents": 508,
-    "num_attacks": 3387
-  },
-  {
-    "timestep": 647,
-    "num_agents": 513,
-    "num_attacks": 3390
-  },
-  {
-    "timestep": 648,
-    "num_agents": 523,
-    "num_attacks": 3402
-  },
-  {
-    "timestep": 649,
-    "num_agents": 524,
-    "num_attacks": 3412
-  },
-  {
-    "timestep": 650,
-    "num_agents": 528,
-    "num_attacks": 3422
-  },
-  {
-    "timestep": 651,
-    "num_agents": 527,
-    "num_attacks": 3434
-  },
-  {
-    "timestep": 652,
-    "num_agents": 528,
-    "num_attacks": 3450
-  },
-  {
-    "timestep": 653,
-    "num_agents": 526,
-    "num_attacks": 3460
-  },
-  {
-    "timestep": 654,
-    "num_agents": 529,
-    "num_attacks": 3485
-  },
-  {
-    "timestep": 655,
-    "num_agents": 511,
-    "num_attacks": 3491
-  },
-  {
-    "timestep": 656,
-    "num_agents": 519,
-    "num_attacks": 3511
-  },
-  {
-    "timestep": 657,
-    "num_agents": 505,
-    "num_attacks": 3529
-  },
-  {
-    "timestep": 658,
-    "num_agents": 499,
-    "num_attacks": 3540
-  },
-  {
-    "timestep": 659,
-    "num_agents": 500,
-    "num_attacks": 3551
-  },
-  {
-    "timestep": 660,
-    "num_agents": 495,
-    "num_attacks": 3557
-  },
-  {
-    "timestep": 661,
-    "num_agents": 502,
-    "num_attacks": 3564
-  },
-  {
-    "timestep": 662,
-    "num_agents": 507,
-    "num_attacks": 3575
-  },
-  {
-    "timestep": 663,
-    "num_agents": 511,
-    "num_attacks": 3584
-  },
-  {
-    "timestep": 664,
-    "num_agents": 510,
-    "num_attacks": 3588
-  },
-  {
-    "timestep": 665,
-    "num_agents": 511,
-    "num_attacks": 3596
-  },
-  {
-    "timestep": 666,
-    "num_agents": 515,
-    "num_attacks": 3606
-  },
-  {
-    "timestep": 667,
-    "num_agents": 512,
-    "num_attacks": 3609
-  },
-  {
-    "timestep": 668,
-    "num_agents": 520,
-    "num_attacks": 3611
-  },
-  {
-    "timestep": 669,
-    "num_agents": 530,
-    "num_attacks": 3614
-  },
-  {
-    "timestep": 670,
-    "num_agents": 541,
-    "num_attacks": 3619
-  },
-  {
-    "timestep": 671,
-    "num_agents": 540,
-    "num_attacks": 3627
-  },
-  {
-    "timestep": 672,
-    "num_agents": 547,
-    "num_attacks": 3650
-  },
-  {
-    "timestep": 673,
-    "num_agents": 525,
-    "num_attacks": 3679
-  },
-  {
-    "timestep": 674,
-    "num_agents": 504,
-    "num_attacks": 3697
-  },
-  {
-    "timestep": 675,
-    "num_agents": 493,
-    "num_attacks": 3707
-  },
-  {
-    "timestep": 676,
-    "num_agents": 488,
-    "num_attacks": 3715
-  },
-  {
-    "timestep": 677,
-    "num_agents": 492,
-    "num_attacks": 3735
-  },
-  {
-    "timestep": 678,
-    "num_agents": 480,
-    "num_attacks": 3744
-  },
-  {
-    "timestep": 679,
-    "num_agents": 481,
-    "num_attacks": 3761
-  },
-  {
-    "timestep": 680,
-    "num_agents": 478,
-    "num_attacks": 3774
-  },
-  {
-    "timestep": 681,
-    "num_agents": 470,
-    "num_attacks": 3782
-  },
-  {
-    "timestep": 682,
-    "num_agents": 474,
-    "num_attacks": 3793
-  },
-  {
-    "timestep": 683,
-    "num_agents": 463,
-    "num_attacks": 3795
-  },
-  {
-    "timestep": 684,
-    "num_agents": 467,
-    "num_attacks": 3800
-  },
-  {
-    "timestep": 685,
-    "num_agents": 469,
-    "num_attacks": 3813
-  },
-  {
-    "timestep": 686,
-    "num_agents": 469,
-    "num_attacks": 3818
-  },
-  {
-    "timestep": 687,
-    "num_agents": 470,
-    "num_attacks": 3822
-  },
-  {
-    "timestep": 688,
-    "num_agents": 473,
-    "num_attacks": 3837
-  },
-  {
-    "timestep": 689,
-    "num_agents": 471,
-    "num_attacks": 3859
-  },
-  {
-    "timestep": 690,
-    "num_agents": 458,
-    "num_attacks": 3864
-  },
-  {
-    "timestep": 691,
-    "num_agents": 467,
-    "num_attacks": 3870
-  },
-  {
-    "timestep": 692,
-    "num_agents": 465,
-    "num_attacks": 3878
-  },
-  {
-    "timestep": 693,
-    "num_agents": 460,
-    "num_attacks": 3883
-  },
-  {
-    "timestep": 694,
-    "num_agents": 457,
-    "num_attacks": 3889
-  },
-  {
-    "timestep": 695,
-    "num_agents": 463,
-    "num_attacks": 3895
-  },
-  {
-    "timestep": 696,
-    "num_agents": 461,
-    "num_attacks": 3910
-  },
-  {
-    "timestep": 697,
-    "num_agents": 450,
-    "num_attacks": 3914
-  },
-  {
-    "timestep": 698,
-    "num_agents": 455,
-    "num_attacks": 3920
-  },
-  {
-    "timestep": 699,
-    "num_agents": 460,
-    "num_attacks": 3931
-  }
+    {
+        "timestep": 0,
+        "num_agents": 200,
+        "num_attacks": 44
+    },
+    {
+        "timestep": 1,
+        "num_agents": 159,
+        "num_attacks": 47
+    },
+    {
+        "timestep": 2,
+        "num_agents": 156,
+        "num_attacks": 47
+    },
+    {
+        "timestep": 3,
+        "num_agents": 160,
+        "num_attacks": 47
+    },
+    {
+        "timestep": 4,
+        "num_agents": 163,
+        "num_attacks": 47
+    },
+    {
+        "timestep": 5,
+        "num_agents": 168,
+        "num_attacks": 50
+    },
+    {
+        "timestep": 6,
+        "num_agents": 167,
+        "num_attacks": 51
+    },
+    {
+        "timestep": 7,
+        "num_agents": 166,
+        "num_attacks": 51
+    },
+    {
+        "timestep": 8,
+        "num_agents": 167,
+        "num_attacks": 51
+    },
+    {
+        "timestep": 9,
+        "num_agents": 170,
+        "num_attacks": 52
+    },
+    {
+        "timestep": 10,
+        "num_agents": 169,
+        "num_attacks": 52
+    },
+    {
+        "timestep": 11,
+        "num_agents": 170,
+        "num_attacks": 52
+    },
+    {
+        "timestep": 12,
+        "num_agents": 173,
+        "num_attacks": 53
+    },
+    {
+        "timestep": 13,
+        "num_agents": 174,
+        "num_attacks": 53
+    },
+    {
+        "timestep": 14,
+        "num_agents": 176,
+        "num_attacks": 53
+    },
+    {
+        "timestep": 15,
+        "num_agents": 179,
+        "num_attacks": 53
+    },
+    {
+        "timestep": 16,
+        "num_agents": 184,
+        "num_attacks": 53
+    },
+    {
+        "timestep": 17,
+        "num_agents": 187,
+        "num_attacks": 54
+    },
+    {
+        "timestep": 18,
+        "num_agents": 188,
+        "num_attacks": 56
+    },
+    {
+        "timestep": 19,
+        "num_agents": 190,
+        "num_attacks": 56
+    },
+    {
+        "timestep": 20,
+        "num_agents": 191,
+        "num_attacks": 56
+    },
+    {
+        "timestep": 21,
+        "num_agents": 194,
+        "num_attacks": 58
+    },
+    {
+        "timestep": 22,
+        "num_agents": 197,
+        "num_attacks": 58
+    },
+    {
+        "timestep": 23,
+        "num_agents": 201,
+        "num_attacks": 61
+    },
+    {
+        "timestep": 24,
+        "num_agents": 202,
+        "num_attacks": 61
+    },
+    {
+        "timestep": 25,
+        "num_agents": 204,
+        "num_attacks": 61
+    },
+    {
+        "timestep": 26,
+        "num_agents": 209,
+        "num_attacks": 61
+    },
+    {
+        "timestep": 27,
+        "num_agents": 213,
+        "num_attacks": 63
+    },
+    {
+        "timestep": 28,
+        "num_agents": 215,
+        "num_attacks": 63
+    },
+    {
+        "timestep": 29,
+        "num_agents": 219,
+        "num_attacks": 64
+    },
+    {
+        "timestep": 30,
+        "num_agents": 218,
+        "num_attacks": 65
+    },
+    {
+        "timestep": 31,
+        "num_agents": 221,
+        "num_attacks": 65
+    },
+    {
+        "timestep": 32,
+        "num_agents": 224,
+        "num_attacks": 65
+    },
+    {
+        "timestep": 33,
+        "num_agents": 227,
+        "num_attacks": 66
+    },
+    {
+        "timestep": 34,
+        "num_agents": 229,
+        "num_attacks": 67
+    },
+    {
+        "timestep": 35,
+        "num_agents": 235,
+        "num_attacks": 67
+    },
+    {
+        "timestep": 36,
+        "num_agents": 238,
+        "num_attacks": 67
+    },
+    {
+        "timestep": 37,
+        "num_agents": 243,
+        "num_attacks": 68
+    },
+    {
+        "timestep": 38,
+        "num_agents": 244,
+        "num_attacks": 68
+    },
+    {
+        "timestep": 39,
+        "num_agents": 245,
+        "num_attacks": 69
+    },
+    {
+        "timestep": 40,
+        "num_agents": 250,
+        "num_attacks": 70
+    },
+    {
+        "timestep": 41,
+        "num_agents": 253,
+        "num_attacks": 71
+    },
+    {
+        "timestep": 42,
+        "num_agents": 260,
+        "num_attacks": 72
+    },
+    {
+        "timestep": 43,
+        "num_agents": 262,
+        "num_attacks": 72
+    },
+    {
+        "timestep": 44,
+        "num_agents": 265,
+        "num_attacks": 73
+    },
+    {
+        "timestep": 45,
+        "num_agents": 272,
+        "num_attacks": 79
+    },
+    {
+        "timestep": 46,
+        "num_agents": 266,
+        "num_attacks": 79
+    },
+    {
+        "timestep": 47,
+        "num_agents": 271,
+        "num_attacks": 79
+    },
+    {
+        "timestep": 48,
+        "num_agents": 278,
+        "num_attacks": 80
+    },
+    {
+        "timestep": 49,
+        "num_agents": 278,
+        "num_attacks": 80
+    },
+    {
+        "timestep": 50,
+        "num_agents": 286,
+        "num_attacks": 80
+    },
+    {
+        "timestep": 51,
+        "num_agents": 287,
+        "num_attacks": 81
+    },
+    {
+        "timestep": 52,
+        "num_agents": 293,
+        "num_attacks": 83
+    },
+    {
+        "timestep": 53,
+        "num_agents": 299,
+        "num_attacks": 84
+    },
+    {
+        "timestep": 54,
+        "num_agents": 302,
+        "num_attacks": 85
+    },
+    {
+        "timestep": 55,
+        "num_agents": 307,
+        "num_attacks": 87
+    },
+    {
+        "timestep": 56,
+        "num_agents": 308,
+        "num_attacks": 87
+    },
+    {
+        "timestep": 57,
+        "num_agents": 316,
+        "num_attacks": 90
+    },
+    {
+        "timestep": 58,
+        "num_agents": 318,
+        "num_attacks": 90
+    },
+    {
+        "timestep": 59,
+        "num_agents": 325,
+        "num_attacks": 92
+    },
+    {
+        "timestep": 60,
+        "num_agents": 331,
+        "num_attacks": 96
+    },
+    {
+        "timestep": 61,
+        "num_agents": 327,
+        "num_attacks": 97
+    },
+    {
+        "timestep": 62,
+        "num_agents": 327,
+        "num_attacks": 98
+    },
+    {
+        "timestep": 63,
+        "num_agents": 335,
+        "num_attacks": 101
+    },
+    {
+        "timestep": 64,
+        "num_agents": 337,
+        "num_attacks": 101
+    },
+    {
+        "timestep": 65,
+        "num_agents": 345,
+        "num_attacks": 105
+    },
+    {
+        "timestep": 66,
+        "num_agents": 348,
+        "num_attacks": 109
+    },
+    {
+        "timestep": 67,
+        "num_agents": 349,
+        "num_attacks": 109
+    },
+    {
+        "timestep": 68,
+        "num_agents": 349,
+        "num_attacks": 110
+    },
+    {
+        "timestep": 69,
+        "num_agents": 352,
+        "num_attacks": 112
+    },
+    {
+        "timestep": 70,
+        "num_agents": 353,
+        "num_attacks": 113
+    },
+    {
+        "timestep": 71,
+        "num_agents": 363,
+        "num_attacks": 115
+    },
+    {
+        "timestep": 72,
+        "num_agents": 363,
+        "num_attacks": 120
+    },
+    {
+        "timestep": 73,
+        "num_agents": 364,
+        "num_attacks": 121
+    },
+    {
+        "timestep": 74,
+        "num_agents": 365,
+        "num_attacks": 122
+    },
+    {
+        "timestep": 75,
+        "num_agents": 370,
+        "num_attacks": 124
+    },
+    {
+        "timestep": 76,
+        "num_agents": 378,
+        "num_attacks": 130
+    },
+    {
+        "timestep": 77,
+        "num_agents": 378,
+        "num_attacks": 135
+    },
+    {
+        "timestep": 78,
+        "num_agents": 378,
+        "num_attacks": 136
+    },
+    {
+        "timestep": 79,
+        "num_agents": 382,
+        "num_attacks": 137
+    },
+    {
+        "timestep": 80,
+        "num_agents": 391,
+        "num_attacks": 141
+    },
+    {
+        "timestep": 81,
+        "num_agents": 390,
+        "num_attacks": 145
+    },
+    {
+        "timestep": 82,
+        "num_agents": 388,
+        "num_attacks": 150
+    },
+    {
+        "timestep": 83,
+        "num_agents": 394,
+        "num_attacks": 153
+    },
+    {
+        "timestep": 84,
+        "num_agents": 393,
+        "num_attacks": 158
+    },
+    {
+        "timestep": 85,
+        "num_agents": 394,
+        "num_attacks": 163
+    },
+    {
+        "timestep": 86,
+        "num_agents": 394,
+        "num_attacks": 164
+    },
+    {
+        "timestep": 87,
+        "num_agents": 395,
+        "num_attacks": 166
+    },
+    {
+        "timestep": 88,
+        "num_agents": 395,
+        "num_attacks": 170
+    },
+    {
+        "timestep": 89,
+        "num_agents": 403,
+        "num_attacks": 177
+    },
+    {
+        "timestep": 90,
+        "num_agents": 397,
+        "num_attacks": 182
+    },
+    {
+        "timestep": 91,
+        "num_agents": 394,
+        "num_attacks": 190
+    },
+    {
+        "timestep": 92,
+        "num_agents": 391,
+        "num_attacks": 192
+    },
+    {
+        "timestep": 93,
+        "num_agents": 392,
+        "num_attacks": 194
+    },
+    {
+        "timestep": 94,
+        "num_agents": 399,
+        "num_attacks": 200
+    },
+    {
+        "timestep": 95,
+        "num_agents": 398,
+        "num_attacks": 201
+    },
+    {
+        "timestep": 96,
+        "num_agents": 408,
+        "num_attacks": 211
+    },
+    {
+        "timestep": 97,
+        "num_agents": 402,
+        "num_attacks": 211
+    },
+    {
+        "timestep": 98,
+        "num_agents": 408,
+        "num_attacks": 213
+    },
+    {
+        "timestep": 99,
+        "num_agents": 418,
+        "num_attacks": 217
+    },
+    {
+        "timestep": 100,
+        "num_agents": 421,
+        "num_attacks": 225
+    },
+    {
+        "timestep": 101,
+        "num_agents": 419,
+        "num_attacks": 233
+    },
+    {
+        "timestep": 102,
+        "num_agents": 415,
+        "num_attacks": 235
+    },
+    {
+        "timestep": 103,
+        "num_agents": 413,
+        "num_attacks": 238
+    },
+    {
+        "timestep": 104,
+        "num_agents": 415,
+        "num_attacks": 244
+    },
+    {
+        "timestep": 105,
+        "num_agents": 415,
+        "num_attacks": 248
+    },
+    {
+        "timestep": 106,
+        "num_agents": 415,
+        "num_attacks": 256
+    },
+    {
+        "timestep": 107,
+        "num_agents": 413,
+        "num_attacks": 263
+    },
+    {
+        "timestep": 108,
+        "num_agents": 416,
+        "num_attacks": 271
+    },
+    {
+        "timestep": 109,
+        "num_agents": 415,
+        "num_attacks": 274
+    },
+    {
+        "timestep": 110,
+        "num_agents": 423,
+        "num_attacks": 285
+    },
+    {
+        "timestep": 111,
+        "num_agents": 413,
+        "num_attacks": 289
+    },
+    {
+        "timestep": 112,
+        "num_agents": 410,
+        "num_attacks": 295
+    },
+    {
+        "timestep": 113,
+        "num_agents": 408,
+        "num_attacks": 321
+    },
+    {
+        "timestep": 114,
+        "num_agents": 386,
+        "num_attacks": 332
+    },
+    {
+        "timestep": 115,
+        "num_agents": 375,
+        "num_attacks": 333
+    },
+    {
+        "timestep": 116,
+        "num_agents": 377,
+        "num_attacks": 343
+    },
+    {
+        "timestep": 117,
+        "num_agents": 370,
+        "num_attacks": 347
+    },
+    {
+        "timestep": 118,
+        "num_agents": 368,
+        "num_attacks": 347
+    },
+    {
+        "timestep": 119,
+        "num_agents": 373,
+        "num_attacks": 348
+    },
+    {
+        "timestep": 120,
+        "num_agents": 380,
+        "num_attacks": 351
+    },
+    {
+        "timestep": 121,
+        "num_agents": 382,
+        "num_attacks": 351
+    },
+    {
+        "timestep": 122,
+        "num_agents": 388,
+        "num_attacks": 358
+    },
+    {
+        "timestep": 123,
+        "num_agents": 390,
+        "num_attacks": 363
+    },
+    {
+        "timestep": 124,
+        "num_agents": 385,
+        "num_attacks": 364
+    },
+    {
+        "timestep": 125,
+        "num_agents": 395,
+        "num_attacks": 369
+    },
+    {
+        "timestep": 126,
+        "num_agents": 394,
+        "num_attacks": 370
+    },
+    {
+        "timestep": 127,
+        "num_agents": 393,
+        "num_attacks": 372
+    },
+    {
+        "timestep": 128,
+        "num_agents": 394,
+        "num_attacks": 375
+    },
+    {
+        "timestep": 129,
+        "num_agents": 399,
+        "num_attacks": 377
+    },
+    {
+        "timestep": 130,
+        "num_agents": 402,
+        "num_attacks": 380
+    },
+    {
+        "timestep": 131,
+        "num_agents": 399,
+        "num_attacks": 385
+    },
+    {
+        "timestep": 132,
+        "num_agents": 396,
+        "num_attacks": 390
+    },
+    {
+        "timestep": 133,
+        "num_agents": 395,
+        "num_attacks": 395
+    },
+    {
+        "timestep": 134,
+        "num_agents": 393,
+        "num_attacks": 397
+    },
+    {
+        "timestep": 135,
+        "num_agents": 393,
+        "num_attacks": 403
+    },
+    {
+        "timestep": 136,
+        "num_agents": 391,
+        "num_attacks": 411
+    },
+    {
+        "timestep": 137,
+        "num_agents": 391,
+        "num_attacks": 417
+    },
+    {
+        "timestep": 138,
+        "num_agents": 394,
+        "num_attacks": 422
+    },
+    {
+        "timestep": 139,
+        "num_agents": 397,
+        "num_attacks": 425
+    },
+    {
+        "timestep": 140,
+        "num_agents": 405,
+        "num_attacks": 431
+    },
+    {
+        "timestep": 141,
+        "num_agents": 403,
+        "num_attacks": 437
+    },
+    {
+        "timestep": 142,
+        "num_agents": 409,
+        "num_attacks": 451
+    },
+    {
+        "timestep": 143,
+        "num_agents": 396,
+        "num_attacks": 456
+    },
+    {
+        "timestep": 144,
+        "num_agents": 396,
+        "num_attacks": 466
+    },
+    {
+        "timestep": 145,
+        "num_agents": 398,
+        "num_attacks": 474
+    },
+    {
+        "timestep": 146,
+        "num_agents": 396,
+        "num_attacks": 485
+    },
+    {
+        "timestep": 147,
+        "num_agents": 397,
+        "num_attacks": 494
+    },
+    {
+        "timestep": 148,
+        "num_agents": 395,
+        "num_attacks": 502
+    },
+    {
+        "timestep": 149,
+        "num_agents": 398,
+        "num_attacks": 505
+    },
+    {
+        "timestep": 150,
+        "num_agents": 398,
+        "num_attacks": 508
+    },
+    {
+        "timestep": 151,
+        "num_agents": 398,
+        "num_attacks": 509
+    },
+    {
+        "timestep": 152,
+        "num_agents": 405,
+        "num_attacks": 516
+    },
+    {
+        "timestep": 153,
+        "num_agents": 398,
+        "num_attacks": 520
+    },
+    {
+        "timestep": 154,
+        "num_agents": 399,
+        "num_attacks": 524
+    },
+    {
+        "timestep": 155,
+        "num_agents": 403,
+        "num_attacks": 529
+    },
+    {
+        "timestep": 156,
+        "num_agents": 407,
+        "num_attacks": 532
+    },
+    {
+        "timestep": 157,
+        "num_agents": 415,
+        "num_attacks": 538
+    },
+    {
+        "timestep": 158,
+        "num_agents": 418,
+        "num_attacks": 546
+    },
+    {
+        "timestep": 159,
+        "num_agents": 411,
+        "num_attacks": 552
+    },
+    {
+        "timestep": 160,
+        "num_agents": 407,
+        "num_attacks": 555
+    },
+    {
+        "timestep": 161,
+        "num_agents": 414,
+        "num_attacks": 558
+    },
+    {
+        "timestep": 162,
+        "num_agents": 423,
+        "num_attacks": 562
+    },
+    {
+        "timestep": 163,
+        "num_agents": 422,
+        "num_attacks": 563
+    },
+    {
+        "timestep": 164,
+        "num_agents": 422,
+        "num_attacks": 565
+    },
+    {
+        "timestep": 165,
+        "num_agents": 429,
+        "num_attacks": 569
+    },
+    {
+        "timestep": 166,
+        "num_agents": 425,
+        "num_attacks": 571
+    },
+    {
+        "timestep": 167,
+        "num_agents": 432,
+        "num_attacks": 586
+    },
+    {
+        "timestep": 168,
+        "num_agents": 422,
+        "num_attacks": 593
+    },
+    {
+        "timestep": 169,
+        "num_agents": 415,
+        "num_attacks": 613
+    },
+    {
+        "timestep": 170,
+        "num_agents": 396,
+        "num_attacks": 620
+    },
+    {
+        "timestep": 171,
+        "num_agents": 399,
+        "num_attacks": 626
+    },
+    {
+        "timestep": 172,
+        "num_agents": 402,
+        "num_attacks": 628
+    },
+    {
+        "timestep": 173,
+        "num_agents": 401,
+        "num_attacks": 633
+    },
+    {
+        "timestep": 174,
+        "num_agents": 406,
+        "num_attacks": 639
+    },
+    {
+        "timestep": 175,
+        "num_agents": 406,
+        "num_attacks": 648
+    },
+    {
+        "timestep": 176,
+        "num_agents": 401,
+        "num_attacks": 656
+    },
+    {
+        "timestep": 177,
+        "num_agents": 395,
+        "num_attacks": 662
+    },
+    {
+        "timestep": 178,
+        "num_agents": 399,
+        "num_attacks": 676
+    },
+    {
+        "timestep": 179,
+        "num_agents": 395,
+        "num_attacks": 687
+    },
+    {
+        "timestep": 180,
+        "num_agents": 389,
+        "num_attacks": 695
+    },
+    {
+        "timestep": 181,
+        "num_agents": 392,
+        "num_attacks": 708
+    },
+    {
+        "timestep": 182,
+        "num_agents": 389,
+        "num_attacks": 721
+    },
+    {
+        "timestep": 183,
+        "num_agents": 383,
+        "num_attacks": 727
+    },
+    {
+        "timestep": 184,
+        "num_agents": 381,
+        "num_attacks": 732
+    },
+    {
+        "timestep": 185,
+        "num_agents": 386,
+        "num_attacks": 739
+    },
+    {
+        "timestep": 186,
+        "num_agents": 380,
+        "num_attacks": 748
+    },
+    {
+        "timestep": 187,
+        "num_agents": 378,
+        "num_attacks": 753
+    },
+    {
+        "timestep": 188,
+        "num_agents": 379,
+        "num_attacks": 764
+    },
+    {
+        "timestep": 189,
+        "num_agents": 375,
+        "num_attacks": 774
+    },
+    {
+        "timestep": 190,
+        "num_agents": 375,
+        "num_attacks": 778
+    },
+    {
+        "timestep": 191,
+        "num_agents": 375,
+        "num_attacks": 783
+    },
+    {
+        "timestep": 192,
+        "num_agents": 375,
+        "num_attacks": 786
+    },
+    {
+        "timestep": 193,
+        "num_agents": 380,
+        "num_attacks": 791
+    },
+    {
+        "timestep": 194,
+        "num_agents": 384,
+        "num_attacks": 795
+    },
+    {
+        "timestep": 195,
+        "num_agents": 386,
+        "num_attacks": 802
+    },
+    {
+        "timestep": 196,
+        "num_agents": 387,
+        "num_attacks": 802
+    },
+    {
+        "timestep": 197,
+        "num_agents": 399,
+        "num_attacks": 806
+    },
+    {
+        "timestep": 198,
+        "num_agents": 403,
+        "num_attacks": 811
+    },
+    {
+        "timestep": 199,
+        "num_agents": 408,
+        "num_attacks": 816
+    },
+    {
+        "timestep": 200,
+        "num_agents": 407,
+        "num_attacks": 823
+    },
+    {
+        "timestep": 201,
+        "num_agents": 400,
+        "num_attacks": 834
+    },
+    {
+        "timestep": 202,
+        "num_agents": 398,
+        "num_attacks": 837
+    },
+    {
+        "timestep": 203,
+        "num_agents": 404,
+        "num_attacks": 838
+    },
+    {
+        "timestep": 204,
+        "num_agents": 408,
+        "num_attacks": 839
+    },
+    {
+        "timestep": 205,
+        "num_agents": 412,
+        "num_attacks": 843
+    },
+    {
+        "timestep": 206,
+        "num_agents": 418,
+        "num_attacks": 846
+    },
+    {
+        "timestep": 207,
+        "num_agents": 415,
+        "num_attacks": 846
+    },
+    {
+        "timestep": 208,
+        "num_agents": 417,
+        "num_attacks": 847
+    },
+    {
+        "timestep": 209,
+        "num_agents": 426,
+        "num_attacks": 853
+    },
+    {
+        "timestep": 210,
+        "num_agents": 431,
+        "num_attacks": 865
+    },
+    {
+        "timestep": 211,
+        "num_agents": 425,
+        "num_attacks": 873
+    },
+    {
+        "timestep": 212,
+        "num_agents": 418,
+        "num_attacks": 884
+    },
+    {
+        "timestep": 213,
+        "num_agents": 407,
+        "num_attacks": 902
+    },
+    {
+        "timestep": 214,
+        "num_agents": 390,
+        "num_attacks": 911
+    },
+    {
+        "timestep": 215,
+        "num_agents": 382,
+        "num_attacks": 916
+    },
+    {
+        "timestep": 216,
+        "num_agents": 385,
+        "num_attacks": 923
+    },
+    {
+        "timestep": 217,
+        "num_agents": 388,
+        "num_attacks": 933
+    },
+    {
+        "timestep": 218,
+        "num_agents": 387,
+        "num_attacks": 947
+    },
+    {
+        "timestep": 219,
+        "num_agents": 384,
+        "num_attacks": 959
+    },
+    {
+        "timestep": 220,
+        "num_agents": 377,
+        "num_attacks": 963
+    },
+    {
+        "timestep": 221,
+        "num_agents": 375,
+        "num_attacks": 970
+    },
+    {
+        "timestep": 222,
+        "num_agents": 379,
+        "num_attacks": 978
+    },
+    {
+        "timestep": 223,
+        "num_agents": 371,
+        "num_attacks": 983
+    },
+    {
+        "timestep": 224,
+        "num_agents": 368,
+        "num_attacks": 988
+    },
+    {
+        "timestep": 225,
+        "num_agents": 364,
+        "num_attacks": 990
+    },
+    {
+        "timestep": 226,
+        "num_agents": 373,
+        "num_attacks": 995
+    },
+    {
+        "timestep": 227,
+        "num_agents": 379,
+        "num_attacks": 1000
+    },
+    {
+        "timestep": 228,
+        "num_agents": 382,
+        "num_attacks": 1004
+    },
+    {
+        "timestep": 229,
+        "num_agents": 388,
+        "num_attacks": 1010
+    },
+    {
+        "timestep": 230,
+        "num_agents": 382,
+        "num_attacks": 1014
+    },
+    {
+        "timestep": 231,
+        "num_agents": 383,
+        "num_attacks": 1016
+    },
+    {
+        "timestep": 232,
+        "num_agents": 386,
+        "num_attacks": 1021
+    },
+    {
+        "timestep": 233,
+        "num_agents": 389,
+        "num_attacks": 1034
+    },
+    {
+        "timestep": 234,
+        "num_agents": 382,
+        "num_attacks": 1044
+    },
+    {
+        "timestep": 235,
+        "num_agents": 381,
+        "num_attacks": 1047
+    },
+    {
+        "timestep": 236,
+        "num_agents": 388,
+        "num_attacks": 1052
+    },
+    {
+        "timestep": 237,
+        "num_agents": 392,
+        "num_attacks": 1062
+    },
+    {
+        "timestep": 238,
+        "num_agents": 383,
+        "num_attacks": 1074
+    },
+    {
+        "timestep": 239,
+        "num_agents": 376,
+        "num_attacks": 1077
+    },
+    {
+        "timestep": 240,
+        "num_agents": 380,
+        "num_attacks": 1081
+    },
+    {
+        "timestep": 241,
+        "num_agents": 378,
+        "num_attacks": 1084
+    },
+    {
+        "timestep": 242,
+        "num_agents": 375,
+        "num_attacks": 1091
+    },
+    {
+        "timestep": 243,
+        "num_agents": 372,
+        "num_attacks": 1095
+    },
+    {
+        "timestep": 244,
+        "num_agents": 374,
+        "num_attacks": 1096
+    },
+    {
+        "timestep": 245,
+        "num_agents": 376,
+        "num_attacks": 1098
+    },
+    {
+        "timestep": 246,
+        "num_agents": 378,
+        "num_attacks": 1104
+    },
+    {
+        "timestep": 247,
+        "num_agents": 372,
+        "num_attacks": 1112
+    },
+    {
+        "timestep": 248,
+        "num_agents": 370,
+        "num_attacks": 1121
+    },
+    {
+        "timestep": 249,
+        "num_agents": 366,
+        "num_attacks": 1124
+    },
+    {
+        "timestep": 250,
+        "num_agents": 366,
+        "num_attacks": 1125
+    },
+    {
+        "timestep": 251,
+        "num_agents": 368,
+        "num_attacks": 1125
+    },
+    {
+        "timestep": 252,
+        "num_agents": 368,
+        "num_attacks": 1125
+    },
+    {
+        "timestep": 253,
+        "num_agents": 368,
+        "num_attacks": 1125
+    },
+    {
+        "timestep": 254,
+        "num_agents": 373,
+        "num_attacks": 1131
+    },
+    {
+        "timestep": 255,
+        "num_agents": 367,
+        "num_attacks": 1134
+    },
+    {
+        "timestep": 256,
+        "num_agents": 367,
+        "num_attacks": 1137
+    },
+    {
+        "timestep": 257,
+        "num_agents": 371,
+        "num_attacks": 1141
+    },
+    {
+        "timestep": 258,
+        "num_agents": 367,
+        "num_attacks": 1145
+    },
+    {
+        "timestep": 259,
+        "num_agents": 371,
+        "num_attacks": 1149
+    },
+    {
+        "timestep": 260,
+        "num_agents": 377,
+        "num_attacks": 1150
+    },
+    {
+        "timestep": 261,
+        "num_agents": 384,
+        "num_attacks": 1151
+    },
+    {
+        "timestep": 262,
+        "num_agents": 385,
+        "num_attacks": 1154
+    },
+    {
+        "timestep": 263,
+        "num_agents": 383,
+        "num_attacks": 1154
+    },
+    {
+        "timestep": 264,
+        "num_agents": 388,
+        "num_attacks": 1157
+    },
+    {
+        "timestep": 265,
+        "num_agents": 393,
+        "num_attacks": 1164
+    },
+    {
+        "timestep": 266,
+        "num_agents": 398,
+        "num_attacks": 1170
+    },
+    {
+        "timestep": 267,
+        "num_agents": 404,
+        "num_attacks": 1177
+    },
+    {
+        "timestep": 268,
+        "num_agents": 402,
+        "num_attacks": 1178
+    },
+    {
+        "timestep": 269,
+        "num_agents": 402,
+        "num_attacks": 1183
+    },
+    {
+        "timestep": 270,
+        "num_agents": 397,
+        "num_attacks": 1191
+    },
+    {
+        "timestep": 271,
+        "num_agents": 393,
+        "num_attacks": 1197
+    },
+    {
+        "timestep": 272,
+        "num_agents": 392,
+        "num_attacks": 1202
+    },
+    {
+        "timestep": 273,
+        "num_agents": 393,
+        "num_attacks": 1207
+    },
+    {
+        "timestep": 274,
+        "num_agents": 388,
+        "num_attacks": 1210
+    },
+    {
+        "timestep": 275,
+        "num_agents": 397,
+        "num_attacks": 1218
+    },
+    {
+        "timestep": 276,
+        "num_agents": 391,
+        "num_attacks": 1222
+    },
+    {
+        "timestep": 277,
+        "num_agents": 388,
+        "num_attacks": 1226
+    },
+    {
+        "timestep": 278,
+        "num_agents": 388,
+        "num_attacks": 1234
+    },
+    {
+        "timestep": 279,
+        "num_agents": 387,
+        "num_attacks": 1239
+    },
+    {
+        "timestep": 280,
+        "num_agents": 387,
+        "num_attacks": 1247
+    },
+    {
+        "timestep": 281,
+        "num_agents": 387,
+        "num_attacks": 1257
+    },
+    {
+        "timestep": 282,
+        "num_agents": 386,
+        "num_attacks": 1264
+    },
+    {
+        "timestep": 283,
+        "num_agents": 379,
+        "num_attacks": 1266
+    },
+    {
+        "timestep": 284,
+        "num_agents": 383,
+        "num_attacks": 1271
+    },
+    {
+        "timestep": 285,
+        "num_agents": 384,
+        "num_attacks": 1274
+    },
+    {
+        "timestep": 286,
+        "num_agents": 392,
+        "num_attacks": 1282
+    },
+    {
+        "timestep": 287,
+        "num_agents": 392,
+        "num_attacks": 1293
+    },
+    {
+        "timestep": 288,
+        "num_agents": 389,
+        "num_attacks": 1302
+    },
+    {
+        "timestep": 289,
+        "num_agents": 381,
+        "num_attacks": 1314
+    },
+    {
+        "timestep": 290,
+        "num_agents": 369,
+        "num_attacks": 1321
+    },
+    {
+        "timestep": 291,
+        "num_agents": 372,
+        "num_attacks": 1325
+    },
+    {
+        "timestep": 292,
+        "num_agents": 371,
+        "num_attacks": 1328
+    },
+    {
+        "timestep": 293,
+        "num_agents": 373,
+        "num_attacks": 1332
+    },
+    {
+        "timestep": 294,
+        "num_agents": 377,
+        "num_attacks": 1335
+    },
+    {
+        "timestep": 295,
+        "num_agents": 376,
+        "num_attacks": 1340
+    },
+    {
+        "timestep": 296,
+        "num_agents": 378,
+        "num_attacks": 1348
+    },
+    {
+        "timestep": 297,
+        "num_agents": 376,
+        "num_attacks": 1352
+    },
+    {
+        "timestep": 298,
+        "num_agents": 380,
+        "num_attacks": 1357
+    },
+    {
+        "timestep": 299,
+        "num_agents": 375,
+        "num_attacks": 1361
+    },
+    {
+        "timestep": 300,
+        "num_agents": 380,
+        "num_attacks": 1369
+    },
+    {
+        "timestep": 301,
+        "num_agents": 381,
+        "num_attacks": 1373
+    },
+    {
+        "timestep": 302,
+        "num_agents": 386,
+        "num_attacks": 1378
+    },
+    {
+        "timestep": 303,
+        "num_agents": 383,
+        "num_attacks": 1385
+    },
+    {
+        "timestep": 304,
+        "num_agents": 378,
+        "num_attacks": 1388
+    },
+    {
+        "timestep": 305,
+        "num_agents": 385,
+        "num_attacks": 1401
+    },
+    {
+        "timestep": 306,
+        "num_agents": 372,
+        "num_attacks": 1416
+    },
+    {
+        "timestep": 307,
+        "num_agents": 360,
+        "num_attacks": 1421
+    },
+    {
+        "timestep": 308,
+        "num_agents": 359,
+        "num_attacks": 1426
+    },
+    {
+        "timestep": 309,
+        "num_agents": 354,
+        "num_attacks": 1428
+    },
+    {
+        "timestep": 310,
+        "num_agents": 356,
+        "num_attacks": 1430
+    },
+    {
+        "timestep": 311,
+        "num_agents": 358,
+        "num_attacks": 1434
+    },
+    {
+        "timestep": 312,
+        "num_agents": 364,
+        "num_attacks": 1437
+    },
+    {
+        "timestep": 313,
+        "num_agents": 364,
+        "num_attacks": 1439
+    },
+    {
+        "timestep": 314,
+        "num_agents": 362,
+        "num_attacks": 1440
+    },
+    {
+        "timestep": 315,
+        "num_agents": 367,
+        "num_attacks": 1443
+    },
+    {
+        "timestep": 316,
+        "num_agents": 367,
+        "num_attacks": 1445
+    },
+    {
+        "timestep": 317,
+        "num_agents": 373,
+        "num_attacks": 1449
+    },
+    {
+        "timestep": 318,
+        "num_agents": 380,
+        "num_attacks": 1451
+    },
+    {
+        "timestep": 319,
+        "num_agents": 389,
+        "num_attacks": 1454
+    },
+    {
+        "timestep": 320,
+        "num_agents": 389,
+        "num_attacks": 1456
+    },
+    {
+        "timestep": 321,
+        "num_agents": 396,
+        "num_attacks": 1473
+    },
+    {
+        "timestep": 322,
+        "num_agents": 379,
+        "num_attacks": 1479
+    },
+    {
+        "timestep": 323,
+        "num_agents": 374,
+        "num_attacks": 1481
+    },
+    {
+        "timestep": 324,
+        "num_agents": 379,
+        "num_attacks": 1489
+    },
+    {
+        "timestep": 325,
+        "num_agents": 380,
+        "num_attacks": 1494
+    },
+    {
+        "timestep": 326,
+        "num_agents": 385,
+        "num_attacks": 1497
+    },
+    {
+        "timestep": 327,
+        "num_agents": 382,
+        "num_attacks": 1502
+    },
+    {
+        "timestep": 328,
+        "num_agents": 386,
+        "num_attacks": 1505
+    },
+    {
+        "timestep": 329,
+        "num_agents": 390,
+        "num_attacks": 1506
+    },
+    {
+        "timestep": 330,
+        "num_agents": 397,
+        "num_attacks": 1508
+    },
+    {
+        "timestep": 331,
+        "num_agents": 395,
+        "num_attacks": 1508
+    },
+    {
+        "timestep": 332,
+        "num_agents": 405,
+        "num_attacks": 1513
+    },
+    {
+        "timestep": 333,
+        "num_agents": 409,
+        "num_attacks": 1522
+    },
+    {
+        "timestep": 334,
+        "num_agents": 406,
+        "num_attacks": 1529
+    },
+    {
+        "timestep": 335,
+        "num_agents": 401,
+        "num_attacks": 1535
+    },
+    {
+        "timestep": 336,
+        "num_agents": 406,
+        "num_attacks": 1542
+    },
+    {
+        "timestep": 337,
+        "num_agents": 402,
+        "num_attacks": 1549
+    },
+    {
+        "timestep": 338,
+        "num_agents": 399,
+        "num_attacks": 1563
+    },
+    {
+        "timestep": 339,
+        "num_agents": 387,
+        "num_attacks": 1578
+    },
+    {
+        "timestep": 340,
+        "num_agents": 383,
+        "num_attacks": 1588
+    },
+    {
+        "timestep": 341,
+        "num_agents": 378,
+        "num_attacks": 1595
+    },
+    {
+        "timestep": 342,
+        "num_agents": 375,
+        "num_attacks": 1606
+    },
+    {
+        "timestep": 343,
+        "num_agents": 373,
+        "num_attacks": 1618
+    },
+    {
+        "timestep": 344,
+        "num_agents": 370,
+        "num_attacks": 1624
+    },
+    {
+        "timestep": 345,
+        "num_agents": 364,
+        "num_attacks": 1629
+    },
+    {
+        "timestep": 346,
+        "num_agents": 359,
+        "num_attacks": 1638
+    },
+    {
+        "timestep": 347,
+        "num_agents": 356,
+        "num_attacks": 1648
+    },
+    {
+        "timestep": 348,
+        "num_agents": 349,
+        "num_attacks": 1656
+    },
+    {
+        "timestep": 349,
+        "num_agents": 342,
+        "num_attacks": 1660
+    },
+    {
+        "timestep": 350,
+        "num_agents": 348,
+        "num_attacks": 1665
+    },
+    {
+        "timestep": 351,
+        "num_agents": 347,
+        "num_attacks": 1666
+    },
+    {
+        "timestep": 352,
+        "num_agents": 350,
+        "num_attacks": 1669
+    },
+    {
+        "timestep": 353,
+        "num_agents": 350,
+        "num_attacks": 1672
+    },
+    {
+        "timestep": 354,
+        "num_agents": 353,
+        "num_attacks": 1674
+    },
+    {
+        "timestep": 355,
+        "num_agents": 359,
+        "num_attacks": 1679
+    },
+    {
+        "timestep": 356,
+        "num_agents": 357,
+        "num_attacks": 1681
+    },
+    {
+        "timestep": 357,
+        "num_agents": 363,
+        "num_attacks": 1686
+    },
+    {
+        "timestep": 358,
+        "num_agents": 364,
+        "num_attacks": 1690
+    },
+    {
+        "timestep": 359,
+        "num_agents": 364,
+        "num_attacks": 1692
+    },
+    {
+        "timestep": 360,
+        "num_agents": 373,
+        "num_attacks": 1697
+    },
+    {
+        "timestep": 361,
+        "num_agents": 379,
+        "num_attacks": 1702
+    },
+    {
+        "timestep": 362,
+        "num_agents": 376,
+        "num_attacks": 1705
+    },
+    {
+        "timestep": 363,
+        "num_agents": 373,
+        "num_attacks": 1708
+    },
+    {
+        "timestep": 364,
+        "num_agents": 372,
+        "num_attacks": 1711
+    },
+    {
+        "timestep": 365,
+        "num_agents": 370,
+        "num_attacks": 1716
+    },
+    {
+        "timestep": 366,
+        "num_agents": 368,
+        "num_attacks": 1719
+    },
+    {
+        "timestep": 367,
+        "num_agents": 366,
+        "num_attacks": 1720
+    },
+    {
+        "timestep": 368,
+        "num_agents": 366,
+        "num_attacks": 1721
+    },
+    {
+        "timestep": 369,
+        "num_agents": 368,
+        "num_attacks": 1722
+    },
+    {
+        "timestep": 370,
+        "num_agents": 372,
+        "num_attacks": 1724
+    },
+    {
+        "timestep": 371,
+        "num_agents": 370,
+        "num_attacks": 1730
+    },
+    {
+        "timestep": 372,
+        "num_agents": 374,
+        "num_attacks": 1732
+    },
+    {
+        "timestep": 373,
+        "num_agents": 380,
+        "num_attacks": 1735
+    },
+    {
+        "timestep": 374,
+        "num_agents": 385,
+        "num_attacks": 1739
+    },
+    {
+        "timestep": 375,
+        "num_agents": 391,
+        "num_attacks": 1744
+    },
+    {
+        "timestep": 376,
+        "num_agents": 397,
+        "num_attacks": 1748
+    },
+    {
+        "timestep": 377,
+        "num_agents": 403,
+        "num_attacks": 1752
+    },
+    {
+        "timestep": 378,
+        "num_agents": 401,
+        "num_attacks": 1757
+    },
+    {
+        "timestep": 379,
+        "num_agents": 400,
+        "num_attacks": 1763
+    },
+    {
+        "timestep": 380,
+        "num_agents": 403,
+        "num_attacks": 1770
+    },
+    {
+        "timestep": 381,
+        "num_agents": 407,
+        "num_attacks": 1778
+    },
+    {
+        "timestep": 382,
+        "num_agents": 403,
+        "num_attacks": 1785
+    },
+    {
+        "timestep": 383,
+        "num_agents": 403,
+        "num_attacks": 1790
+    },
+    {
+        "timestep": 384,
+        "num_agents": 410,
+        "num_attacks": 1813
+    },
+    {
+        "timestep": 385,
+        "num_agents": 398,
+        "num_attacks": 1826
+    },
+    {
+        "timestep": 386,
+        "num_agents": 390,
+        "num_attacks": 1839
+    },
+    {
+        "timestep": 387,
+        "num_agents": 388,
+        "num_attacks": 1850
+    },
+    {
+        "timestep": 388,
+        "num_agents": 380,
+        "num_attacks": 1853
+    },
+    {
+        "timestep": 389,
+        "num_agents": 381,
+        "num_attacks": 1857
+    },
+    {
+        "timestep": 390,
+        "num_agents": 386,
+        "num_attacks": 1865
+    },
+    {
+        "timestep": 391,
+        "num_agents": 387,
+        "num_attacks": 1869
+    },
+    {
+        "timestep": 392,
+        "num_agents": 388,
+        "num_attacks": 1872
+    },
+    {
+        "timestep": 393,
+        "num_agents": 390,
+        "num_attacks": 1876
+    },
+    {
+        "timestep": 394,
+        "num_agents": 386,
+        "num_attacks": 1878
+    },
+    {
+        "timestep": 395,
+        "num_agents": 396,
+        "num_attacks": 1879
+    },
+    {
+        "timestep": 396,
+        "num_agents": 399,
+        "num_attacks": 1881
+    },
+    {
+        "timestep": 397,
+        "num_agents": 397,
+        "num_attacks": 1881
+    },
+    {
+        "timestep": 398,
+        "num_agents": 399,
+        "num_attacks": 1881
+    },
+    {
+        "timestep": 399,
+        "num_agents": 400,
+        "num_attacks": 1882
+    },
+    {
+        "timestep": 400,
+        "num_agents": 406,
+        "num_attacks": 1882
+    },
+    {
+        "timestep": 401,
+        "num_agents": 411,
+        "num_attacks": 1882
+    },
+    {
+        "timestep": 402,
+        "num_agents": 420,
+        "num_attacks": 1891
+    },
+    {
+        "timestep": 403,
+        "num_agents": 422,
+        "num_attacks": 1901
+    },
+    {
+        "timestep": 404,
+        "num_agents": 421,
+        "num_attacks": 1906
+    },
+    {
+        "timestep": 405,
+        "num_agents": 427,
+        "num_attacks": 1913
+    },
+    {
+        "timestep": 406,
+        "num_agents": 420,
+        "num_attacks": 1914
+    },
+    {
+        "timestep": 407,
+        "num_agents": 422,
+        "num_attacks": 1918
+    },
+    {
+        "timestep": 408,
+        "num_agents": 427,
+        "num_attacks": 1923
+    },
+    {
+        "timestep": 409,
+        "num_agents": 426,
+        "num_attacks": 1930
+    },
+    {
+        "timestep": 410,
+        "num_agents": 425,
+        "num_attacks": 1936
+    },
+    {
+        "timestep": 411,
+        "num_agents": 422,
+        "num_attacks": 1952
+    },
+    {
+        "timestep": 412,
+        "num_agents": 410,
+        "num_attacks": 1959
+    },
+    {
+        "timestep": 413,
+        "num_agents": 404,
+        "num_attacks": 1978
+    },
+    {
+        "timestep": 414,
+        "num_agents": 391,
+        "num_attacks": 1997
+    },
+    {
+        "timestep": 415,
+        "num_agents": 381,
+        "num_attacks": 2010
+    },
+    {
+        "timestep": 416,
+        "num_agents": 369,
+        "num_attacks": 2017
+    },
+    {
+        "timestep": 417,
+        "num_agents": 370,
+        "num_attacks": 2019
+    },
+    {
+        "timestep": 418,
+        "num_agents": 375,
+        "num_attacks": 2025
+    },
+    {
+        "timestep": 419,
+        "num_agents": 379,
+        "num_attacks": 2033
+    },
+    {
+        "timestep": 420,
+        "num_agents": 379,
+        "num_attacks": 2037
+    },
+    {
+        "timestep": 421,
+        "num_agents": 381,
+        "num_attacks": 2049
+    },
+    {
+        "timestep": 422,
+        "num_agents": 373,
+        "num_attacks": 2059
+    },
+    {
+        "timestep": 423,
+        "num_agents": 374,
+        "num_attacks": 2063
+    },
+    {
+        "timestep": 424,
+        "num_agents": 371,
+        "num_attacks": 2069
+    },
+    {
+        "timestep": 425,
+        "num_agents": 369,
+        "num_attacks": 2078
+    },
+    {
+        "timestep": 426,
+        "num_agents": 360,
+        "num_attacks": 2083
+    },
+    {
+        "timestep": 427,
+        "num_agents": 365,
+        "num_attacks": 2094
+    },
+    {
+        "timestep": 428,
+        "num_agents": 357,
+        "num_attacks": 2102
+    },
+    {
+        "timestep": 429,
+        "num_agents": 353,
+        "num_attacks": 2117
+    },
+    {
+        "timestep": 430,
+        "num_agents": 348,
+        "num_attacks": 2138
+    },
+    {
+        "timestep": 431,
+        "num_agents": 334,
+        "num_attacks": 2141
+    },
+    {
+        "timestep": 432,
+        "num_agents": 335,
+        "num_attacks": 2143
+    },
+    {
+        "timestep": 433,
+        "num_agents": 335,
+        "num_attacks": 2143
+    },
+    {
+        "timestep": 434,
+        "num_agents": 336,
+        "num_attacks": 2143
+    },
+    {
+        "timestep": 435,
+        "num_agents": 343,
+        "num_attacks": 2146
+    },
+    {
+        "timestep": 436,
+        "num_agents": 348,
+        "num_attacks": 2147
+    },
+    {
+        "timestep": 437,
+        "num_agents": 356,
+        "num_attacks": 2149
+    },
+    {
+        "timestep": 438,
+        "num_agents": 357,
+        "num_attacks": 2150
+    },
+    {
+        "timestep": 439,
+        "num_agents": 357,
+        "num_attacks": 2151
+    },
+    {
+        "timestep": 440,
+        "num_agents": 367,
+        "num_attacks": 2153
+    },
+    {
+        "timestep": 441,
+        "num_agents": 369,
+        "num_attacks": 2155
+    },
+    {
+        "timestep": 442,
+        "num_agents": 375,
+        "num_attacks": 2160
+    },
+    {
+        "timestep": 443,
+        "num_agents": 375,
+        "num_attacks": 2163
+    },
+    {
+        "timestep": 444,
+        "num_agents": 373,
+        "num_attacks": 2164
+    },
+    {
+        "timestep": 445,
+        "num_agents": 372,
+        "num_attacks": 2165
+    },
+    {
+        "timestep": 446,
+        "num_agents": 373,
+        "num_attacks": 2167
+    },
+    {
+        "timestep": 447,
+        "num_agents": 371,
+        "num_attacks": 2171
+    },
+    {
+        "timestep": 448,
+        "num_agents": 375,
+        "num_attacks": 2175
+    },
+    {
+        "timestep": 449,
+        "num_agents": 374,
+        "num_attacks": 2181
+    },
+    {
+        "timestep": 450,
+        "num_agents": 377,
+        "num_attacks": 2183
+    },
+    {
+        "timestep": 451,
+        "num_agents": 379,
+        "num_attacks": 2187
+    },
+    {
+        "timestep": 452,
+        "num_agents": 379,
+        "num_attacks": 2197
+    },
+    {
+        "timestep": 453,
+        "num_agents": 375,
+        "num_attacks": 2199
+    },
+    {
+        "timestep": 454,
+        "num_agents": 375,
+        "num_attacks": 2209
+    },
+    {
+        "timestep": 455,
+        "num_agents": 372,
+        "num_attacks": 2212
+    },
+    {
+        "timestep": 456,
+        "num_agents": 369,
+        "num_attacks": 2215
+    },
+    {
+        "timestep": 457,
+        "num_agents": 372,
+        "num_attacks": 2220
+    },
+    {
+        "timestep": 458,
+        "num_agents": 376,
+        "num_attacks": 2229
+    },
+    {
+        "timestep": 459,
+        "num_agents": 376,
+        "num_attacks": 2231
+    },
+    {
+        "timestep": 460,
+        "num_agents": 380,
+        "num_attacks": 2233
+    },
+    {
+        "timestep": 461,
+        "num_agents": 388,
+        "num_attacks": 2236
+    },
+    {
+        "timestep": 462,
+        "num_agents": 397,
+        "num_attacks": 2240
+    },
+    {
+        "timestep": 463,
+        "num_agents": 402,
+        "num_attacks": 2244
+    },
+    {
+        "timestep": 464,
+        "num_agents": 400,
+        "num_attacks": 2247
+    },
+    {
+        "timestep": 465,
+        "num_agents": 409,
+        "num_attacks": 2252
+    },
+    {
+        "timestep": 466,
+        "num_agents": 411,
+        "num_attacks": 2256
+    },
+    {
+        "timestep": 467,
+        "num_agents": 414,
+        "num_attacks": 2266
+    },
+    {
+        "timestep": 468,
+        "num_agents": 415,
+        "num_attacks": 2282
+    },
+    {
+        "timestep": 469,
+        "num_agents": 403,
+        "num_attacks": 2298
+    },
+    {
+        "timestep": 470,
+        "num_agents": 398,
+        "num_attacks": 2361
+    },
+    {
+        "timestep": 471,
+        "num_agents": 340,
+        "num_attacks": 2370
+    },
+    {
+        "timestep": 472,
+        "num_agents": 338,
+        "num_attacks": 2372
+    },
+    {
+        "timestep": 473,
+        "num_agents": 344,
+        "num_attacks": 2377
+    },
+    {
+        "timestep": 474,
+        "num_agents": 347,
+        "num_attacks": 2395
+    },
+    {
+        "timestep": 475,
+        "num_agents": 333,
+        "num_attacks": 2411
+    },
+    {
+        "timestep": 476,
+        "num_agents": 319,
+        "num_attacks": 2415
+    },
+    {
+        "timestep": 477,
+        "num_agents": 320,
+        "num_attacks": 2417
+    },
+    {
+        "timestep": 478,
+        "num_agents": 318,
+        "num_attacks": 2417
+    },
+    {
+        "timestep": 479,
+        "num_agents": 327,
+        "num_attacks": 2418
+    },
+    {
+        "timestep": 480,
+        "num_agents": 326,
+        "num_attacks": 2419
+    },
+    {
+        "timestep": 481,
+        "num_agents": 329,
+        "num_attacks": 2420
+    },
+    {
+        "timestep": 482,
+        "num_agents": 337,
+        "num_attacks": 2423
+    },
+    {
+        "timestep": 483,
+        "num_agents": 341,
+        "num_attacks": 2426
+    },
+    {
+        "timestep": 484,
+        "num_agents": 340,
+        "num_attacks": 2427
+    },
+    {
+        "timestep": 485,
+        "num_agents": 339,
+        "num_attacks": 2430
+    },
+    {
+        "timestep": 486,
+        "num_agents": 339,
+        "num_attacks": 2431
+    },
+    {
+        "timestep": 487,
+        "num_agents": 344,
+        "num_attacks": 2436
+    },
+    {
+        "timestep": 488,
+        "num_agents": 347,
+        "num_attacks": 2438
+    },
+    {
+        "timestep": 489,
+        "num_agents": 345,
+        "num_attacks": 2438
+    },
+    {
+        "timestep": 490,
+        "num_agents": 351,
+        "num_attacks": 2440
+    },
+    {
+        "timestep": 491,
+        "num_agents": 352,
+        "num_attacks": 2440
+    },
+    {
+        "timestep": 492,
+        "num_agents": 352,
+        "num_attacks": 2444
+    },
+    {
+        "timestep": 493,
+        "num_agents": 356,
+        "num_attacks": 2450
+    },
+    {
+        "timestep": 494,
+        "num_agents": 359,
+        "num_attacks": 2454
+    },
+    {
+        "timestep": 495,
+        "num_agents": 355,
+        "num_attacks": 2454
+    },
+    {
+        "timestep": 496,
+        "num_agents": 361,
+        "num_attacks": 2456
+    },
+    {
+        "timestep": 497,
+        "num_agents": 370,
+        "num_attacks": 2460
+    },
+    {
+        "timestep": 498,
+        "num_agents": 373,
+        "num_attacks": 2462
+    },
+    {
+        "timestep": 499,
+        "num_agents": 372,
+        "num_attacks": 2462
+    },
+    {
+        "timestep": 500,
+        "num_agents": 372,
+        "num_attacks": 2465
+    },
+    {
+        "timestep": 501,
+        "num_agents": 370,
+        "num_attacks": 2469
+    },
+    {
+        "timestep": 502,
+        "num_agents": 377,
+        "num_attacks": 2476
+    },
+    {
+        "timestep": 503,
+        "num_agents": 374,
+        "num_attacks": 2478
+    },
+    {
+        "timestep": 504,
+        "num_agents": 383,
+        "num_attacks": 2483
+    },
+    {
+        "timestep": 505,
+        "num_agents": 383,
+        "num_attacks": 2485
+    },
+    {
+        "timestep": 506,
+        "num_agents": 384,
+        "num_attacks": 2504
+    },
+    {
+        "timestep": 507,
+        "num_agents": 366,
+        "num_attacks": 2516
+    },
+    {
+        "timestep": 508,
+        "num_agents": 359,
+        "num_attacks": 2518
+    },
+    {
+        "timestep": 509,
+        "num_agents": 365,
+        "num_attacks": 2523
+    },
+    {
+        "timestep": 510,
+        "num_agents": 370,
+        "num_attacks": 2525
+    },
+    {
+        "timestep": 511,
+        "num_agents": 379,
+        "num_attacks": 2527
+    },
+    {
+        "timestep": 512,
+        "num_agents": 381,
+        "num_attacks": 2529
+    },
+    {
+        "timestep": 513,
+        "num_agents": 388,
+        "num_attacks": 2531
+    },
+    {
+        "timestep": 514,
+        "num_agents": 386,
+        "num_attacks": 2532
+    },
+    {
+        "timestep": 515,
+        "num_agents": 387,
+        "num_attacks": 2536
+    },
+    {
+        "timestep": 516,
+        "num_agents": 387,
+        "num_attacks": 2540
+    },
+    {
+        "timestep": 517,
+        "num_agents": 392,
+        "num_attacks": 2545
+    },
+    {
+        "timestep": 518,
+        "num_agents": 397,
+        "num_attacks": 2552
+    },
+    {
+        "timestep": 519,
+        "num_agents": 396,
+        "num_attacks": 2560
+    },
+    {
+        "timestep": 520,
+        "num_agents": 393,
+        "num_attacks": 2569
+    },
+    {
+        "timestep": 521,
+        "num_agents": 384,
+        "num_attacks": 2574
+    },
+    {
+        "timestep": 522,
+        "num_agents": 388,
+        "num_attacks": 2583
+    },
+    {
+        "timestep": 523,
+        "num_agents": 387,
+        "num_attacks": 2587
+    },
+    {
+        "timestep": 524,
+        "num_agents": 391,
+        "num_attacks": 2597
+    },
+    {
+        "timestep": 525,
+        "num_agents": 387,
+        "num_attacks": 2605
+    },
+    {
+        "timestep": 526,
+        "num_agents": 387,
+        "num_attacks": 2615
+    },
+    {
+        "timestep": 527,
+        "num_agents": 387,
+        "num_attacks": 2622
+    },
+    {
+        "timestep": 528,
+        "num_agents": 390,
+        "num_attacks": 2625
+    },
+    {
+        "timestep": 529,
+        "num_agents": 387,
+        "num_attacks": 2625
+    },
+    {
+        "timestep": 530,
+        "num_agents": 388,
+        "num_attacks": 2625
+    },
+    {
+        "timestep": 531,
+        "num_agents": 390,
+        "num_attacks": 2625
+    },
+    {
+        "timestep": 532,
+        "num_agents": 400,
+        "num_attacks": 2626
+    },
+    {
+        "timestep": 533,
+        "num_agents": 401,
+        "num_attacks": 2627
+    },
+    {
+        "timestep": 534,
+        "num_agents": 407,
+        "num_attacks": 2630
+    },
+    {
+        "timestep": 535,
+        "num_agents": 411,
+        "num_attacks": 2633
+    },
+    {
+        "timestep": 536,
+        "num_agents": 408,
+        "num_attacks": 2633
+    },
+    {
+        "timestep": 537,
+        "num_agents": 416,
+        "num_attacks": 2635
+    },
+    {
+        "timestep": 538,
+        "num_agents": 418,
+        "num_attacks": 2638
+    },
+    {
+        "timestep": 539,
+        "num_agents": 416,
+        "num_attacks": 2640
+    },
+    {
+        "timestep": 540,
+        "num_agents": 415,
+        "num_attacks": 2642
+    },
+    {
+        "timestep": 541,
+        "num_agents": 413,
+        "num_attacks": 2645
+    },
+    {
+        "timestep": 542,
+        "num_agents": 412,
+        "num_attacks": 2649
+    },
+    {
+        "timestep": 543,
+        "num_agents": 418,
+        "num_attacks": 2652
+    },
+    {
+        "timestep": 544,
+        "num_agents": 415,
+        "num_attacks": 2652
+    },
+    {
+        "timestep": 545,
+        "num_agents": 423,
+        "num_attacks": 2655
+    },
+    {
+        "timestep": 546,
+        "num_agents": 421,
+        "num_attacks": 2655
+    },
+    {
+        "timestep": 547,
+        "num_agents": 427,
+        "num_attacks": 2659
+    },
+    {
+        "timestep": 548,
+        "num_agents": 434,
+        "num_attacks": 2667
+    },
+    {
+        "timestep": 549,
+        "num_agents": 433,
+        "num_attacks": 2668
+    },
+    {
+        "timestep": 550,
+        "num_agents": 445,
+        "num_attacks": 2671
+    },
+    {
+        "timestep": 551,
+        "num_agents": 451,
+        "num_attacks": 2678
+    },
+    {
+        "timestep": 552,
+        "num_agents": 445,
+        "num_attacks": 2678
+    },
+    {
+        "timestep": 553,
+        "num_agents": 454,
+        "num_attacks": 2685
+    },
+    {
+        "timestep": 554,
+        "num_agents": 452,
+        "num_attacks": 2690
+    },
+    {
+        "timestep": 555,
+        "num_agents": 454,
+        "num_attacks": 2697
+    },
+    {
+        "timestep": 556,
+        "num_agents": 458,
+        "num_attacks": 2706
+    },
+    {
+        "timestep": 557,
+        "num_agents": 460,
+        "num_attacks": 2713
+    },
+    {
+        "timestep": 558,
+        "num_agents": 456,
+        "num_attacks": 2716
+    },
+    {
+        "timestep": 559,
+        "num_agents": 457,
+        "num_attacks": 2717
+    },
+    {
+        "timestep": 560,
+        "num_agents": 458,
+        "num_attacks": 2723
+    },
+    {
+        "timestep": 561,
+        "num_agents": 465,
+        "num_attacks": 2733
+    },
+    {
+        "timestep": 562,
+        "num_agents": 467,
+        "num_attacks": 2738
+    },
+    {
+        "timestep": 563,
+        "num_agents": 466,
+        "num_attacks": 2745
+    },
+    {
+        "timestep": 564,
+        "num_agents": 461,
+        "num_attacks": 2750
+    },
+    {
+        "timestep": 565,
+        "num_agents": 470,
+        "num_attacks": 2759
+    },
+    {
+        "timestep": 566,
+        "num_agents": 467,
+        "num_attacks": 2764
+    },
+    {
+        "timestep": 567,
+        "num_agents": 468,
+        "num_attacks": 2768
+    },
+    {
+        "timestep": 568,
+        "num_agents": 478,
+        "num_attacks": 2776
+    },
+    {
+        "timestep": 569,
+        "num_agents": 482,
+        "num_attacks": 2783
+    },
+    {
+        "timestep": 570,
+        "num_agents": 482,
+        "num_attacks": 2793
+    },
+    {
+        "timestep": 571,
+        "num_agents": 481,
+        "num_attacks": 2818
+    },
+    {
+        "timestep": 572,
+        "num_agents": 458,
+        "num_attacks": 2824
+    },
+    {
+        "timestep": 573,
+        "num_agents": 453,
+        "num_attacks": 2831
+    },
+    {
+        "timestep": 574,
+        "num_agents": 454,
+        "num_attacks": 2836
+    },
+    {
+        "timestep": 575,
+        "num_agents": 449,
+        "num_attacks": 2844
+    },
+    {
+        "timestep": 576,
+        "num_agents": 453,
+        "num_attacks": 2852
+    },
+    {
+        "timestep": 577,
+        "num_agents": 456,
+        "num_attacks": 2859
+    },
+    {
+        "timestep": 578,
+        "num_agents": 456,
+        "num_attacks": 2874
+    },
+    {
+        "timestep": 579,
+        "num_agents": 446,
+        "num_attacks": 2888
+    },
+    {
+        "timestep": 580,
+        "num_agents": 441,
+        "num_attacks": 2896
+    },
+    {
+        "timestep": 581,
+        "num_agents": 443,
+        "num_attacks": 2901
+    },
+    {
+        "timestep": 582,
+        "num_agents": 443,
+        "num_attacks": 2910
+    },
+    {
+        "timestep": 583,
+        "num_agents": 447,
+        "num_attacks": 2921
+    },
+    {
+        "timestep": 584,
+        "num_agents": 440,
+        "num_attacks": 2924
+    },
+    {
+        "timestep": 585,
+        "num_agents": 440,
+        "num_attacks": 2932
+    },
+    {
+        "timestep": 586,
+        "num_agents": 443,
+        "num_attacks": 2940
+    },
+    {
+        "timestep": 587,
+        "num_agents": 437,
+        "num_attacks": 2945
+    },
+    {
+        "timestep": 588,
+        "num_agents": 432,
+        "num_attacks": 2949
+    },
+    {
+        "timestep": 589,
+        "num_agents": 440,
+        "num_attacks": 2953
+    },
+    {
+        "timestep": 590,
+        "num_agents": 441,
+        "num_attacks": 2954
+    },
+    {
+        "timestep": 591,
+        "num_agents": 445,
+        "num_attacks": 2956
+    },
+    {
+        "timestep": 592,
+        "num_agents": 455,
+        "num_attacks": 2959
+    },
+    {
+        "timestep": 593,
+        "num_agents": 458,
+        "num_attacks": 2963
+    },
+    {
+        "timestep": 594,
+        "num_agents": 461,
+        "num_attacks": 2967
+    },
+    {
+        "timestep": 595,
+        "num_agents": 465,
+        "num_attacks": 2972
+    },
+    {
+        "timestep": 596,
+        "num_agents": 463,
+        "num_attacks": 2977
+    },
+    {
+        "timestep": 597,
+        "num_agents": 469,
+        "num_attacks": 2979
+    },
+    {
+        "timestep": 598,
+        "num_agents": 481,
+        "num_attacks": 2986
+    },
+    {
+        "timestep": 599,
+        "num_agents": 487,
+        "num_attacks": 2993
+    },
+    {
+        "timestep": 600,
+        "num_agents": 488,
+        "num_attacks": 3003
+    },
+    {
+        "timestep": 601,
+        "num_agents": 489,
+        "num_attacks": 3016
+    },
+    {
+        "timestep": 602,
+        "num_agents": 484,
+        "num_attacks": 3023
+    },
+    {
+        "timestep": 603,
+        "num_agents": 489,
+        "num_attacks": 3033
+    },
+    {
+        "timestep": 604,
+        "num_agents": 484,
+        "num_attacks": 3042
+    },
+    {
+        "timestep": 605,
+        "num_agents": 489,
+        "num_attacks": 3052
+    },
+    {
+        "timestep": 606,
+        "num_agents": 492,
+        "num_attacks": 3056
+    },
+    {
+        "timestep": 607,
+        "num_agents": 501,
+        "num_attacks": 3067
+    },
+    {
+        "timestep": 608,
+        "num_agents": 505,
+        "num_attacks": 3079
+    },
+    {
+        "timestep": 609,
+        "num_agents": 495,
+        "num_attacks": 3086
+    },
+    {
+        "timestep": 610,
+        "num_agents": 492,
+        "num_attacks": 3092
+    },
+    {
+        "timestep": 611,
+        "num_agents": 490,
+        "num_attacks": 3101
+    },
+    {
+        "timestep": 612,
+        "num_agents": 492,
+        "num_attacks": 3110
+    },
+    {
+        "timestep": 613,
+        "num_agents": 494,
+        "num_attacks": 3124
+    },
+    {
+        "timestep": 614,
+        "num_agents": 486,
+        "num_attacks": 3133
+    },
+    {
+        "timestep": 615,
+        "num_agents": 479,
+        "num_attacks": 3146
+    },
+    {
+        "timestep": 616,
+        "num_agents": 473,
+        "num_attacks": 3150
+    },
+    {
+        "timestep": 617,
+        "num_agents": 475,
+        "num_attacks": 3154
+    },
+    {
+        "timestep": 618,
+        "num_agents": 477,
+        "num_attacks": 3164
+    },
+    {
+        "timestep": 619,
+        "num_agents": 478,
+        "num_attacks": 3177
+    },
+    {
+        "timestep": 620,
+        "num_agents": 478,
+        "num_attacks": 3182
+    },
+    {
+        "timestep": 621,
+        "num_agents": 481,
+        "num_attacks": 3192
+    },
+    {
+        "timestep": 622,
+        "num_agents": 484,
+        "num_attacks": 3195
+    },
+    {
+        "timestep": 623,
+        "num_agents": 489,
+        "num_attacks": 3200
+    },
+    {
+        "timestep": 624,
+        "num_agents": 494,
+        "num_attacks": 3208
+    },
+    {
+        "timestep": 625,
+        "num_agents": 501,
+        "num_attacks": 3217
+    },
+    {
+        "timestep": 626,
+        "num_agents": 507,
+        "num_attacks": 3231
+    },
+    {
+        "timestep": 627,
+        "num_agents": 494,
+        "num_attacks": 3235
+    },
+    {
+        "timestep": 628,
+        "num_agents": 494,
+        "num_attacks": 3243
+    },
+    {
+        "timestep": 629,
+        "num_agents": 498,
+        "num_attacks": 3251
+    },
+    {
+        "timestep": 630,
+        "num_agents": 505,
+        "num_attacks": 3264
+    },
+    {
+        "timestep": 631,
+        "num_agents": 504,
+        "num_attacks": 3269
+    },
+    {
+        "timestep": 632,
+        "num_agents": 509,
+        "num_attacks": 3274
+    },
+    {
+        "timestep": 633,
+        "num_agents": 513,
+        "num_attacks": 3279
+    },
+    {
+        "timestep": 634,
+        "num_agents": 508,
+        "num_attacks": 3282
+    },
+    {
+        "timestep": 635,
+        "num_agents": 509,
+        "num_attacks": 3287
+    },
+    {
+        "timestep": 636,
+        "num_agents": 505,
+        "num_attacks": 3298
+    },
+    {
+        "timestep": 637,
+        "num_agents": 508,
+        "num_attacks": 3304
+    },
+    {
+        "timestep": 638,
+        "num_agents": 505,
+        "num_attacks": 3316
+    },
+    {
+        "timestep": 639,
+        "num_agents": 500,
+        "num_attacks": 3324
+    },
+    {
+        "timestep": 640,
+        "num_agents": 504,
+        "num_attacks": 3335
+    },
+    {
+        "timestep": 641,
+        "num_agents": 498,
+        "num_attacks": 3337
+    },
+    {
+        "timestep": 642,
+        "num_agents": 511,
+        "num_attacks": 3348
+    },
+    {
+        "timestep": 643,
+        "num_agents": 515,
+        "num_attacks": 3357
+    },
+    {
+        "timestep": 644,
+        "num_agents": 511,
+        "num_attacks": 3371
+    },
+    {
+        "timestep": 645,
+        "num_agents": 507,
+        "num_attacks": 3381
+    },
+    {
+        "timestep": 646,
+        "num_agents": 508,
+        "num_attacks": 3387
+    },
+    {
+        "timestep": 647,
+        "num_agents": 513,
+        "num_attacks": 3390
+    },
+    {
+        "timestep": 648,
+        "num_agents": 523,
+        "num_attacks": 3402
+    },
+    {
+        "timestep": 649,
+        "num_agents": 524,
+        "num_attacks": 3412
+    },
+    {
+        "timestep": 650,
+        "num_agents": 528,
+        "num_attacks": 3422
+    },
+    {
+        "timestep": 651,
+        "num_agents": 527,
+        "num_attacks": 3434
+    },
+    {
+        "timestep": 652,
+        "num_agents": 528,
+        "num_attacks": 3450
+    },
+    {
+        "timestep": 653,
+        "num_agents": 526,
+        "num_attacks": 3460
+    },
+    {
+        "timestep": 654,
+        "num_agents": 529,
+        "num_attacks": 3485
+    },
+    {
+        "timestep": 655,
+        "num_agents": 511,
+        "num_attacks": 3491
+    },
+    {
+        "timestep": 656,
+        "num_agents": 519,
+        "num_attacks": 3511
+    },
+    {
+        "timestep": 657,
+        "num_agents": 505,
+        "num_attacks": 3529
+    },
+    {
+        "timestep": 658,
+        "num_agents": 499,
+        "num_attacks": 3540
+    },
+    {
+        "timestep": 659,
+        "num_agents": 500,
+        "num_attacks": 3551
+    },
+    {
+        "timestep": 660,
+        "num_agents": 495,
+        "num_attacks": 3557
+    },
+    {
+        "timestep": 661,
+        "num_agents": 502,
+        "num_attacks": 3564
+    },
+    {
+        "timestep": 662,
+        "num_agents": 507,
+        "num_attacks": 3575
+    },
+    {
+        "timestep": 663,
+        "num_agents": 511,
+        "num_attacks": 3584
+    },
+    {
+        "timestep": 664,
+        "num_agents": 510,
+        "num_attacks": 3588
+    },
+    {
+        "timestep": 665,
+        "num_agents": 511,
+        "num_attacks": 3596
+    },
+    {
+        "timestep": 666,
+        "num_agents": 515,
+        "num_attacks": 3606
+    },
+    {
+        "timestep": 667,
+        "num_agents": 512,
+        "num_attacks": 3609
+    },
+    {
+        "timestep": 668,
+        "num_agents": 520,
+        "num_attacks": 3611
+    },
+    {
+        "timestep": 669,
+        "num_agents": 530,
+        "num_attacks": 3614
+    },
+    {
+        "timestep": 670,
+        "num_agents": 541,
+        "num_attacks": 3619
+    },
+    {
+        "timestep": 671,
+        "num_agents": 540,
+        "num_attacks": 3627
+    },
+    {
+        "timestep": 672,
+        "num_agents": 547,
+        "num_attacks": 3650
+    },
+    {
+        "timestep": 673,
+        "num_agents": 525,
+        "num_attacks": 3679
+    },
+    {
+        "timestep": 674,
+        "num_agents": 504,
+        "num_attacks": 3697
+    },
+    {
+        "timestep": 675,
+        "num_agents": 493,
+        "num_attacks": 3707
+    },
+    {
+        "timestep": 676,
+        "num_agents": 488,
+        "num_attacks": 3715
+    },
+    {
+        "timestep": 677,
+        "num_agents": 492,
+        "num_attacks": 3735
+    },
+    {
+        "timestep": 678,
+        "num_agents": 480,
+        "num_attacks": 3744
+    },
+    {
+        "timestep": 679,
+        "num_agents": 481,
+        "num_attacks": 3761
+    },
+    {
+        "timestep": 680,
+        "num_agents": 478,
+        "num_attacks": 3774
+    },
+    {
+        "timestep": 681,
+        "num_agents": 470,
+        "num_attacks": 3782
+    },
+    {
+        "timestep": 682,
+        "num_agents": 474,
+        "num_attacks": 3793
+    },
+    {
+        "timestep": 683,
+        "num_agents": 463,
+        "num_attacks": 3795
+    },
+    {
+        "timestep": 684,
+        "num_agents": 467,
+        "num_attacks": 3800
+    },
+    {
+        "timestep": 685,
+        "num_agents": 469,
+        "num_attacks": 3813
+    },
+    {
+        "timestep": 686,
+        "num_agents": 469,
+        "num_attacks": 3818
+    },
+    {
+        "timestep": 687,
+        "num_agents": 470,
+        "num_attacks": 3822
+    },
+    {
+        "timestep": 688,
+        "num_agents": 473,
+        "num_attacks": 3837
+    },
+    {
+        "timestep": 689,
+        "num_agents": 471,
+        "num_attacks": 3859
+    },
+    {
+        "timestep": 690,
+        "num_agents": 458,
+        "num_attacks": 3864
+    },
+    {
+        "timestep": 691,
+        "num_agents": 467,
+        "num_attacks": 3870
+    },
+    {
+        "timestep": 692,
+        "num_agents": 465,
+        "num_attacks": 3878
+    },
+    {
+        "timestep": 693,
+        "num_agents": 460,
+        "num_attacks": 3883
+    },
+    {
+        "timestep": 694,
+        "num_agents": 457,
+        "num_attacks": 3889
+    },
+    {
+        "timestep": 695,
+        "num_agents": 463,
+        "num_attacks": 3895
+    },
+    {
+        "timestep": 696,
+        "num_agents": 461,
+        "num_attacks": 3910
+    },
+    {
+        "timestep": 697,
+        "num_agents": 450,
+        "num_attacks": 3914
+    },
+    {
+        "timestep": 698,
+        "num_agents": 455,
+        "num_attacks": 3920
+    },
+    {
+        "timestep": 699,
+        "num_agents": 460,
+        "num_attacks": 3931
+    }
 ]
