@@ -1,5 +1,5 @@
 import './App.css';
-import SimViewer from './SimViewer';
+import SimViewer from './components/SimViewer';
 
 function App() {
   return (

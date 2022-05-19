@@ -1,11 +1,12 @@
 import { useState, useEffect, useCallback } from "react";
 // import fetchSim from "cloud_services";
 import ParamForm from "./ParamForm";
-
+import pivot_json from "../services/Services"
+import LinePlot from "./LinePlot";
 
 const SimViewer = (props) => {
   const [timestep, setTimestep] = useState(0);
-  const [simData, setSimData] = useState(null)
+//   const [simData, setSimData] = useState(null)
   const simPars = {
     violence_prob: .001,
     gov_policy: 'NONE',
@@ -15,6 +16,9 @@ const SimViewer = (props) => {
     total_steps: 500
   };
 
+  const simData = require('../static/model_json.json');
+  const simPiv = pivot_json(simData)
+  console.log(simPiv)
   // Retrive data for target parameter from server, set it to state,
   // update it when dive_meta changes
 //   useEffect(() => {
@@ -27,11 +31,23 @@ const SimViewer = (props) => {
 //   }, [simPars]);
 
   const zoom = 5;
-
   return (
     <div className="sim_viewer">
             <div className="sim_viewer_left">
-            This is where some nice geom_raster or other area-looking thing will be
+            <div>
+                <LinePlot
+                    data={simPiv}
+                    target1={'num_agents'}
+                    target2={'num_attacks'}
+                    x_step={50}>
+                </LinePlot>
+                <LinePlot
+                    data={simPiv}
+                    target1={'num_agents'}
+                    target2={'num_attacks'}
+                    x_step={50}>
+                </LinePlot>
+            </div>
             <table id="sim_meta">
                 <tr>
                     <td>{simPars.violence_prob}</td>
