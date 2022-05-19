@@ -12,16 +12,15 @@ const SimViewer = (props) => {
     const [msPerStep, setMsPerStep] = useState(1000);
     const [controlState, setControlState] = useState("pause");
     const [lineYMax, setLineYMax] = useState(0);
-
-    //   const [simData, setSimData] = useState(null)
-    const simPars = {
+    const [simPars, setSimPars] = useState({
         violence_prob: 0.001,
-        gov_policy: "NONE",
-        reactive_level: "HIGH",
-        discontent: "LOW",
+        gov_policy: "Low",
+        reactive_level: "High",
+        discontent: "Low",
         starting_pop: 200,
         total_steps: 500,
-    };
+    });
+    // const [simData, setSimData] = useState(null)
 
     useEffect(() => {
         let interval = null;
@@ -58,7 +57,9 @@ const SimViewer = (props) => {
                     <Heatmap></Heatmap>
                 </div>
                 <div className="sim_viewer_right" width="400" margin="50">
-                    <ParamForm></ParamForm>
+                    <ParamForm
+                        setSimPars={setSimPars}
+                    ></ParamForm>
                 </div>
                 <div>
                     <PlaybackControls

@@ -4,6 +4,7 @@ import LoadingButton from "@mui/lab/LoadingButton";
 import "rc-slider/assets/index.css";
 import { BsCloudUpload } from "react-icons/bs";
 import ToggleButtonGroup from "@mui/lab/ToggleButtonGroup";
+import { useState } from "react";
 
 const gov_policy_options = {
     0: "Concilatory",
@@ -37,7 +38,26 @@ const numeric_options = {
     1000: "1,000",
 };
 
+const violence_prob_options = {
+    0: '.01%',
+    1: '.05%',
+    2: '.1%',
+    3: '.3%',
+    4: '.5%',
+    5: '.8%',
+    6: '1%',
+  };
+
 const ParamForm = (props) => {
+
+    const [govPolicy, setGovPolicy] = useState("Neutral");
+    const [govReactivity, setGovReactivity] = useState("Medium");
+    const [discontent, setDiscontent] = useState("Medium");
+    const [startingPop, setStartingPop] = useState(600);
+    const [baseViolPct, setBaseViolPct] = useState(600);
+    const [nSteps, setNSteps] = useState(600);
+    const [waitingForSim, setWaitingForSim] = useState(false);
+
     return (
         <>
             Government Policy
@@ -60,6 +80,9 @@ const ParamForm = (props) => {
                     fluid
                     label="Government Reactivity"
                     marks={reactive_level_options}
+                    onAfterChange={(value) =>
+                        setGovReactivity(reactive_level_options[value])
+                    }
                     min={0}
                     max={4}
                     defaultValue={2}
@@ -71,9 +94,26 @@ const ParamForm = (props) => {
                     fluid
                     label="Discontent"
                     marks={discontent_options}
+                    onAfterChange={(value) =>
+                        setDiscontent(discontent_options[value])
+                    }
                     min={0}
                     max={2}
                     defaultValue={1}
+                />
+            </div>
+            Baseline Violence Probability
+            <div className="contain_inner">
+                <Slider
+                    fluid
+                    label="Discontent"
+                    marks={violence_prob_options}
+                    onAfterChange={(value) =>
+                        setBaseViolPct(violence_prob_options[value])
+                    }
+                    min={0}
+                    max={6}
+                    defaultValue={3}
                 />
             </div>
             Starting Population
@@ -84,6 +124,9 @@ const ParamForm = (props) => {
                     min={200}
                     max={1000}
                     marks={numeric_options}
+                    onAfterChange={(value) =>
+                        setStartingPop(numeric_options[value])
+                    }
                     step={100}
                     dots={true}
                     defaultValue={600}
@@ -97,6 +140,7 @@ const ParamForm = (props) => {
                     min={200}
                     max={1000}
                     marks={numeric_options}
+                    onAfterChange={(value) => setNSteps(numeric_options[value])}
                     step={100}
                     dots={true}
                     defaultValue={600}
@@ -107,6 +151,18 @@ const ParamForm = (props) => {
                     loadingPosition="start"
                     startIcon={<BsCloudUpload />}
                     variant="outlined"
+                    loading={waitingForSim}
+                    onClick={() => {
+                        setWaitingForSim(true);
+                        props.setSimPars({
+                            violence_prob: baseViolPct,
+                            gov_policy: govPolicy,
+                            reactive_level: govReactivity,
+                            discontent: discontent,
+                            starting_pop: startingPop,
+                            total_steps: nSteps,
+                        });
+                    }}
                 >
                     Simulate
                 </LoadingButton>

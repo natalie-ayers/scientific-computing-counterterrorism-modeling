@@ -4,12 +4,13 @@ import Plot from "react-plotly.js";
 function LinePlot(props) {
     const y_val1 = props.data[props.target1];
     const y_val2 = props.data[props.target2];
-    const x_range = [0, props.timestep];
+    const x_range = [-1, props.timestep];
     const y_max_t = Math.max(y_val1[props.timestep], y_val2[props.timestep]);
 
     if (props.lineYMax < y_max_t) {
         props.setLineYMax(y_max_t);
     }
+
     const y_range = [0, props.lineYMax];
 
     console.log(props.data.num_agents);
