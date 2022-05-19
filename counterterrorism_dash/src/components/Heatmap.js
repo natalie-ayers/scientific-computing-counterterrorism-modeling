@@ -1,30 +1,32 @@
 import React from "react";
 import Plot from "react-plotly.js";
 
-var xValues = ['A', 'B', 'C', 'D', 'E'];
+var xValues = ["A", "B", "C", "D", "E"];
 
-var yValues = ['W', 'X', 'Y', 'Z'];
+var yValues = ["W", "X", "Y", "Z"];
 
 var zValues = [
-  [0.00, 0.00, 0.75, 0.75, 0.00],
-  [0.00, 0.00, 0.75, 0.75, 0.00],
+  [0.0, 0.0, 0.75, 0.75, 0.0],
+  [0.0, 0.0, 0.75, 0.75, 0.0],
   [0.75, 0.75, 0.75, 0.75, 0.75],
-  [0.00, 0.00, 0.00, 0.75, 0.00]
+  [0.0, 0.0, 0.0, 0.75, 0.0],
 ];
 
 var colorscaleValue = [
-  [0, '#3D9970'],
-  [1, '#001f3f']
+  [0, "#3D9970"],
+  [1, "#001f3f"],
 ];
 
-var data = [{
-  x: xValues,
-  y: yValues,
-  z: zValues,
-  type: 'heatmap',
-  colorscale: colorscaleValue,
-  showscale: false
-}];
+var data = [
+  {
+    x: xValues,
+    y: yValues,
+    z: zValues,
+    type: "heatmap",
+    colorscale: colorscaleValue,
+    showscale: false,
+  },
+];
 
 var layout = {
   annotations: [],
@@ -33,56 +35,51 @@ var layout = {
     r: 25,
     b: 25,
     t: 25,
-    pad: 4
+    pad: 4,
   },
   xaxis: {
-    ticks: '',
-    side: 'top'
+    ticks: "",
+    side: "top",
   },
   yaxis: {
-    ticks: '',
-    ticksuffix: ' ',
+    ticks: "",
+    ticksuffix: " ",
     width: 700,
     height: 700,
-    autosize: false
-  }
+    autosize: false,
+  },
 };
 
-for ( var i = 0; i < yValues.length; i++ ) {
-  for ( var j = 0; j < xValues.length; j++ ) {
+for (var i = 0; i < yValues.length; i++) {
+  for (var j = 0; j < xValues.length; j++) {
     var currentValue = zValues[i][j];
     if (currentValue != 0.0) {
-      var textColor = 'white';
-    }else{
-      var textColor = 'black';
+      var textColor = "white";
+    } else {
+      var textColor = "black";
     }
     var result = {
-      xref: 'x1',
-      yref: 'y1',
+      xref: "x1",
+      yref: "y1",
       x: xValues[j],
       y: yValues[i],
       text: zValues[i][j],
       font: {
-        family: 'Arial',
+        family: "Arial",
         size: 12,
-        color: 'rgb(50, 171, 96)'
+        color: "rgb(50, 171, 96)",
       },
       showarrow: false,
       font: {
-        color: textColor
-      }
+        color: textColor,
+      },
     };
     layout.annotations.push(result);
   }
 }
 
 function Heatmap(props) {
-    return (
-        <Plot
-        data={data}
-        layout={layout}
-        ></Plot>
-    )
+  return <Plot data={data} layout={layout}></Plot>;
 }
 
 export default Heatmap;

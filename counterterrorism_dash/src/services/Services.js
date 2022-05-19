@@ -4,11 +4,11 @@
 //   };
 
 const pivot_json = (props) => {
-    let data_array = {};
-    Object.keys(props[0]).forEach(k => {
-        data_array[k] = props.map(o => o[k]);
-    });
-    return data_array;
+  let data_array = {};
+  Object.keys(props[0]).forEach((k) => {
+    data_array[k] = props.map((o) => o[k]);
+  });
+  return data_array;
 };
 
-export default pivot_json
+export default pivot_json;
