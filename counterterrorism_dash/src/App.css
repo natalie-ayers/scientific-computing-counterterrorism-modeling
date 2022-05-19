@@ -36,3 +36,34 @@
     transform: rotate(360deg);
   }
 }
+
+.sim_viewer {
+    border: 3px solid #fff;
+    padding: 20px;
+}
+
+.sim_viewer_right {
+    width: 20%;
+    float: right;
+    padding-bottom: 10px;
+    /* height: 600px; */
+    border: 5px solid rgb(0, 0, 0);
+}
+
+.sim_viewer_left {
+    width: 55%;
+    float: left;
+    padding: 2px;
+    height: 600px;
+    border: 5px solid rgb(0, 0, 0);
+}
+
+.contain_inner {
+    position: relative;
+    top: 0%; left: 50%; bottom: 20%;
+    padding-left: 15%;
+    padding-right: 20%;
+    padding-top: 15%;
+    padding-bottom: 0%;
+    transform: translate(-50%,-50%);
+}
