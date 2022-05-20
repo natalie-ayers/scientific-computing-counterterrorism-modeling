@@ -3,7 +3,8 @@ import { useState, useEffect, useCallback } from "react";
 import ParamForm from "./ParamForm";
 import pivot_json from "../services/Services";
 import LinePlot from "./LinePlot";
-import Heatmap from "./Heatmap";
+import HeatMap from "./HeatMap";
+import PieChart from './PieChart.js'
 import PlaybackControls from "./PlaybackControls";
 
 const SimViewer = (props) => {
@@ -54,7 +55,9 @@ const SimViewer = (props) => {
             <div className="sim_viewer">
                 <div className="sim_viewer_left">
                     {timestep}
-                    <Heatmap></Heatmap>
+                    <HeatMap
+                        timestep={timestep}
+                    ></HeatMap>
                 </div>
                 <div className="sim_viewer_right" width="400" margin="50">
                     <ParamForm
@@ -91,6 +94,11 @@ const SimViewer = (props) => {
                         lineYMax={lineYMax}
                         setLineYMax={setLineYMax}
                     ></LinePlot>
+                </div>
+                <div className="sim_viewer_left">
+                    <PieChart
+                        timestep={timestep}
+                    ></PieChart>
                 </div>
             </div>
         </div>
