@@ -4,7 +4,7 @@ import ParamForm from "./ParamForm";
 import pivot_json from "../services/Services";
 import LinePlot from "./LinePlot";
 import HeatMap from "./HeatMap";
-import PieChart from './PieChart.js'
+import PieChart from "./PieChart.js";
 import PlaybackControls from "./PlaybackControls";
 
 const SimViewer = (props) => {
@@ -55,14 +55,10 @@ const SimViewer = (props) => {
             <div className="sim_viewer">
                 <div className="sim_viewer_left">
                     {timestep}
-                    <HeatMap
-                        timestep={timestep}
-                    ></HeatMap>
+                    <HeatMap timestep={timestep}></HeatMap>
                 </div>
                 <div className="sim_viewer_right" width="400" margin="50">
-                    <ParamForm
-                        setSimPars={setSimPars}
-                    ></ParamForm>
+                    <ParamForm setSimPars={setSimPars}></ParamForm>
                 </div>
                 <div>
                     <PlaybackControls
@@ -96,9 +92,7 @@ const SimViewer = (props) => {
                     ></LinePlot>
                 </div>
                 <div className="sim_viewer_left">
-                    <PieChart
-                        timestep={timestep}
-                    ></PieChart>
+                    <PieChart timestep={timestep}></PieChart>
                 </div>
             </div>
         </div>

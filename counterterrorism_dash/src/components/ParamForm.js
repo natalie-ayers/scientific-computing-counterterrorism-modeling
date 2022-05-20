@@ -39,17 +39,16 @@ const numeric_options = {
 };
 
 const violence_prob_options = {
-    0: '.01%',
-    1: '.05%',
-    2: '.1%',
-    3: '.3%',
-    4: '.5%',
-    5: '.8%',
-    6: '1%',
-  };
+    0: ".01%",
+    1: ".05%",
+    2: ".1%",
+    3: ".3%",
+    4: ".5%",
+    5: ".8%",
+    6: "1%",
+};
 
 const ParamForm = (props) => {
-
     const [govPolicy, setGovPolicy] = useState("Neutral");
     const [govReactivity, setGovReactivity] = useState("Medium");
     const [discontent, setDiscontent] = useState("Medium");

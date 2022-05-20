@@ -10,28 +10,25 @@ const PieChart = (props) => {
         [20, 30, 40, 10],
         [20, 30, 45, 5],
         [20, 30, 50, 0],
-        [20, 25, 55, 0]
-    ]
-    var data = [{
-        values: pct_vals[props.timestep],
-        labels: ['Combatant', 'Sympathetic', 'Neutral', 'Anti-Violence'],
-        type: 'pie',
-        marker: {
-            colors: ['#eb4034', '#eba534', '#6cd11f', '#1fd1d1']
-        }
-      }];
-      
-      var layout = {
+        [20, 25, 55, 0],
+    ];
+    var data = [
+        {
+            values: pct_vals[props.timestep],
+            labels: ["Combatant", "Sympathetic", "Neutral", "Anti-Violence"],
+            type: "pie",
+            marker: {
+                colors: ["#eb4034", "#eba534", "#6cd11f", "#1fd1d1"],
+            },
+        },
+    ];
+
+    var layout = {
         height: 400,
-        width: 400
-      };
-    
-    return (
-    <Plot
-        data={data}
-        layout={layout}
-    ></Plot>
-    );
-}
+        width: 400,
+    };
+
+    return <Plot data={data} layout={layout}></Plot>;
+};
 
 export default PieChart;
