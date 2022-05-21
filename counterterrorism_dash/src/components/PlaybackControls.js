@@ -4,6 +4,7 @@ import {
     BsFillSkipForwardCircleFill,
     BsFillSkipEndCircleFill,
     BsFillPlayCircleFill,
+    BsFillSkipBackwardCircleFill
 } from "react-icons/bs";
 import ToggleButton from "@mui/material/ToggleButton";
 import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
@@ -22,6 +23,17 @@ const PlaybackControls = (props) => {
                     props.setTimestep(0);
                     props.setActive(false);
                     props.setControlState("skip-to-beginning");
+                }}
+            >
+                <BsFillSkipBackwardCircleFill />
+            </ToggleButton>
+            <ToggleButton
+                value="back-one"
+                aria-label="back-one"
+                onClick={() => {
+                    props.setTimestep(props.timestep - 1);
+                    props.setActive(false);
+                    props.setControlState("back-one");
                 }}
             >
                 <BsFillSkipStartCircleFill />

@@ -1,13 +1,1 @@
-const url = "https://us-central1-sci-comp-counterterror-model.cloudfunctions.net/counterterror_model_http";
-const gcloud_identity = require("../.gcloud_identity.json");
-const auth_prefix = "Authorization:bearer ";
-const auth_text = auth_prefix.concat(gcloud_identity.id);
-const options = {
-    method: 'POST',
-    headers: {
-        'Content-Type': 'application/json',
-        // mode: 'cors', // no-cors, *cors, same-origin
-        Authorization: auth_text,
-        body: JSON.stringify(sim_params) 
-    }
-};
+{"id": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjQ4NmYxNjQ4MjAwNWEyY2RhZjI2ZDkyMTQwMThkMDI5Y2E0NmZiNTYiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzMjU1NTk0MDU1OS5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImF1ZCI6IjMyNTU1OTQwNTU5LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTA1NTgxMzA2MjY5ODkxMjkwMzM1IiwiaGQiOiJ1Y2hpY2Fnby5lZHUiLCJlbWFpbCI6Im5wZ0B1Y2hpY2Fnby5lZHUiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiYXRfaGFzaCI6IkREMXUta1dkMTVpVks5MHNtaVRtNlEiLCJpYXQiOjE2NTMxNzA3MTgsImV4cCI6MTY1MzE3NDMxOH0.GthDDNoT6-BPMWK2dNep5sVt03dUJZQnlF6mfxV3y9RpQk-BeVrjO4MY2cg2TSsGRT0yqvV5OiJLIvhB3X2b7vHd3eXJQuSQwGaQQmBRLJZmh7bra-4SMT10VcuR61JjoB55qy4a63-GXPs1RyOGoZ9I-LE7akYqQ0e96P1wbyB0HsGqL4qPq3pUAqbQYejFOO_z52NLntNCGBoLkCM95nDLaTBreXwz6E8oZuzifUoeP4dAvURdwS-EF6m64TZC6xaLBkNGUk6SCMn3LdGmtO0Bhk1k2uZ_AUb28j4yjXFlBBlgkTKclV7BxojB0UMsFCUwFdlM8TmdbAj66ZMKMw"}

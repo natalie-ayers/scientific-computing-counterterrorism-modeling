@@ -4,7 +4,7 @@ To run the docker image and see the React dashboard:
 
 ```
 cd counterterrorism_dash
-docker run --name counterterrorism_dash -d -p 3000:3000 counterterrorism_dash:latest
+npm start
 ```
 
 Then, in your browser, navigate to:
