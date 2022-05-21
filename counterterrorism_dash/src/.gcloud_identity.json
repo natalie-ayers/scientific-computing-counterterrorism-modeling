@@ -1,0 +1,13 @@
+const url = "https://us-central1-sci-comp-counterterror-model.cloudfunctions.net/counterterror_model_http";
+const gcloud_identity = require("../.gcloud_identity.json");
+const auth_prefix = "Authorization:bearer ";
+const auth_text = auth_prefix.concat(gcloud_identity.id);
+const options = {
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/json',
+        // mode: 'cors', // no-cors, *cors, same-origin
+        Authorization: auth_text,
+        body: JSON.stringify(sim_params) 
+    }
+};
