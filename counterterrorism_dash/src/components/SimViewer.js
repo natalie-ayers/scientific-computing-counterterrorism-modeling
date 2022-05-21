@@ -53,14 +53,15 @@ const SimViewer = (props) => {
     return (
         <div>
             <div className="sim_viewer">
-                <div className="sim_viewer_left">
-                    {timestep}
+                <div className="sim_viewer_tleft">
                     <HeatMap timestep={timestep}></HeatMap>
+                </div>
+                <div className="sim_viewer_tctr">
+                    Timestep {timestep} of {simPars.total_steps}
+                    <PieChart timestep={timestep}></PieChart>
                 </div>
                 <div className="sim_viewer_right" width="400" margin="50">
                     <ParamForm setSimPars={setSimPars}></ParamForm>
-                </div>
-                <div>
                     <PlaybackControls
                         setMsPerStep={setMsPerStep}
                         setActive={setActive}
@@ -70,17 +71,10 @@ const SimViewer = (props) => {
                         max_timestep={simPars.total_steps}
                     ></PlaybackControls>
                 </div>
+
             </div>
             <div className="sim_viewer">
-                {/* <div className="sim_viewer_right">
-        <LinePlot
-            data={simPiv}
-            target1={'num_agents'}
-            target2={'num_attacks'}
-            x_step={50}>
-        </LinePlot>
-        </div> */}
-                <div className="sim_viewer_left">
+                <div className="sim_viewer_bleft">
                     <LinePlot
                         data={simPiv}
                         target1={"num_agents"}
@@ -91,8 +85,16 @@ const SimViewer = (props) => {
                         setLineYMax={setLineYMax}
                     ></LinePlot>
                 </div>
-                <div className="sim_viewer_left">
-                    <PieChart timestep={timestep}></PieChart>
+                <div className="sim_viewer_bctr">
+                    <LinePlot
+                        data={simPiv}
+                        target1={"num_agents"}
+                        target2={"num_attacks"}
+                        x_step={50}
+                        timestep={timestep}
+                        lineYMax={lineYMax}
+                        setLineYMax={setLineYMax}
+                    ></LinePlot>
                 </div>
             </div>
         </div>

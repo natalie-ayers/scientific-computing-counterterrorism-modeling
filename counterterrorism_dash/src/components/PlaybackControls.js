@@ -40,7 +40,7 @@ const PlaybackControls = (props) => {
                 value="play"
                 aria-label="play"
                 onClick={() => {
-                    props.setMsPerStep(1000);
+                    props.setMsPerStep(500);
                     props.setActive(true);
                     props.setControlState("play");
                 }}

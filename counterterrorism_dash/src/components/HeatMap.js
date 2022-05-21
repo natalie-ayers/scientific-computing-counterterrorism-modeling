@@ -9,7 +9,7 @@ function HeatMap(props) {
         [
             [0.0, 0.0, 0.75, 0.75],
             [0.75, 0.75, 0.75, 0.75],
-            [0.0, 0.0, 0.0, 0.75],
+            [0.0, 0.5, 0.0, 0.75],
         ],
         [
             [0.25, 0.25, 0.75, 0.75],
@@ -131,8 +131,6 @@ function HeatMap(props) {
         ],
     ];
 
-    var zAnnot;
-
     var colorscaleValue = [
         [0, "#d40000"],
         [1, "#0099ff"],
@@ -144,14 +142,30 @@ function HeatMap(props) {
             y: yValues,
             z: zValues[props.timestep],
             type: "heatmap",
+            hovertemplate: 'Non-violence: %{z:.2f}%<extra></extra>',
             colorscale: colorscaleValue,
             showscale: false,
         },
+        {
+            x: ['A', 'B', 'B'],
+            y: ["ㅤ3", "ㅤ3", "ㅤ1"],
+            text: ['Repression', 'Concilation', 'Indiscriminate Concilation'],
+            mode: 'markers',
+            marker: {
+              color: "#ffffff",
+              size: [80, 80, 50],
+              symbol: [105, 106, 106],
+              line: {
+                width: 4
+              }
+            }
+          }
     ];
 
     var layout = {
         annotations: [],
         font: { size: 20 },
+        paper_bgcolor:"#f5eeda",
         margin: {
             l: 30,
             r: 25,
@@ -200,7 +214,6 @@ function HeatMap(props) {
             layout.annotations.push(result);
         }
     }
-
     return <Plot data={data} layout={layout}></Plot>;
 }
 

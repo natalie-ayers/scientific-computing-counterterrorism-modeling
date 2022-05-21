@@ -145,7 +145,7 @@ const ParamForm = (props) => {
                     defaultValue={600}
                 />
             </div>
-            <div>
+            <div className="sim_button">
                 <LoadingButton
                     loadingPosition="start"
                     startIcon={<BsCloudUpload />}

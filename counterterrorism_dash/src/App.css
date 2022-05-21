@@ -38,12 +38,11 @@
 }
 
 .sim_viewer {
-    border: 3px solid #fff;
     padding: 20px;
 }
 
 .sim_viewer_right {
-    width: 20%;
+    width: 25%;
     float: right;
     padding-bottom: 10px;
     /* height: 600px; */
@@ -52,7 +51,7 @@
     /* border-radius: 5px; */
 }
 
-.sim_viewer_left {
+.sim_viewer_tleft {
     width: 45%;
     float: left;
     padding: 2px;
@@ -60,11 +59,51 @@
     border-radius: 25px;
 }
 
+.sim_viewer_tctr {
+    width: 25%;
+    float: left;
+    padding: 2px;
+    border: 5px solid rgb(0, 0, 0);
+    border-radius: 25px;
+    border-collapse: separate;
+    border-spacing: 10px;
+}
+
+.sim_viewer_bleft {
+    width: 35%;
+    float: left;
+    padding: 2px;
+    border: 5px solid rgb(0, 0, 0);
+    border-radius: 25px;
+}
+
+.sim_viewer_bctr {
+    width: 35%;
+    float: left;
+    padding: 2px;
+    border: 5px solid rgb(0, 0, 0);
+    border-radius: 25px;
+    border-collapse: separate;
+    border-spacing: 10px;
+}
+
 .contain_inner {
     position: relative;
     top: 0%;
     left: 50%;
     bottom: 20%;
+    padding-left: 15%;
+    padding-right: 20%;
+    padding-top: 15%;
+    padding-bottom: 0%;
+    transform: translate(-50%, -50%);
+}
+
+.sim_button {
+    position: relative;
+    top: 0%;
+    left: 50%;
+    bottom: 0%;
     padding-left: 15%;
     padding-right: 20%;
     padding-top: 15%;
