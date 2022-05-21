@@ -1,7 +1,7 @@
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect } from "react";
 // import fetchSim from "cloud_services";
 import ParamForm from "./ParamForm";
-import pivot_json from "../services/Services";
+import { pivot_json } from "../services/Services";
 import LinePlot from "./LinePlot";
 import HeatMap from "./HeatMap";
 import PieChart from "./PieChart.js";
@@ -37,7 +37,8 @@ const SimViewer = (props) => {
 
     const simData = require("../static/model_json.json");
     const simPiv = pivot_json(simData);
-    console.log(simPiv);
+
+    // console.log(simPiv);
     // Retrive data for target parameter from server, set it to state,
     // update it when dive_meta changes
     //   useEffect(() => {
@@ -49,7 +50,6 @@ const SimViewer = (props) => {
     //     callSimData(simPars);
     //   }, [simPars]);
 
-    const zoom = 5;
     return (
         <div>
             <div className="sim_viewer">
@@ -68,10 +68,10 @@ const SimViewer = (props) => {
                         setTimestep={setTimestep}
                         setControlState={setControlState}
                         controlState={controlState}
+                        timestep={timestep}
                         max_timestep={simPars.total_steps}
                     ></PlaybackControls>
                 </div>
-
             </div>
             <div className="sim_viewer">
                 <div className="sim_viewer_bleft">

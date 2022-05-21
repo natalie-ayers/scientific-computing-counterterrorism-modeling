@@ -7,14 +7,15 @@ function LinePlot(props) {
     const x_range = [-1, props.timestep];
     const y_max_t = Math.max(y_val1[props.timestep], y_val2[props.timestep]);
 
+
+    const y_range = [0, props.lineYMax];
+
     if (props.lineYMax < y_max_t) {
         props.setLineYMax(y_max_t);
     }
 
-    const y_range = [0, props.lineYMax];
-
-    console.log(props.data.num_agents);
     return (
+
         <Plot
             data={[
                 {

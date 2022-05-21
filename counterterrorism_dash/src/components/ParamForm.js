@@ -1,10 +1,9 @@
-import React, { Component } from "react";
-import Slider, { Range } from "rc-slider";
+import Slider from "rc-slider";
 import LoadingButton from "@mui/lab/LoadingButton";
 import "rc-slider/assets/index.css";
 import { BsCloudUpload } from "react-icons/bs";
-import ToggleButtonGroup from "@mui/lab/ToggleButtonGroup";
 import { useState } from "react";
+import { fetchSim } from '../services/Services.js'
 
 const gov_policy_options = {
     0: "Concilatory",
@@ -56,10 +55,26 @@ const ParamForm = (props) => {
     const [baseViolPct, setBaseViolPct] = useState(600);
     const [nSteps, setNSteps] = useState(600);
     const [waitingForSim, setWaitingForSim] = useState(false);
+    const sim_params = {
+        "violence_prob": 0.0005,
+        "gov_policy": "None",
+        "reactive_level": "Low",
+        "discontent": "Mid",
+        "starting_pop": 200,
+        "total_steps": 30,
+        "add_violence_aftermath":10,
+        "crowding_threshold":30,
+        "agent_birth_rate":0.03
+    }
+
+    const styleObj = {
+        fontSize: 16,
+        textAlign: "center",
+    }
 
     return (
         <>
-            Government Policy
+            <p style={styleObj}>Government Policy</p>
             <div className="contain_inner">
                 <Slider
                     fluid
@@ -73,7 +88,7 @@ const ParamForm = (props) => {
                     defaultValue={1}
                 />
             </div>
-            Government Reactivity
+            <p style={styleObj}>Government Reactivity</p>
             <div className="contain_inner">
                 <Slider
                     fluid
@@ -87,7 +102,7 @@ const ParamForm = (props) => {
                     defaultValue={2}
                 />
             </div>
-            Discontent
+            <p style={styleObj}>Discontent</p>
             <div className="contain_inner">
                 <Slider
                     fluid
@@ -101,7 +116,7 @@ const ParamForm = (props) => {
                     defaultValue={1}
                 />
             </div>
-            Baseline Violence Probability
+            <p style={styleObj}>Baseline Violence Probability</p>
             <div className="contain_inner">
                 <Slider
                     fluid
@@ -115,7 +130,7 @@ const ParamForm = (props) => {
                     defaultValue={3}
                 />
             </div>
-            Starting Population
+            <p style={styleObj}>Starting Population</p>
             <div className="contain_inner">
                 <Slider
                     fluid
@@ -131,7 +146,7 @@ const ParamForm = (props) => {
                     defaultValue={600}
                 />
             </div>
-            Number of Steps
+            <p style={styleObj}>Number of Steps</p>
             <div className="contain_inner">
                 <Slider
                     fluid
@@ -161,6 +176,8 @@ const ParamForm = (props) => {
                             starting_pop: startingPop,
                             total_steps: nSteps,
                         });
+                        const fetched = fetchSim(sim_params)
+                        console.log(fetched)
                     }}
                 >
                     Simulate
