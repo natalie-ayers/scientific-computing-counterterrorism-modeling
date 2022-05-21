@@ -9,7 +9,8 @@ class Palestinian(Agent):
     """
     Palestinians actors
     """
-    def __init__(self, unique_id, model, discontent):
+    def __init__(self, unique_id, model, discontent, add_violence_aftermath,\
+                crowding_threshold):
         super().__init__(unique_id, model)
         self.unique_id = unique_id
         # civilians on a spectrum from unhappy willing to be 
@@ -20,6 +21,8 @@ class Palestinian(Agent):
         self.model = model
         self.discontent = discontent
         self.status = self.assign_status()
+        self.add_violence_aftermath = add_violence_aftermath
+        self.crowding_threshold = crowding_threshold
 
     def assign_status(self):
         if self.discontent == 'high':
@@ -50,8 +53,8 @@ class Palestinian(Agent):
             [prob_violence, (1 - prob_violence)], k=1)
         if violence:
             # if a terrorist act is committed, its 
-            # aftermath is felt for 10 rounds
-            model.violence_aftermath = 10
+            # aftermath is felt for x rounds
+            model.violence_aftermath = self.add_violence_aftermath
             model.num_attacks += 1
             # 60% die after attacks
             death= choices([True, False], weights=\
@@ -71,7 +74,7 @@ class Palestinian(Agent):
 
         # decrease satisfaction due to overcrowded conditions
         crowding = len(self.model.grid.get_cell_list_contents([self.pos]))
-        if crowding > 30:
+        if crowding > self.crowding_threshold:
             self.satisfaction -= 5
         # otherwise, decrease satisfaction due to general living conditions
         else:
@@ -83,14 +86,23 @@ class Palestinian(Agent):
                 self.satisfaction += 3
 
         if govt_action == 'INDISC-CONC':
-            self.satisfaction += 3 ** model.sust_conc
+            if model.sust_conc == 0:
+                mult_conc = 1
+            else:
+                mult_conc = model.sust_conc
+
+            self.satisfaction += 3 ** mult_conc
         
         if govt_action == 'TARG-CONC':
             if action_pos == self.pos:
                 self.satisfaction += 2
 
         if govt_action == 'INDISC-REPR':
-            self.satisfaction -= 3 ** model.sust_repr
+            if model.sust_repr == 0:
+                mult_repr = 1.5
+            else:
+                mult_repr = model.sust_repr
+            self.satisfaction -= 3 ** mult_repr
 
         if govt_action == 'TARG-REPR':
             # only have negative response to targeted repression if 
@@ -196,7 +208,8 @@ class CounterterrorismModel(Model):
     """
     def __init__(self, N, height, width, prob_violence=0.005, \
                     reactive_lvl = 'mid-low',policy='NONE',\
-                    discontent='mid', seed=50):
+                    discontent='mid', add_violence_aftermath=10, \
+                    crowding_threshold=30, agent_birth_rate=0.03, seed=50):
         self.num_agents = N
         self.height = height
         self.width = width
@@ -204,6 +217,7 @@ class CounterterrorismModel(Model):
         self.policy = policy
         self.reactive_lvl = reactive_lvl
         self.discontent = discontent
+        self.crowding_threshold = crowding_threshold
         self.current_id = 0
         self.timestep = 1
         self.grid = MultiGrid(height, width, torus=False)
@@ -212,15 +226,19 @@ class CounterterrorismModel(Model):
         self.sust_repr = 0
         self.num_attacks = 0
         self.violence_aftermath = 0
+        # additional violence aftermath score to add after attack
+        self.add_violence_aftermath = add_violence_aftermath
         self.deaths = []
         self.govt_action = 'NONE'
         self.action_pos = (0,0)
+        self.agent_birth_rate = agent_birth_rate
 
         seed = 50
 
         # create our Palestinian agents
         for i in range(self.num_agents):
-            a = Palestinian(self.next_id(), self, self.discontent)
+            a = Palestinian(self.next_id(), self, self.discontent, \
+                self.add_violence_aftermath, self.crowding_threshold)
             self.schedule.add(a)
 
             # add agent to random grid cell (neighborhoods)
@@ -274,9 +292,10 @@ class CounterterrorismModel(Model):
         self.deaths = []
 
         # add to population
-        new_births = randint(0,round(self.num_agents * 0.03))
+        new_births = randint(0,round(self.num_agents * self.agent_birth_rate))
         for i in range(new_births):
-            a = Palestinian(self.next_id(), self, self.discontent)
+            a = Palestinian(self.next_id(), self, self.discontent, \
+                self.add_violence_aftermath, self.crowding_threshold)
             self.schedule.add(a)
 
             # add agent to random grid cell (neighborhoods)
