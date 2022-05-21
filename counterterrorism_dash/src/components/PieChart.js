@@ -24,8 +24,16 @@ const PieChart = (props) => {
     ];
 
     var layout = {
-        height: 400,
+        height: 422,
         width: 400,
+        paper_bgcolor:"#f5eeda",
+        margin: {
+            l: 30,
+            r: 25,
+            b: 25,
+            t: 35,
+            pad: 4,
+        },
     };
 
     return <Plot data={data} layout={layout}></Plot>;

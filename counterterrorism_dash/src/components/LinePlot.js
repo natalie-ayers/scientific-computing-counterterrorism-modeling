@@ -37,8 +37,9 @@ function LinePlot(props) {
                 },
             ]}
             layout={{
-                width: 700,
+                width: 550,
                 height: 300,
+                paper_bgcolor:"#f5eeda",
                 margin: {
                     l: 25,
                     r: 25,
