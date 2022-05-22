@@ -9,12 +9,14 @@ export async function fetchSim(sim_params) {
     const options = {
         method: 'POST',
         headers: {
+            auth_text,
             'Content-Type': 'application/json',
-            // mode: 'cors', // no-cors, *cors, same-origin
-            Authorization: auth_text,
-            body: JSON.stringify(sim_params) 
-        }
-    };
+            'Content-Security-Policy': "default-src 'self'"
+        },
+        //mode: 'no-cors', // no-cors, *cors, same-origin
+        
+        body: JSON.stringify(sim_params) 
+        };
     
     const res = await fetch(url, options)
     console.log(res.status)
