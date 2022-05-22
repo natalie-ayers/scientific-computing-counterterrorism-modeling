@@ -10,6 +10,8 @@ library(tidyr) # for cleaning data
 library(ggplot2) # for visualization
 library(haven)
 library(rjson)
+library(gdata)
+library(data.table)
 
 setwd('C:/Users/natra/Documents/Education/UChicago/Scientific Computing/scientific-computing-counterterrorism-modeling')
 ```
@@ -43,6 +45,7 @@ model_norm_attacks <- (model_n_attacks - mean(model_n_attacks)) / sd(model_n_att
 ```{r}
 model_attacks_freq <- data.frame(table(model_norm_attacks)) %>%
   rename(attacks=model_norm_attacks, count = Freq)
+model_attacks_freq$attacks <- as.numeric(as.character(model_attacks_freq$attacks))
 ```
 
 
@@ -76,11 +79,20 @@ placebo_obs <- data.frame(attacks = obs_attacks_freq$attacks,
           count = rmultinom(n = 1,
           size = sum(obs_attacks_freq$count),
           prob = obs_attacks_freq$count))
+placebo_obs$attacks <- as.numeric(as.character(placebo_obs$attacks))
 placebo_model <- data.frame(attacks = obs_attacks_freq$attacks,
           count = rmultinom(n = 1,
           size = sum(model_attacks_freq$count),
           prob = obs_attacks_freq$count))
+placebo_model$attacks <- as.numeric(as.character(placebo_model$attacks))
+```
 
+```{r}
+head(placebo_obs)
+```
+
+```{r}
+head(placebo_model)
 ```
 
 
@@ -113,13 +125,122 @@ comp_placebo_dists
 
 ```{r}
 bandwidths <- c(0) # store all the bandwidths you want in this vector
-placebo_at_0 <- diftrans(pre_main = obs_attacks_placebo,
-                post_main = model_attacks_placebo, # from previous exercise
+placebo_at_0 <- diftrans(pre_main = placebo_obs,
+                post_main = placebo_model, 
                 var = attacks,
                 bandwidth_seq = bandwidths)
+placebo_at_0
 ```
+
+```{r}
+# choose bandwidths
+bandwidths <- seq(0, 100000, 5000)
+# find placebo cost (expressed as percentages)
+placebo <- diftrans(pre_main = placebo_obs,
+                post_main = placebo_model, 
+                var = attacks,
+                bandwidth_seq = bandwidths)
+
+placebo_cost <- placebo$main * 100
+head(placebo_cost)
+```
+
+```{r}
+obs_attacks_dt <- as.data.table(obs_attacks_freq)
+obs_attacks_freq_mod <- obs_attacks_dt[, count[sample.int(.N,
+                                                          round(length(model_attacks_freq[,1])/length(obs_attacks_freq[,1])), 
+                                                          TRUE)], by=attacks]
+obs_attacks_freq_mod <- obs_attacks_freq_mod %>% rename(count = V1)
+obs_attacks_freq_mod <- obs_attacks_freq_mod[1:length(model_attacks_freq[,1]),]
+obs_attacks_freq_mod$attacks <-  as.numeric(as.character(obs_attacks_freq_mod$attacks))
+obs_attacks_freq_mod
+```
+
+```{r}
+# confirm new inflated distribution matches original
+obs_attacks_dist <- obs_attacks_freq %>% uncount(count)
+obs_attacks_mod_dist <- obs_attacks_freq_mod %>% uncount(count)
+
+comp_dists <- ggplot() +
+          geom_histogram(data=obs_attacks_dist,
+                         aes(x = as.numeric(as.character(attacks)),
+                             y = ..density..,
+                             color = "Observed Attacks"),
+                         binwidth = 0.25,
+                         fill = "orange",  alpha = 0.35) + 
+          geom_histogram(data=obs_attacks_mod_dist,
+                          aes(x = as.numeric(as.character(attacks)),
+                              y = ..density..,
+                              color="Resampled Observed Attacks"),
+                          binwidth = 0.25,
+                          fill = "steelblue",alpha=0.35) + 
+          xlab("Normalized number of attacks") + 
+          ylab("Density") + 
+          ggtitle("Distribution of Observed (1987-2004) and Resampled Observed Attacks") + 
+          scale_color_manual(name = "Attack Source", 
+                             values=c(`Observed Attacks`="orange", `Modeled Attacks`="steelblue"))
+comp_dists
+```
+
+```{r}
+obs_attacks_freq_mod <- obs_attacks_freq_mod %>% add_row(attacks = max(model_attacks_freq$attacks), count=0) %>% add_row(attacks = min(model_attacks_freq$attacks), count=0)
+
+model_attacks_freq <- model_attacks_freq %>% add_row(attacks = max(obs_attacks_freq_mod$attacks), count=0) %>% add_row(attacks = min(obs_attacks_freq_mod$attacks), count=0)
+
+```
+
+```{r}
+new_attacks <- data.frame(attacks = seq(round(min(obs_attacks_freq_mod$attacks),1), round(max(obs_attacks_freq_mod$attacks),1),by=0.1))
+```
+
+```{r}
+head(new_attacks)
+```
+
+```{r}
+head(model_attacks_dummy)
+```
+
+```{r}
+model_attacks_freq$rounded_attacks <- round(model_attacks_freq$attacks,1)
+model_attacks_dummy <- model_attacks_freq %>% group_by(rounded_attacks) %>% summarise(sum_cnts = sum(count))
+
+merged_model_attacks <- merge(new_attacks, model_attacks_dummy, by.x="attacks",by.y="rounded_attacks",all.x=TRUE)
+merged_model_attacks[is.na(merged_model_attacks)] <- 0
+```
+
+```{r}
+obs_attacks_freq_mod$rounded_attacks <- round(obs_attacks_freq_mod$attacks,1)
+obs_attacks_dummy <- obs_attacks_freq_mod %>% group_by(rounded_attacks) %>% summarise(sum_cnts = sum(count))
+
+merged_obs_attacks <- merge(new_attacks, obs_attacks_dummy, by.x="attacks",by.y="rounded_attacks",all.x=TRUE)
+merged_obs_attacks[is.na(merged_obs_attacks)] <- 0
+```
+
+
+```{r}
+ba <- diftrans(pre_main = merged_obs_attacks,
+              post_main = merged_model_attacks,
+              var = attacks,
+              bandwidth_seq = bandwidths)
+
+ba_cost <- ba$main * 100
+head(ba_cost)
+```
+
+
+```{r}
+# reverting to chi-square
+obs_attacks_mod_dist <- obs_attacks_freq %>% uncount(count)
+model_attacks_dist <- model_attacks_freq %>% select(-c("rounded_attacks")) %>% uncount(count) %>% dplyr::pull()
+model_attacks_dist <-  sample(model_attacks_dist, size=length(obs_attacks_mod_dist[,1]),replace=TRUE)
+model_attacks_dist <- data.frame(attacks=model_attacks_dist)
+chisq.test(obs_attacks_mod_dist$attacks, model_attacks_dist$attacks)
+```
+
 
 #### References
 
 https://www.tutorialspoint.com/how-to-combine-year-month-and-day-column-in-an-r-data-frame
 https://stackoverflow.com/questions/24496984/how-to-add-legend-to-ggplot-manually-r
+https://stackoverflow.com/questions/24460785/resample-with-replacement-by-group
