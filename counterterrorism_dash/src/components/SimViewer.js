@@ -57,11 +57,8 @@ const SimViewer = (props) => {
                     <HeatMap timestep={timestep}></HeatMap>
                 </div>
                 <div className="sim_viewer_tctr">
-                    Timestep {timestep} of {simPars.total_steps}
                     <PieChart timestep={timestep}></PieChart>
-                </div>
-                <div className="sim_viewer_right" width="400" margin="50">
-                    <ParamForm setSimPars={setSimPars}></ParamForm>
+                    <div>Timestep {timestep} of {simPars.total_steps}</div>
                     <PlaybackControls
                         setMsPerStep={setMsPerStep}
                         setActive={setActive}
@@ -71,6 +68,9 @@ const SimViewer = (props) => {
                         timestep={timestep}
                         max_timestep={simPars.total_steps}
                     ></PlaybackControls>
+                </div>
+                <div className="sim_viewer_right" width="400" margin="50">
+                    <ParamForm>setSimPars={setSimPars}</ParamForm>
                 </div>
             </div>
             <div className="sim_viewer">

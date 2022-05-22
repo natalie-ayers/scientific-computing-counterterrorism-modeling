@@ -163,6 +163,8 @@ function HeatMap(props) {
     ];
 
     var layout = {
+        width: 850,
+        height: 483,
         annotations: [],
         font: { size: 20 },
         paper_bgcolor:"#f5eeda",
@@ -181,8 +183,6 @@ function HeatMap(props) {
             ticks: "",
             ticks: 1,
             ticksuffix: " ",
-            width: 700,
-            height: 700,
             autosize: false,
         },
     };

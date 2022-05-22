@@ -10,6 +10,7 @@ export async function fetchSim(sim_params) {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
+            'Content-Security-Policy': "default-src",
             // mode: 'cors', // no-cors, *cors, same-origin
             Authorization: auth_text,
             body: JSON.stringify(sim_params) 
