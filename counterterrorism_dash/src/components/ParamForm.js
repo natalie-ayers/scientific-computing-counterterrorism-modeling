@@ -47,13 +47,47 @@ const violence_prob_options = {
     6: "1%",
 };
 
+const agent_crowding_options = {
+    0: "10",
+    1: "20",
+    2: "30",
+    3: "40",
+    4: "50",
+    5: "60",
+    6: "70",
+};
+
+const viol_aftermath_options = {
+    0: "2",
+    1: "3",
+    2: "4",
+    3: "5",
+    4: "10",
+    5: "15",
+    6: "30",
+};
+
+const birth_rate_options = {
+    0: ".01%",
+    1: ".02%",
+    2: ".03%",
+    3: ".05%",
+    4: ".1%",
+    5: ".5%",
+    6: "1%",
+};
+
 const ParamForm = (props) => {
     const [govPolicy, setGovPolicy] = useState("Neutral");
     const [govReactivity, setGovReactivity] = useState("Medium");
     const [discontent, setDiscontent] = useState("Medium");
-    const [startingPop, setStartingPop] = useState(600);
-    const [baseViolPct, setBaseViolPct] = useState(600);
-    const [nSteps, setNSteps] = useState(600);
+    const [startingPop, setStartingPop] = useState("600");
+    const [baseViolPct, setBaseViolPct] = useState("600");
+    const [nSteps, setNSteps] = useState("600");
+    const [addViol, setAddViol] = useState("5");
+    const [crowdingThresh, setCrowdingThresh] = useState("40");
+    const [birthRate, setBirthRate] = useState(".05%");
+
     const [waitingForSim, setWaitingForSim] = useState(false);
 
     const sim_params = {
@@ -130,13 +164,13 @@ const ParamForm = (props) => {
                     <Slider
                         fluid
                         label="Agent Birth Rate"
-                        marks={discontent_options}
+                        marks={birth_rate_options}
                         onAfterChange={(value) =>
-                            setDiscontent(discontent_options[value])
+                            setBirthRate(birth_rate_options[value])
                         }
                         min={0}
-                        max={2}
-                        defaultValue={1}
+                        max={6}
+                        defaultValue={3}
                     />
                 </div>
                 <p style={styleObj}>Crowding Threshold</p>
@@ -144,13 +178,13 @@ const ParamForm = (props) => {
                     <Slider
                         fluid
                         label="Crowding Threshold"
-                        marks={discontent_options}
+                        marks={agent_crowding_options}
                         onAfterChange={(value) =>
-                            setDiscontent(discontent_options[value])
+                            setCrowdingThresh(agent_crowding_options[value])
                         }
                         min={0}
-                        max={2}
-                        defaultValue={1}
+                        max={6}
+                        defaultValue={3}
                     />
                 </div>
                 <p style={styleObj}>Add. Violence Aftermath</p>
@@ -158,13 +192,13 @@ const ParamForm = (props) => {
                     <Slider
                         fluid
                         label="Add. Violence Aftermat"
-                        marks={discontent_options}
+                        marks={viol_aftermath_options}
                         onAfterChange={(value) =>
-                            setDiscontent(discontent_options[value])
+                            setAddViol(viol_aftermath_options[value])
                         }
                         min={0}
-                        max={2}
-                        defaultValue={1}
+                        max={6}
+                        defaultValue={3}
                     />
                 </div>
                 <p style={styleObj}>Baseline Violence Probability</p>
@@ -231,6 +265,9 @@ const ParamForm = (props) => {
                                 gov_policy: govPolicy,
                                 reactive_level: govReactivity,
                                 discontent: discontent,
+                                add_violence_aftermath:addViol,
+                                crowding_threshold:crowdingThresh,
+                                agent_birth_rate:birthRate,
                                 starting_pop: startingPop,
                                 total_steps: nSteps,
                             });
