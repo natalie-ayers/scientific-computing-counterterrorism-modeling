@@ -2,3 +2,5 @@
 /counterterrorism_dash/package-lock.json
 /counterterrorism_dash/package.json
 /counterterrorism_dash/node_modules/*
+*.pkl
+/model_output/*.pkl
