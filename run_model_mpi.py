@@ -23,8 +23,8 @@ def sim_counterterrorism_models():
     reactive_lvl=['mid-high','none']
     #reactive_lvl = ['high','mid-high','mid-low','low','none']
     discontent = ['high','mid','low']
-    starting_population = [300, 500]
-    #starting_population = [200, 300, 400, 500, 600, 800, 1000]
+    starting_population = [300, 600]
+    #starting_population = [200, 300, 400, 600, 800, 1000]
     grid_size = {200:(2,3),300:(3,3),400:(3,4),600:(4,5),\
                   800:(5,5),1000:(5,6)}
     #steps = [200, 300, 500, 700, 900]
