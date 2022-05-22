@@ -64,7 +64,7 @@ def sim_counterterrorism_models():
         model_df = model.datacollector.get_model_vars_dataframe()
         agents_df = model.datacollector.get_agent_vars_dataframe()
         deaths_df = model.datacollector.get_table_dataframe('Deaths')
-        govt_actions_df = scenario.datacollector.get_table_dataframe('govt_actions')
+        govt_actions_df = model.datacollector.get_table_dataframe('govt_actions')
 
         # get values from model dataframe
         return_dict['final_pop'] = int(model_df[model_df.index == steps-1]\
