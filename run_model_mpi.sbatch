@@ -3,7 +3,6 @@
 #SBATCH --job-name=run_model_mpi
 #SBATCH --ntasks=2
 #SBATCH --partition=broadwl
-#SBATCH --constraint=fdr
 #SBATCH --account=mpcs56420
 
 # Load Python and MPI modules
