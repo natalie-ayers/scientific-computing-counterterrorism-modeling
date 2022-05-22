@@ -2,50 +2,55 @@ import React from "react";
 import Plot from "react-plotly.js";
 
 function LinePlot(props) {
-    const y_val1 = props.data[props.target1];
-    const y_val2 = props.data[props.target2];
-    const x_range = [-1, props.timestep];
-    const y_max_t = Math.max(y_val1[props.timestep], y_val2[props.timestep]);
-
-
-    const y_range = [0, props.lineYMax];
-
-    if (props.lineYMax < y_max_t) {
-        props.setLineYMax(y_max_t);
-    }
-
     return (
-
         <Plot
             data={[
                 {
                     x: props.data.timestep,
-                    y: y_val1,
-                    name: "Agents",
+                    y: props.data[props.target1],
+                    name: props.lab1,
                     type: "scatter",
                     mode: "lines",
-                    marker: { color: "rgba(0,100,80,1)" },
+                    marker: { color: "rgba(256,0,0,1)" },
                     showlegend: true,
                 },
                 {
                     x: props.data.timestep,
-                    y: y_val2,
-                    name: "Attacks",
+                    y: props.data[props.target2],
+                    name: props.lab1,
                     type: "scatter",
                     mode: "lines",
-                    marker: { color: "rgba(256,100,80,1)" },
+                    marker: { color: "rgba(222,143,143,1)" },
+                    showlegend: true,
+                },
+                {
+                    x: props.data.timestep,
+                    y: props.data[props.target3],
+                    name: props.lab3,
+                    type: "scatter",
+                    mode: "lines",
+                    marker: { color: "rgba(0,0,255,1)" },
+                    showlegend: true,
+                },
+                {
+                    x: props.data.timestep,
+                    y: props.data[props.target4],
+                    name: props.lab4,
+                    type: "scatter",
+                    mode: "lines",
+                    marker: { color: "rgba(147,142,208,1)" },
                     showlegend: true,
                 },
             ]}
             layout={{
                 width: 640,
                 height: 400,
-                paper_bgcolor:"#f5eeda",
+                paper_bgcolor: "#f5eeda",
                 legend: {
                     x: 1,
-                    xanchor: 'right',
-                    y: 1
-                  },
+                    xanchor: "right",
+                    y: 1,
+                },
                 margin: {
                     l: 25,
                     r: 25,
@@ -61,7 +66,7 @@ function LinePlot(props) {
                             size: 14.5,
                         },
                     },
-                    range: y_range,
+                    range: [0, props.data[props.yMax][props.timestep]],
                 },
                 xaxis: {
                     title: {
@@ -71,7 +76,7 @@ function LinePlot(props) {
                             size: 14.5,
                         },
                     },
-                    range: x_range,
+                    range: [-1, props.timestep],
                     tickmode: "linear",
                     tick0: 0,
                     dtick: props.x_step,

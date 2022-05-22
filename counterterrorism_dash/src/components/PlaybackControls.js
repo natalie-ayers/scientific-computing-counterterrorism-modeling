@@ -4,7 +4,7 @@ import {
     BsFillSkipForwardCircleFill,
     BsFillSkipEndCircleFill,
     BsFillPlayCircleFill,
-    BsFillSkipBackwardCircleFill
+    BsFillSkipBackwardCircleFill,
 } from "react-icons/bs";
 import ToggleButton from "@mui/material/ToggleButton";
 import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
