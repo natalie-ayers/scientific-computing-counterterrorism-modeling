@@ -21,7 +21,7 @@ const SimViewer = (props) => {
         starting_pop: 200,
         total_steps: 500,
     });
-    // const [simData, setSimData] = useState(null)
+    const [simData, setSimData] = useState(null);
 
     useEffect(() => {
         let interval = null;
@@ -35,10 +35,11 @@ const SimViewer = (props) => {
         return () => clearInterval(interval);
     }, [isActive, timestep]);
 
-    const simData = require("../static/model_json.json");
-    const simPiv = pivot_json(simData);
+    const simData_tst = require("../static/long_sim_response.json");
+    // const simPiv = pivot_json(simData);
+    // setSimData(simData_tst)
 
-    // console.log(simPiv);
+    console.log(simData_tst);
     // Retrive data for target parameter from server, set it to state,
     // update it when dive_meta changes
     //   useEffect(() => {
@@ -54,11 +55,13 @@ const SimViewer = (props) => {
         <div>
             <div className="sim_viewer">
                 <div className="sim_viewer_tleft">
-                    <HeatMap timestep={timestep}></HeatMap>
+                    <HeatMap timestep={timestep} data={simData_tst}></HeatMap>
                 </div>
                 <div className="sim_viewer_tctr">
-                    <PieChart timestep={timestep}></PieChart>
-                    <div>Timestep {timestep} of {simPars.total_steps}</div>
+                    <PieChart timestep={timestep} data={simData_tst}></PieChart>
+                    <div>
+                        Timestep {timestep} of {simPars.total_steps}
+                    </div>
                     <PlaybackControls
                         setMsPerStep={setMsPerStep}
                         setActive={setActive}
@@ -76,24 +79,30 @@ const SimViewer = (props) => {
             <div className="sim_viewer">
                 <div className="sim_viewer_bleft">
                     <LinePlot
-                        data={simPiv}
-                        target1={"num_agents"}
-                        target2={"num_attacks"}
+                        data={simData_tst}
+                        target1={"lPlot_nAgents"}
+                        lab1={"Agents"}
+                        target2={"lPlot_nAttacks"}
+                        lab2={"Attacks"}
                         x_step={50}
                         timestep={timestep}
-                        lineYMax={lineYMax}
-                        setLineYMax={setLineYMax}
+                        yMax={"max_y_agentattacks"}
                     ></LinePlot>
                 </div>
                 <div className="sim_viewer_bctr">
                     <LinePlot
-                        data={simPiv}
-                        target1={"num_agents"}
-                        target2={"num_attacks"}
+                        data={simData_tst}
+                        target1={"lPlot_cumTargRepr"}
+                        lab1={"Targeted Repression"}
+                        target2={"lPlot_cumIndiscRepr"}
+                        lab2={"Indiscriminate Repression"}
+                        target3={"lPlot_cumTargConc"}
+                        lab3={"Targeted Concilation"}
+                        target4={"lPlot_cumIndiscConc"}
+                        lab4={"Indiscriminate Concilation"}
+                        yMax={"max_y_govtactions"}
                         x_step={50}
                         timestep={timestep}
-                        lineYMax={lineYMax}
-                        setLineYMax={setLineYMax}
                     ></LinePlot>
                 </div>
             </div>

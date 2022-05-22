@@ -3,7 +3,7 @@ import "rc-slider/assets/index.css";
 import LoadingButton from "@mui/lab/LoadingButton";
 import { useState } from "react";
 import { BsCloudUpload } from "react-icons/bs";
-import { fetchSim } from '../services/Services.js'
+import { fetchSim } from "../services/Services.js";
 
 const gov_policy_options = {
     0: "Concilatory",
@@ -91,27 +91,27 @@ const ParamForm = (props) => {
     const [waitingForSim, setWaitingForSim] = useState(false);
 
     const sim_params = {
-        "violence_prob": 0.0005,
-        "gov_policy": "None",
-        "reactive_level": "Low",
-        "discontent": "Mid",
-        "starting_pop": 200,
-        "total_steps": 30,
-        "add_violence_aftermath":10,
-        "crowding_threshold":30,
-        "agent_birth_rate":0.03
-    }
+        violence_prob: 0.0005,
+        gov_policy: "None",
+        reactive_level: "Low",
+        discontent: "Mid",
+        starting_pop: 200,
+        total_steps: 30,
+        add_violence_aftermath: 10,
+        crowding_threshold: 30,
+        agent_birth_rate: 0.03,
+    };
 
     const styleObj = {
         fontSize: 16,
         textAlign: "center",
-    }
+    };
 
     return (
         <>
             <div>
                 <div className="sim_lab">ㅤㅤGOVㅤㅤㅤ</div>
-                <div className='contain_org'>
+                <div className="contain_org">
                     <p style={styleObj}>Government Policy</p>
                     <div className="contain_inner">
                         <Slider
@@ -143,141 +143,143 @@ const ParamForm = (props) => {
                 </div>
             </div>
             <div>
-            <div className="sim_lab">ㅤㅤㅤㅤㅤAGENTSㅤㅤㅤㅤㅤㅤ</div>
-            <div className='contain_org'>
-                <p style={styleObj}>Discontent</p>
-                <div className="contain_inner">
-                    <Slider
-                        fluid
-                        label="Discontent"
-                        marks={discontent_options}
-                        onAfterChange={(value) =>
-                            setDiscontent(discontent_options[value])
-                        }
-                        min={0}
-                        max={2}
-                        defaultValue={1}
-                    />
+                <div className="sim_lab">ㅤㅤㅤㅤㅤAGENTSㅤㅤㅤㅤㅤㅤ</div>
+                <div className="contain_org">
+                    <p style={styleObj}>Discontent</p>
+                    <div className="contain_inner">
+                        <Slider
+                            fluid
+                            label="Discontent"
+                            marks={discontent_options}
+                            onAfterChange={(value) =>
+                                setDiscontent(discontent_options[value])
+                            }
+                            min={0}
+                            max={2}
+                            defaultValue={1}
+                        />
+                    </div>
+                    <p style={styleObj}>Agent Birth Rate</p>
+                    <div className="contain_inner">
+                        <Slider
+                            fluid
+                            label="Agent Birth Rate"
+                            marks={birth_rate_options}
+                            onAfterChange={(value) =>
+                                setBirthRate(birth_rate_options[value])
+                            }
+                            min={0}
+                            max={6}
+                            defaultValue={3}
+                        />
+                    </div>
+                    <p style={styleObj}>Crowding Threshold</p>
+                    <div className="contain_inner">
+                        <Slider
+                            fluid
+                            label="Crowding Threshold"
+                            marks={agent_crowding_options}
+                            onAfterChange={(value) =>
+                                setCrowdingThresh(agent_crowding_options[value])
+                            }
+                            min={0}
+                            max={6}
+                            defaultValue={3}
+                        />
+                    </div>
+                    <p style={styleObj}>Add. Violence Aftermath</p>
+                    <div className="contain_inner">
+                        <Slider
+                            fluid
+                            label="Add. Violence Aftermat"
+                            marks={viol_aftermath_options}
+                            onAfterChange={(value) =>
+                                setAddViol(viol_aftermath_options[value])
+                            }
+                            min={0}
+                            max={6}
+                            defaultValue={3}
+                        />
+                    </div>
+                    <p style={styleObj}>Baseline Violence Probability</p>
+                    <div className="contain_inner">
+                        <Slider
+                            fluid
+                            label="Discontent"
+                            marks={violence_prob_options}
+                            onAfterChange={(value) =>
+                                setBaseViolPct(violence_prob_options[value])
+                            }
+                            min={0}
+                            max={6}
+                            defaultValue={3}
+                        />
+                    </div>
                 </div>
-                <p style={styleObj}>Agent Birth Rate</p>
-                <div className="contain_inner">
-                    <Slider
-                        fluid
-                        label="Agent Birth Rate"
-                        marks={birth_rate_options}
-                        onAfterChange={(value) =>
-                            setBirthRate(birth_rate_options[value])
-                        }
-                        min={0}
-                        max={6}
-                        defaultValue={3}
-                    />
-                </div>
-                <p style={styleObj}>Crowding Threshold</p>
-                <div className="contain_inner">
-                    <Slider
-                        fluid
-                        label="Crowding Threshold"
-                        marks={agent_crowding_options}
-                        onAfterChange={(value) =>
-                            setCrowdingThresh(agent_crowding_options[value])
-                        }
-                        min={0}
-                        max={6}
-                        defaultValue={3}
-                    />
-                </div>
-                <p style={styleObj}>Add. Violence Aftermath</p>
-                <div className="contain_inner">
-                    <Slider
-                        fluid
-                        label="Add. Violence Aftermat"
-                        marks={viol_aftermath_options}
-                        onAfterChange={(value) =>
-                            setAddViol(viol_aftermath_options[value])
-                        }
-                        min={0}
-                        max={6}
-                        defaultValue={3}
-                    />
-                </div>
-                <p style={styleObj}>Baseline Violence Probability</p>
-                <div className="contain_inner">
-                    <Slider
-                        fluid
-                        label="Discontent"
-                        marks={violence_prob_options}
-                        onAfterChange={(value) =>
-                            setBaseViolPct(violence_prob_options[value])
-                        }
-                        min={0}
-                        max={6}
-                        defaultValue={3}
-                    />
-                </div>
-            </div>
             </div>
             <div>
-            <div className="sim_lab">ㅤㅤSIMㅤㅤㅤ</div>
-            <div className='contain_org'>
-            <p style={styleObj}>Starting Population</p>
-                <div className="contain_inner">
-                    <Slider
-                        fluid
-                        label="Starting Pop"
-                        min={200}
-                        max={1000}
-                        marks={numeric_options}
-                        onAfterChange={(value) =>
-                            setStartingPop(numeric_options[value])
-                        }
-                        step={100}
-                        dots={true}
-                        defaultValue={600}
-                    />
+                <div className="sim_lab">ㅤㅤSIMㅤㅤㅤ</div>
+                <div className="contain_org">
+                    <p style={styleObj}>Starting Population</p>
+                    <div className="contain_inner">
+                        <Slider
+                            fluid
+                            label="Starting Pop"
+                            min={200}
+                            max={1000}
+                            marks={numeric_options}
+                            onAfterChange={(value) =>
+                                setStartingPop(numeric_options[value])
+                            }
+                            step={100}
+                            dots={true}
+                            defaultValue={600}
+                        />
+                    </div>
+                    <p style={styleObj}>Number of Steps</p>
+                    <div className="contain_inner">
+                        <Slider
+                            fluid
+                            label="Number of Steps"
+                            min={200}
+                            max={1000}
+                            marks={numeric_options}
+                            onAfterChange={(value) =>
+                                setNSteps(numeric_options[value])
+                            }
+                            step={100}
+                            dots={true}
+                            defaultValue={600}
+                        />
+                    </div>
                 </div>
-                <p style={styleObj}>Number of Steps</p>
-                <div className="contain_inner">
-                    <Slider
-                        fluid
-                        label="Number of Steps"
-                        min={200}
-                        max={1000}
-                        marks={numeric_options}
-                        onAfterChange={(value) => setNSteps(numeric_options[value])}
-                        step={100}
-                        dots={true}
-                        defaultValue={600}
-                    />
-                </div>
-            </div>
             </div>
             <div className="sim_button">
-                    <LoadingButton
-                        loadingPosition="start"
-                        startIcon={<BsCloudUpload />}
-                        variant="outlined"
-                        loading={waitingForSim}
-                        onClick={() => {
-                            setWaitingForSim(true);
-                            props.setSimPars({
-                                violence_prob: baseViolPct,
-                                gov_policy: govPolicy,
-                                reactive_level: govReactivity,
-                                discontent: discontent,
-                                add_violence_aftermath:addViol,
-                                crowding_threshold:crowdingThresh,
-                                agent_birth_rate:birthRate,
-                                starting_pop: startingPop,
-                                total_steps: nSteps,
-                            });
-                            const fetched = fetchSim(sim_params)
-                            console.log(fetched)
-                        }}
-                    >
-                        Simulate
-                    </LoadingButton>
-                </div>
+                <LoadingButton
+                    loadingPosition="start"
+                    startIcon={<BsCloudUpload />}
+                    variant="outlined"
+                    loading={waitingForSim}
+                    onClick={() => {
+                        setWaitingForSim(true);
+                        props.setSimPars({
+                            violence_prob: baseViolPct,
+                            gov_policy: govPolicy,
+                            reactive_level: govReactivity,
+                            discontent: discontent,
+                            add_violence_aftermath: addViol,
+                            crowding_threshold: crowdingThresh,
+                            agent_birth_rate: birthRate,
+                            starting_pop: startingPop,
+                            total_steps: nSteps,
+                        });
+                        const fetched = fetchSim(sim_params);
+                        console.log(fetched);
+                    }}
+                >
+                    Simulate
+                </LoadingButton>
+            </div>
         </>
     );
 };
