@@ -1,0 +1,125 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+```{r}
+library(diftrans)
+library(dplyr) # for manipulating data
+library(tidyr) # for cleaning data
+library(ggplot2) # for visualization
+library(haven)
+library(rjson)
+
+setwd('C:/Users/natra/Documents/Education/UChicago/Scientific Computing/scientific-computing-counterterrorism-modeling')
+```
+
+```{r}
+# read in real-world data
+obs_data_full <- read_stata(file = "./real_data/GATE_GTD_Israel_monthly_data_ext.dta")
+
+```
+
+```{r}
+obs_attacks <- obs_data_full %>% select(c("year","month","att_palunk","att_pal","att_unk"))
+obs_attacks$date <- as.Date(with(obs_attacks, paste(year, month, "01",sep="-")),"%Y-%m-%d")
+obs_attacks <- obs_attacks %>%  drop_na()
+obs_attacks$norm_att_palunk <- (obs_attacks$att_palunk - mean(obs_attacks$att_palunk)) / sd(obs_attacks$att_palunk)
+```
+
+```{r}
+obs_attacks_freq <- data.frame(table(obs_attacks$norm_att_palunk)) %>%
+                    rename(attacks = Var1, count = Freq)
+```
+
+
+```{r}
+# read in model output
+model_results_full <- fromJSON(file="long_sim_response.json")
+model_n_attacks <- model_results_full$lPlot_nAttacks
+model_norm_attacks <- (model_n_attacks - mean(model_n_attacks)) / sd(model_n_attacks)
+```
+
+```{r}
+model_attacks_freq <- data.frame(table(model_norm_attacks)) %>%
+  rename(attacks=model_norm_attacks, count = Freq)
+```
+
+
+```{r}
+obs_attacks_dist <- obs_attacks_freq %>% uncount(count)
+model_attacks_dist <- model_attacks_freq %>% uncount(count)
+
+comp_dists <- ggplot() +
+          geom_histogram(data=obs_attacks_dist,
+                         aes(x = as.numeric(as.character(attacks)),
+                             y = ..density..,
+                             color = "Observed Attacks"),
+                         binwidth = 0.25,
+                         fill = "orange",  alpha = 0.35) + 
+          geom_histogram(data=model_attacks_dist,
+                          aes(x = as.numeric(as.character(attacks)),
+                              y = ..density..,
+                              color="Modeled Attacks"),
+                          binwidth = 0.25,
+                          fill = "steelblue",alpha=0.35) + 
+          xlab("Normalized number of attacks") + 
+          ylab("Density") + 
+          ggtitle("Distribution of Observed (1987-2004) and Modeled Attacks") + 
+          scale_color_manual(name = "Attack Source", 
+                             values=c(`Observed Attacks`="orange", `Modeled Attacks`="steelblue"))
+comp_dists
+```
+
+```{r}
+placebo_obs <- data.frame(attacks = obs_attacks_freq$attacks,
+          count = rmultinom(n = 1,
+          size = sum(obs_attacks_freq$count),
+          prob = obs_attacks_freq$count))
+placebo_model <- data.frame(attacks = obs_attacks_freq$attacks,
+          count = rmultinom(n = 1,
+          size = sum(model_attacks_freq$count),
+          prob = obs_attacks_freq$count))
+
+```
+
+
+```{r}
+obs_attacks_placebo <- placebo_obs %>% uncount(count)
+model_attacks_placebo <- placebo_model %>% uncount(count)
+
+comp_placebo_dists <- ggplot() +
+          geom_histogram(data=obs_attacks_placebo,
+                         aes(x = as.numeric(as.character(attacks)),
+                             y = ..density..,
+                             color = "Observed Attacks"),
+                         binwidth = 0.25,
+                         fill = "orange",  alpha = 0.35) + 
+          geom_histogram(data=model_attacks_placebo,
+                          aes(x = as.numeric(as.character(attacks)),
+                              y = ..density..,
+                              color="Modeled Attacks"),
+                          binwidth = 0.25,
+                          fill = "steelblue",alpha=0.35) + 
+          xlab("Normalized number of attacks") + 
+          ylab("Density") + 
+          ggtitle("Distribution of Observed (1987-2004) and Modeled Attacks") + 
+          scale_color_manual(name = "Attack Source", 
+                             values=c(`Observed Attacks`="orange", `Modeled Attacks`="steelblue"))
+comp_placebo_dists
+
+```
+
+
+```{r}
+bandwidths <- c(0) # store all the bandwidths you want in this vector
+placebo_at_0 <- diftrans(pre_main = obs_attacks_placebo,
+                post_main = model_attacks_placebo, # from previous exercise
+                var = attacks,
+                bandwidth_seq = bandwidths)
+```
+
+#### References
+
+https://www.tutorialspoint.com/how-to-combine-year-month-and-day-column-in-an-r-data-frame
+https://stackoverflow.com/questions/24496984/how-to-add-legend-to-ggplot-manually-r
