@@ -24,14 +24,14 @@ const PieChart = (props) => {
     ];
 
     var layout = {
-        height: 422,
+        height: 410,
         width: 400,
         paper_bgcolor:"#f5eeda",
         margin: {
-            l: 30,
-            r: 25,
-            b: 25,
-            t: 35,
+            l: 0,
+            r: 0,
+            b: 0,
+            t: 10,
             pad: 4,
         },
     };

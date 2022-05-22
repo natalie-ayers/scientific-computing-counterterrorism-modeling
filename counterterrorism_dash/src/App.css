@@ -52,7 +52,7 @@
 }
 
 .sim_viewer_tleft {
-    width: 45%;
+    width: 47.5%;
     float: left;
     padding: 2px;
     border: 5px solid rgb(0, 0, 0);
@@ -70,7 +70,7 @@
 }
 
 .sim_viewer_bleft {
-    width: 35%;
+    width: 37.5%;
     float: left;
     padding: 2px;
     border: 5px solid rgb(0, 0, 0);
@@ -89,24 +89,40 @@
 
 .contain_inner {
     position: relative;
-    top: 0%;
-    left: 50%;
-    bottom: 20%;
+    /* float: inline-start; */
     padding-left: 15%;
-    padding-right: 20%;
-    padding-top: 5%;
-    padding-bottom: 0%;
-    transform: translate(-50%, -50%);
+    padding-right: 15%;
+    padding-top: 0%;
+    padding-bottom: 3%;
 }
 
 .sim_button {
     position: relative;
+    /* float: inline-start; */
     top: 0%;
-    left: 50%;
     bottom: 0%;
     padding-left: 15%;
     padding-right: 20%;
-    padding-top: 15%;
-    padding-bottom: 0%;
-    transform: translate(-50%, -50%);
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.contain_org {
+    border: 3px solid rgb(115, 113, 113);
+    margin: 1%;
+    /* margin-left: 10%; */
+    float: right;
+    width: 88%;
+    padding-bottom: 4%;
+    border-radius: 25px;
+}
+
+.sim_lab {
+    writing-mode: vertical-rl;
+    width: 6%;
+    /* margin-top: 10%; */
+    /* margin-left: 4; */
+    display:inline-block;
+    align-items: center;
+    text-orientation: upright;
 }
