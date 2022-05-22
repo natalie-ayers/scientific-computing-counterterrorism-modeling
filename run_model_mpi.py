@@ -54,7 +54,7 @@ def sim_counterterrorism_models():
         prob_violence, govt_policy, reactive_lvl, discontent,\
         starting_population, steps = params
         height, width = grid_size[starting_population]
-        model = model_mpi_midway.CounterterrorismModel(N=starting_population,height=height,\
+        model = model.CounterterrorismModel(N=starting_population,height=height,\
                                                 width=width,prob_violence=prob_violence,\
                                                 policy=govt_policy,reactive_lvl=reactive_lvl,\
                                                 discontent=discontent)

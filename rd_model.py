@@ -236,13 +236,13 @@ class CounterterrorismModel(Model):
         self.govt_action = 'NONE'
         self.action_pos = (0,0)
         self.agent_birth_rate = agent_birth_rate
-        self.change_prob_violence=change_prob_violence, 
-        self.change_reactive_lvl = change_reactive_lvl,
-        self.change_policy=change_policy,
-        self.change_discontent=change_discontent, 
-        self.change_add_violence_aftermath=change_add_violence_aftermath, 
-        self.change_crowding_threshold=change_crowding_threshold, 
-        self.change_agent_birth_rate=change_agent_birth_rate
+        self.change_prob_violence = change_prob_violence
+        self.change_reactive_lvl = change_reactive_lvl
+        self.change_policy = change_policy
+        self.change_discontent = change_discontent 
+        self.change_add_violence_aftermath = change_add_violence_aftermath 
+        self.change_crowding_threshold = change_crowding_threshold 
+        self.change_agent_birth_rate = change_agent_birth_rate
 
         seed = 50
 
@@ -281,8 +281,11 @@ class CounterterrorismModel(Model):
 
         if self.timestep_to_change:
             if self.timestep == self.timestep_to_change:
-                print('Regime change! Policy shift underway... \n')
+                print('Regime change! Policy shift underway at step',\
+                    self.timestep,'... \n')
+                #print('orig prob violence',self.prob_violence)
                 self.prob_violence = self.change_prob_violence
+                #print('new prob violence', self.prob_violence)
                 self.policy = self.change_policy
                 self.reactive_lvl = self.change_reactive_lvl
                 self.discontent = self.change_discontent
