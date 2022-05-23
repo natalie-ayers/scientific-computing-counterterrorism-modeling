@@ -120,9 +120,7 @@ class Palestinian(Agent):
         else:
             violence = False
         
-        # only react if didn't commit violence (otherwise has died)
-        if not violence:
-            self.react(self.model)
+        self.react(self.model)
 
         self.status = self.assign_status()
 
