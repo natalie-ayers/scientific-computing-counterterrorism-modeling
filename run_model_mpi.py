@@ -16,19 +16,19 @@ def sim_counterterrorism_models():
     """
 
     # Define parameter value combinations to test
-    #prob_violence = [0.0001, 0.0005, 0.001, 0.003, 0.005, 0.01]
-    prob_violence = [0.0001, 0.003]
-    govt_policy = ['CONC']
-    #govt_policy = ['NONE','CONC','REPR']
-    reactive_lvl=['mid-high','none']
-    #reactive_lvl = ['high','mid-high','mid-low','low','none']
+    prob_violence = [0.0001, 0.0005, 0.001, 0.003, 0.005, 0.01]
+    #prob_violence = [0.0001, 0.003]
+    #govt_policy = ['CONC']
+    govt_policy = ['NONE','CONC','REPR']
+    #reactive_lvl=['mid-high','none']
+    reactive_lvl = ['high','mid-high','mid-low','low','none']
     discontent = ['high','mid','low']
     starting_population = [300, 600]
     #starting_population = [200, 300, 400, 600, 800, 1000]
     grid_size = {200:(2,3),300:(3,3),400:(3,4),600:(4,5),\
                   800:(5,5),1000:(5,6)}
-    #steps = [200, 300, 500, 700, 900]
-    steps = [200, 500]
+    steps = [200, 300, 500, 700, 900]
+    #steps = [200, 500]
 
     full_params = [prob_violence, govt_policy, reactive_lvl, discontent, \
                     starting_population,steps]
