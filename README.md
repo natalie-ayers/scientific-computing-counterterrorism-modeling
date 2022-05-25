@@ -8,6 +8,8 @@ This model was also uploaded as a Google Cloud Platform Cloud Function, enabling
 
 ## Interactive Visualization
 
+![Example of dashboard visualizations.](dash_example.png)
+
 The output of the model can also be visualized in an interactive React dashboard, with instructions below. First, to create the simulation data which the dashboard will use, you can either run the GCP Cloud Function above, or run a model locally using:  
   
 `python counterterror_model_json_output.py --params='{"violence_prob": 0.0005,"gov_policy": "None","reactive_level": "none","discontent": "Mid","starting_pop": 200,"total_steps": 400,"add_violence_aftermath":10,"crowding_threshold":30,"agent_birth_rate":0.03}'`
@@ -58,7 +60,6 @@ Additional comparative work was done in the R Markdown script stored in `r_optim
 ## Mid-Simulation Parameter Changes
 
 In order to perform further analysis on the simulations, such as considering whether a policy change or other change to the model's context mid-simulation, we also developed `rd_model.py` and the associated `rd_model_simulations.ipynb` notebook to demonstrate. This version of the model is identical to the original in `model.py`, except it accepts a new set of parameters to switch to half-way through the model's running. We believe this should allow for analyses such as a regression discontinuity, by comparing the effect of changing a single parameter from another while leaving all other parameters unchanged. 
-
 
 ## References
 
