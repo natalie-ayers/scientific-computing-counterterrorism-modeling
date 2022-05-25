@@ -12,10 +12,21 @@ This repo contains multiple tools for developing and analyzing simulations of co
 The base simulation is stored in model.py, and one example of running the model with desired parameters and analyzing the results is found in `local_model.ipynb`. Opening and running through the cells in `local_model.ipynb` is the simplest entry-point to become familiar with the model's functioning.  
 This model was also uploaded as a Google Cloud Platform Cloud Function, enabling it to be called and run with any combination of parameters. 
 
+The primary parameters available to adjust are: 
+
+* Probability of commiting a violent act
+  * This is the probability with which a combatant will commit an act of violence
+* Government policy: NONE, CONC, REPR
+  * This is the government's proclivity for a certain type of action - it can be thought of as a moderate government (NONE), a liberal government (CONC, ie conciliatory), or a conservative government (REPR, ie repressive)
+* Reactive Level: high, mid-high, mid-low, low, none
+  * This is the level at which the government reacts to recent violence with repressive measures. It determines the probabilities which the government uses to select either no action, a repressive action (targeted or indiscriminate), or a conciliatory action (targeted or indiscriminate). For example, if the reactive level is high, then any violent attack will influence their decisions for a much longer time after the attack, whereas a low or no reactive level will lead them to only have a higher probability of repressive action for 2 turns, or to have no increased probability of repressive action. We can think of this as a combination of the government's political persuasion (conservative vs liberal) and the amount of pressure they're receiving from their citizens to react.
+* Discontent: high, mid, low
+  * This is the initial level of discontent of the citizens. It determines at what level of satisfaction they transition between combatants, sympathetic, neutral, and anti-violence
+* Starting population 
+  * This is the starting population of Palestinians for the model, which also determines the grid size selected for the model.
+
 
 ## Interactive Visualization
-
-![Example of dashboard visualizations.](dash_example.png)
 
 The output of the model can also be visualized in an interactive React dashboard, with instructions below. First, to create the simulation data which the dashboard will use, you can either run the GCP Cloud Function above, or run a model locally using:  
   
@@ -67,6 +78,7 @@ Additional comparative work was done in the R Markdown script stored in `r_optim
 ## Mid-Simulation Parameter Changes
 
 In order to perform further analysis on the simulations, such as considering whether a policy change or other change to the model's context mid-simulation, we also developed `rd_model.py` and the associated `rd_model_simulations.ipynb` notebook to demonstrate. This version of the model is identical to the original in `model.py`, except it accepts a new set of parameters to switch to half-way through the model's running. We believe this should allow for analyses such as a regression discontinuity, by comparing the effect of changing a single parameter from another while leaving all other parameters unchanged. 
+
 
 ## References
 
