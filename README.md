@@ -1,5 +1,12 @@
 # Counterterrorism Simulations and Simulation Analyses
 
+This repo contains multiple tools for developing and analyzing simulations of counterterrorism actions and terrorist attacks. While it is not intended to be a fully accurate representation of reality, and we acknowledge the many simplifications required to create models of the incredibly complex situations in which terrorism occurs, we hope that by creating a model which mimics some aspects of reality, social scientists may be able to use these simulations as research aids. By examining the differing impacts of parameters in the simulations and by comparing these simulation outputs to real-world data, we hope to spur new hypotheses and insights which can then be tested using traditional social science methods. The toolkit we developed contains the following:
+* An agent-based model of terrorism developed in Python using the Mesa package. This base model can be run locally and as a GCP cloud function.
+* An interactive dashboard to visualize the simulations step-by-step.
+* Results from a large-scale run of thousands of simulations, run using MPI on UChicago's Midway 2, and a comparison of these results with real-world data to determine the most promising parameter combinations.
+* An enhanced model which allows shifting parameters mid-way through the simulation, mirroring policy or government shifts. 
+
+
 ## Base Simulation
 
 The base simulation is stored in model.py, and one example of running the model with desired parameters and analyzing the results is found in `local_model.ipynb`. Opening and running through the cells in `local_model.ipynb` is the simplest entry-point to become familiar with the model's functioning.  
