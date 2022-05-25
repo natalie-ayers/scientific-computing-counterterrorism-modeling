@@ -39,11 +39,21 @@ The params are all optional, so you can set as many or as few as you want to cha
  - `cloud` - flag to retreive simulation from the google cloud function. Note this requires an identity file to be in the base of the repo as described below.
  - `output_file` - string path to output. Default is `counterterrorism_dash/src/static/long_sim_response.json`, which is where the dashboard expects new responses to be (ie, if left unchanged, dashboard will react to new simulations).
 
-To run the simulation in the cloud, you need to have a file in the repo's base directory called `.gcloud_identity.json`, which is a json with one key `id` and a value of your gcloud secret key. **This file is git ignored and should not be shared with anyone lest your credits be hijacked by crypto miners**. It is structured as follows:
+To run the simulation in the cloud, you need to have a file in the repo's base directory called `.gcloud_identity.json`, which is a json with one key `id` and a value of your gcloud identity token. **This file is git ignored and should not be shared with anyone lest your credits be hijacked by crypto miners**.
+
+This token can be obtained with the google cloud cli:
+
+```
+$ gcloud auth print-identity-token
+```
+ 
+`.gcloud_identity.json` is structured as follows:
 
 ```
 {'id' : 'Funbd$578fGGsofo@#djv...'}
 ```
+
+The identity periodically changes, so it is recommended to do this just before running simulations in the cloud. 
 
 To build the React dashboard:
 
