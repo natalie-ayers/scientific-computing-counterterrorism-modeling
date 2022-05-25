@@ -5,11 +5,7 @@ import argparse
 import sys
 import ast
 import json
-
-parser = argparse.ArgumentParser()
-parser.add_argument("--params", help="Dictionary of parameter options to run simulation")
-parser.add_argument("--output_file", help="JSON output file to store JSON of model outputs")
-parser.add_argument("--verbose",help="Whether to print out each model step; default=True")
+import requests
 
 def counterterror_model_http(request,verbose=True):
     """
@@ -211,28 +207,52 @@ def counterterror_model_http(request,verbose=True):
     return return_vals
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--params", help="Dictionary of parameter options to run simulation")
+    parser.add_argument(
+        "--output_file",
+        default='counterterrorism_dash/src/static/long_sim_response.json',
+        help="JSON output file to store JSON of model outputs"
+    )
+    parser.add_argument(
+        "--verbose",
+        action='store_true',
+        default=False,
+        help="Whether to print out each model step; default=False"
+    )
+
+    parser.add_argument(
+        "--cloud",
+        action='store_true',
+        default=False,
+        help="Whether to run the model as a google cloud function (requires user creds to be stored in .cloud_identity, untracked by git); default=False"
+    )
+
     args = parser.parse_args()
-    request = args.params
-    request = ast.literal_eval(request)
-    verbose_str = args.verbose
-    print("verbose",verbose_str)
-    if verbose_str:
-        if verbose_str.lower() == "false":
-            verbose = False
-        elif verbose_str.lower() == "true":
-            verbose = True
-        else:
-            print("Unknown value set for verbose; defaulting to True")
-            verbose = True
+    params_dict = ast.literal_eval(args.params)
+    
+    print("Running simulation with parameters",params_dict)
+    if args.cloud:
+        print("Running in the cloud.")
+        gcloud = json.load(open(".gcloud_identity.json"))['id']
+        headers = {
+            'Authorization': f"bearer {gcloud}",
+        }
+        response = requests.post(
+            'https://us-central1-sci-comp-counterterror-model.cloudfunctions.net/counterterror_model_http',
+            headers=headers,
+            json=params_dict
+        )
+        return_vals = response.json()
+        # with open(args.output_file, 'w') as j_path:
+        #     json.dump(response.json(), j_path)
     else:
-        verbose = True
+        print("Running locally.")
+        return_vals = counterterror_model_http(params_dict, args.verbose)
+        print("Successfully completed simulation")
     
-    print("Running simulation with parameters",request)
-    return_vals = counterterror_model_http(request, verbose)
-    print("Successfully completed simulation")
-    
-    out_file = args.output_file
-    with open(out_file,'w') as f:
+    # out_file = args.output_file
+    with open(args.output_file,'w') as f:
         json.dump(return_vals, f)
 
-    print("Model results written to",out_file)
+    print("Model results written to ",args.output_file)

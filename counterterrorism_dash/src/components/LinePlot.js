@@ -17,7 +17,7 @@ function LinePlot(props) {
                 {
                     x: props.data.timestep,
                     y: props.data[props.target2],
-                    name: props.lab1,
+                    name: props.lab2,
                     type: "scatter",
                     mode: "lines",
                     marker: { color: "rgba(222,143,143,1)" },

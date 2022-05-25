@@ -12,16 +12,16 @@ const SimViewer = (props) => {
     const [isActive, setActive] = useState(false);
     const [msPerStep, setMsPerStep] = useState(1000);
     const [controlState, setControlState] = useState("pause");
-    const [lineYMax, setLineYMax] = useState(0);
     const [simPars, setSimPars] = useState({
         violence_prob: 0.001,
         gov_policy: "Low",
         reactive_level: "High",
         discontent: "Low",
         starting_pop: 200,
-        total_steps: 500,
+        total_steps: 375,
     });
-    const [simData, setSimData] = useState(null);
+    // when cloud function CORS permissions issue is resolved, can set simData state
+    // const [simData, setSimData] = useState(null);
 
     useEffect(() => {
         let interval = null;
@@ -36,21 +36,6 @@ const SimViewer = (props) => {
     }, [isActive, timestep]);
 
     const simData_tst = require("../static/long_sim_response.json");
-    // const simPiv = pivot_json(simData);
-    // setSimData(simData_tst)
-
-    console.log(simData_tst);
-    // Retrive data for target parameter from server, set it to state,
-    // update it when dive_meta changes
-    //   useEffect(() => {
-    //     console.log("Calling Google Cloud for new simulation")
-    //     const callSimData = async () => {
-    //       const simulation = await fetchSim(simPars);
-    //       setSimData(simulation)
-    //     }
-    //     callSimData(simPars);
-    //   }, [simPars]);
-
     return (
         <div>
             <div className="sim_viewer">
@@ -60,7 +45,7 @@ const SimViewer = (props) => {
                 <div className="sim_viewer_tctr">
                     <PieChart timestep={timestep} data={simData_tst}></PieChart>
                     <div>
-                        Timestep {timestep} of {simPars.total_steps}
+                        Timestep {timestep + 1} of {simData_tst.step.length}
                     </div>
                     <PlaybackControls
                         setMsPerStep={setMsPerStep}
@@ -69,11 +54,13 @@ const SimViewer = (props) => {
                         setControlState={setControlState}
                         controlState={controlState}
                         timestep={timestep}
-                        max_timestep={simPars.total_steps}
+                        max_timestep={simData_tst.step.length - 1}
                     ></PlaybackControls>
                 </div>
                 <div className="sim_viewer_right" width="400" margin="50">
-                    <ParamForm>setSimPars={setSimPars}</ParamForm>
+                    <ParamForm
+                       setSimPars={setSimPars}
+                    ></ParamForm>
                 </div>
             </div>
             <div className="sim_viewer">

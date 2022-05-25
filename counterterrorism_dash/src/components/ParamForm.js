@@ -273,8 +273,8 @@ const ParamForm = (props) => {
                             starting_pop: startingPop,
                             total_steps: nSteps,
                         });
-                        const fetched = fetchSim(sim_params);
-                        console.log(fetched);
+                        // const fetched = fetchSim(sim_params);
+                        // console.log(fetched);
                     }}
                 >
                     Simulate
