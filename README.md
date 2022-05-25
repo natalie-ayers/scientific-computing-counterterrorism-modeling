@@ -46,5 +46,10 @@ Additional comparative work was done in the R Markdown script stored in `r_optim
 In order to perform further analysis on the simulations, such as considering whether a policy change or other change to the model's context mid-simulation, we also developed `rd_model.py` and the associated `rd_model_simulations.ipynb` notebook to demonstrate. This version of the model is identical to the original in `model.py`, except it accepts a new set of parameters to switch to half-way through the model's running. We believe this should allow for analyses such as a regression discontinuity, by comparing the effect of changing a single parameter from another while leaving all other parameters unchanged. 
 
 
+## References
+
+Dugan, L., & Chenoweth, E. (2012). Moving Beyond Deterrence: The Effectiveness of Raising the Expected Utility of Abstaining from Terrorism in Israel. American Sociological Review, 77(4), 597–624. https://doi.org/10.1177/0003122412450573
+
+Kazil, J., Masad, D., & Crooks A., “Utilizing Python for Agent-Based Modeling: The Mesa Framework,” in Social, Cultural, and Behavioral Modeling, Cham, 2020, pp. 308–317.
 
 
