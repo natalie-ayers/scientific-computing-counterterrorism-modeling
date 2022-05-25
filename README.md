@@ -10,16 +10,28 @@ This model was also uploaded as a Google Cloud Platform Cloud Function, enabling
 
 The output of the model can also be visualized in an interactive React dashboard, with instructions below. First, to create the simulation data which the dashboard will use, you can either run the GCP Cloud Function above, or run a model locally using:  
   
-`python counterterror_model_json_output.py --params='{"violence_prob": 0.0005,"gov_policy": "None","reactive_level": "none","discontent": "Mid","starting_pop": 200,"total_steps": 400,"add_violence_aftermath":10,"crowding_threshold":30,"agent_birth_rate":0.03}' --output_file="counterterror_json_output_demonstration.json" --verbose=True`
+`python counterterror_model_json_output.py --params='{"violence_prob": 0.0005,"gov_policy": "None","reactive_level": "none","discontent": "Mid","starting_pop": 200,"total_steps": 400,"add_violence_aftermath":10,"crowding_threshold":30,"agent_birth_rate":0.03}'`
 
-The params are all optional, so you can set as many or as few as you want to change. The verbose flag, if true, will print out each step of the model as it occurs. 
+The params are all optional, so you can set as many or as few as you want to change. They are described as follows:
+ - `verbose` - flag to print out each step of the model as it occurs
+ - `cloud` - flag to retreive simulation from the google cloud function. Note this requires an identity file to be in the base of the repo as described below.
+ - `output_file` - string path to output. Default is `counterterrorism_dash/src/static/long_sim_response.json`, which is where the dashboard expects new responses to be (ie, if left unchanged, dashboard will react to new simulations).
 
-Once you have the json output from this `counterterror_model_json_output.py` script, it can be loaded into the dashboard.   
+To run the simulation in the cloud, you need to have a file in the repo's base directory called `.gcloud_identity.json`, which is a json with one key `id` and a value of your gcloud secret key. **This file is git ignored and should not be shared with anyone lest your credits be hijacked by crypto miners**. It is structured as follows:
 
-To run the docker image and see the React dashboard:
+```
+{'id' : 'Funbd$578fGGsofo@#djv...'}
+```
+
+To build the React dashboard:
 
 ```
 cd counterterrorism_dash
+npm install
+```
+
+Then after it is built and node modules downloaded:
+```
 npm start
 ```
 
@@ -28,6 +40,8 @@ Then, in your browser, navigate to:
 http://localhost:3000/
 ```
 
+When the dashboard is active, it will react to new simulation runs. For example, rerunning the above python in bash
+will update the model outcome automatically. As of now, the sliders to the right of the dashboard don't change the active simulation, as we were unable to change security settings of our cloud function to provide CORS preflight authorization to our responses (as modern browsers expect). Future work on this project (using a google account with less restricted credentials) would allow the simParams state to be sent to the google cloud function via a POST request (which is effectively what our python script does) - this functionality is outlined in fetchSim within `src/services/Services.js`.
 
 ## Large-Scale Simulation Runs
 
