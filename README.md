@@ -23,7 +23,7 @@ The primary parameters available to adjust are:
 * Discontent: high, mid, low
   * This is the initial level of discontent of the citizens. It determines at what level of satisfaction they transition between combatants, sympathetic, neutral, and anti-violence
 * Starting population 
-  * This is the starting population of Palestinians for the model, which also determines the grid size selected for the model.
+  * This is the starting population of agents for the model, which also determines the grid size selected for the model.
 
 
 ## Interactive Visualization
